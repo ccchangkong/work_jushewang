@@ -1,0 +1,379 @@
+/*head*/
+
+body {
+	background: #f6f6f6;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	background: #282828;
+}
+
+.top {
+	height: 50px;
+	width: 1200px;
+	margin: auto;
+}
+
+.logo img {
+	margin-left: 17px;
+	margin-top: 11px;
+}
+
+.logo span {
+	width: 36px;
+	height: 16px;
+	font-size: 12px;
+	color: #282828;
+	text-align: center;
+	line-height: 16px;
+	background: #fff;
+	margin-left: 9px;
+	margin-top: 23px;
+}
+
+.personal span {
+	width: 70px;
+	height: 24px;
+	color: #888;
+	font-size: 14px;
+	display: block;
+	float: left;
+	line-height: 24px;
+	margin-top: 17px;
+	padding-left: 30px;
+	margin-left: 10px;
+}
+
+.personal .online {
+	background: url(../img/online.png) no-repeat;
+}
+
+.personal .wechat {
+	background: url(../img/wechat.png) no-repeat;
+}
+
+.personal .weibo {
+	background: url(../img/weibo.png) no-repeat;
+}
+
+.personal .beforelogin {
+	background: url(../img/login.png) no-repeat;
+}
+
+.personal .afterlogin {
+	display: none;
+}
+
+.personal .shoppingcart {
+	background: url(../img/shoppingcart.png) no-repeat;
+}
+
+.banner {
+	background: url(../img/banner.jpg) no-repeat center;
+	background-size: 100% 200px;
+	width: 100%;
+	height: 138px;
+	padding-top: 62px;
+}
+
+.searchbox {
+	width: 1200px;
+	margin: auto;
+}
+
+.searchbox h1 {
+	font-size: 16px;
+	color: #697a8b;
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+.searchbox span {
+	width: 430px;
+	display: block;
+	height: 40px;
+	border: 1px solid rgba(102, 102, 102, 0.6);
+	border-radius: 9px;
+	background: rgba(40, 40, 40, 0.6);
+	margin: auto;
+	padding-left: 14px;
+	position: relative;
+}
+
+.searchbox input {
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	width: 390px;
+	background: rgba(40, 40, 40, 0);
+	color: #888;
+}
+
+.banner .search {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/search.png) no-repeat center;
+	border-radius: 0 9px 9px 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+/*headend*/
+
+
+/*main*/
+
+.login_main {
+	background: url(../img/loginBg.jpg) no-repeat center;
+	width: 100%;
+	height: 730px;
+	position: relative;
+}
+
+.login_main .login_tabBox {
+	width: 380px;
+	height: 455px;
+	position: absolute;
+	left: 50%;
+	top: 128px;
+	margin-left: -190px;
+}
+
+.login_tabBox .login_tabs {
+	width: 100%;
+	height: 45px;
+}
+
+.login_tabBox img,
+.login_tabBox p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.login_tabBox img {
+	margin-right: 4px;
+}
+
+.login_tabBox .login_tabs li {
+	position: relative;
+	float: left;
+	width: 126px;
+	height: 100%;
+	text-align: center;
+	font-size: 14px;
+	line-height: 45px;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.login_tabs a {
+	color: #fff;
+}
+
+.login_tabs_login {
+	background: #fff;
+}
+
+.login_tabs_login a p {
+	color: #ffa200 !important;
+}
+
+.login_tabs_register a p {
+	text-shadow: 2px 2px 15px #333;
+	filter: glow(color=#333333, strength=2);
+}
+
+.login_tabs_resetPwd a p {
+	text-shadow: 2px 2px 15px #333;
+	filter: glow(color=#333333, strength=2);
+}
+
+.login_tabs_register {
+	margin: 0 1px;
+	background: url(../img/login_tab.png) no-repeat center;
+}
+
+.login_tabs_resetPwd {
+	background: url(../img/login_tab.png) no-repeat center;
+}
+
+.login_inputs {
+	width: 100%;
+	height: 410px;
+	background: white;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.login_inputs>img {
+	margin-bottom: 12px;
+}
+
+.login_inputs li {
+	width: 318px;
+	height: 38px;
+	margin: 20px auto;
+}
+
+.login_inputs li input {
+	height: 38px;
+	width: 283px;
+	border: solid 1px #dcdcdc;
+}
+
+#login_userName {
+	background-image: url(../img/login_input_1.png);
+	background-repeat: no-repeat;
+	background-position: 10px 12px;
+	padding-left: 35px;
+}
+
+#login_userPwd {
+	background-image: url(../img/login_input_2.png);
+	background-repeat: no-repeat;
+	background-position: 10px 12px;
+	padding-left: 35px;
+}
+.register_w175r {
+	width: 135px !important;
+	float: left;
+	padding-left: 35px;
+}
+
+.vCode {
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	background-color: #999999;
+}
+a.login_btn {
+	display: block;
+	height: 38px;
+	width: 100%;
+	background-color: #525f70;
+	color: #fff;
+	font-size: 16px;
+	line-height: 38px;
+}
+
+li.someA {
+	height: 38px;
+	width: 300px;
+	padding-top: 10px;
+	margin-bottom: -30px;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+li.someB {
+	width: 320px;
+	display: block;
+	float: left;
+	margin: 0 30px;
+	text-align: left;
+	color: #999999;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+a.login_btn_rg {
+	float: left;
+	display: inline;
+	color: #999999;
+}
+
+a.login_btn_pw {
+	float: right;
+	display: inline;
+	color: #ffa200;
+}
+
+
+/*mainend*/
+
+
+/*foot*/
+
+.foot {
+	font-size: 12px;
+}
+
+.slogen {
+	background: #282828;
+	height: 40px;
+}
+
+.slogen li {
+	height: 40px;
+	width: 20%;
+	line-height: 40px;
+}
+
+.wap {
+	width: 1200px;
+	margin: auto;
+	position: relative;
+	color: #aaa;
+}
+
+.slogen li em {
+	height: 25px;
+	width: 25px;
+	vertical-align: middle;
+	margin-right: 5px;
+	background: url(../img/bg.png) no-repeat;
+	display: inline-block;
+}
+
+.slogen li.fore1 em {
+	background-position: -408px -55px;
+}
+
+.slogen li.fore2 em {
+	background-position: -409px -87px;
+}
+
+.slogen li.fore3 em {
+	background-position: -409px -117px;
+}
+
+.slogen li.fore4 em {
+	background-position: -409px -148px;
+}
+
+.slogen li.fore5 em {
+	background-position: -410px -177px;
+}
+
+.copyright {
+	padding: 15px 0;
+	line-height: 30px;
+}
+
+.mt15 {
+	margin-top: 15px;
+}
+
+.mr15 {
+	margin-right: 15px;
+}
+
+.grey {
+	color: #8d8d8d;
+}
+
+.copyright p a {
+	color: #282828;
+	display: inline-block
+}
+
+
+/*footend*/

@@ -1,0 +1,37 @@
+/*||	Public style*/
+/*||	v1.0.20160418*/
+
+*{
+	padding:0;
+	margin:0;
+	border:none;
+	font-family:Arial,"\5FAE\8F6F\96C5\9ED1";
+	font-weight:normal;
+	outline:none;
+}
+ul, ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	outline:none;
+	cursor:pointer;
+}
+img{
+	display:block;
+}
+i{font-style:normal;}
+b{font-weight:normal;}
+em{font-style:normal;text-decoration:none;}
+input,button,select,textarea{outline:none}
+/*Ëõ·Å*/
+textarea{resize:none}
+/*h5 tag*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+	display:block;
+}
+.clear{ clear:both;}
+.oh{ overflow:hidden;}
+.fl{ float:left;}
+.fr{ float:right;}
+.tac{ text-align:center;}

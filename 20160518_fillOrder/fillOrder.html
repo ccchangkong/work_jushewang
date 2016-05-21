@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="奢侈品,二手奢侈品,二手奢侈品销售,二手奢侈品鉴定" />
+		<meta name="description" content="聚奢网作为国内领先的二手奢侈品交易平台，涉及二手奢侈品网上交易与实体店销售[020]、二手奢侈品的评估与二手奢侈品鉴定为主营业务，保证100%正品，0假货，国内二手奢侈品，尽在聚奢网！" />
+		<title>个人中心-聚奢网</title>
+		<link rel="stylesheet" type="text/css" href="css/fillorder.css" />
+		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="js/fillOrder.js"></script>
+		<style type="text/css">
+			.divselect {
+				position: static;
+			}
+			
+			.divselect ul {
+				width: 546px;
+				top: 33px;
+				left: 93px;
+				border-top: 1px solid #e7e7e7;
+			}
+			
+			.divselect ul li {
+				width: 135px;
+				text-align: center;
+			}
+			
+			.divselect ul li a {
+				color: #666;
+			}
+			
+			.divselect cite.special-cite {
+				z-index: 100;
+				position: relative;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		
+		<!--头部-->
+		<div class="header">
+			<div class="top">
+				<div class="logo oh fl">
+					<img class="fl" src="img/logo.png" alt="logo" /><span class="fl">分销</span>
+				</div>
+				<div class="personal oh fr">
+					<span class="online"><a>在线客服</a></span>
+					<span class="wechat"><a>微信客服</a></span>
+					<span class="weibo"><a>微博客服</a></span>
+					<span class="beforelogin"><a>注册</a>/<a>登录</a></span>
+					<span class="afterlogin"></span>
+					<span class="shoppingcart"><a>购物车[<em>0</em>]</a></span>
+				</div>
+			</div>
+
+		</div>
+		<!--导航、搜索结束-->
+
+		<div class="bg ptb20">
+			<div class="wap">
+				<!--修改开始-->
+				<div class="white_b grey_bs oh orderFormInfo">
+					<h2 class="lndividual_center_title fs14 grey_bbs">填写并核对订单信息</h2>
+					<div class="p20">
+						<div class="grey_bs p10 br mt15 pr">
+							配送信息<a href="javascript:void(0);" class="white violet_b pay_btn_30 pa addAddress">添加地址</a>
+						</div>
+						<input type="hidden" value="close" id="changeAddress">
+						<!--<ul id="deliver_ul" class="form_list_1 ptb20">-->
+						<input id="deliverlength" type="hidden" value="7">
+						<div class="form_list_1 oh ptb20 deliveryInfo">
+
+							<a href="javascript:void(0);" class="moreAddress fr pay_btn_30 grey">更多地址</a>
+
+							<input id="deliverProvince" type="hidden" value=""> <input id="deliverCity" type="hidden" value=""> <input id="deliverCounty" type="hidden" value=""> <input id="deliverStreet" type="hidden" value=""> <input id="deliverDetail" type="hidden" value="">							<input id="deliverPeople" type="hidden" value=""> <input id="deliverPhone" type="hidden" value="">
+
+							<ul class="oh mb20">
+								<li><label class="dib whether isUse grey_bs ml10" name="chooseOne" selectedid="100"></label></li>
+								<li><label>地址</label> <span id="deliver_address">
+																			天津市 汉沽区
+																			寨上街道 白湖乡
+																			uytdud </span></li>
+								<li><label>邮编</label> <span id="deliver_code">ytsdry</span></li>
+								<li><label>姓名</label> <span id="deliver_relName">tyd</span></li>
+								<li><label>手机</label> <span id="deliver_phone">18645455555</span></li>
+								<li class=" plr20"><a name="updateAddress" selectedid="100" class="pay_btn_30 blue">修改</a></li>
+							</ul>
+
+							<ul class="oh mb20" style="display: none;">
+								<li><label class="dib whether grey_bs ml10" for="opt0" name="chooseOne" selectedid="101"></label>
+									<input type="hidden" value="" id="opt0"></li>
+								<li><label>地址</label> <span id="deliver_address">
+																			辽宁省 本溪市
+																			明山区 高峪街道
+																			1 </span></li>
+								<li><label>邮编</label> <span id="deliver_code">1</span></li>
+								<li><label>姓名</label> <span id="deliver_relName">1</span></li>
+								<li><label>手机</label> <span id="deliver_phone">13275825639</span></li>
+								<li class=" plr20"><a name="updateAddress" selectedid="101" class="pay_btn_30 blue">修改</a></li>
+							</ul>
+
+							<ul class="oh mb20" style="display: none;">
+								<li><label class="dib whether grey_bs ml10" for="opt0" name="chooseOne" selectedid="96"></label>
+									<input type="hidden" value="" id="opt0"></li>
+								<li><label>地址</label> <span id="deliver_address">
+																			北京市 丰台区
+																			卢沟桥乡 岚城镇
+																			46463 </span></li>
+								<li><label>邮编</label> <span id="deliver_code">221231</span></li>
+								<li><label>姓名</label> <span id="deliver_relName">wisjfkl</span></li>
+								<li><label>手机</label> <span id="deliver_phone">13546442213</span></li>
+								<li class=" plr20"><a name="updateAddress" selectedid="96" class="pay_btn_30 blue">修改</a></li>
+							</ul>
+
+							<ul class="oh mb20" style="display: none;">
+								<li><label class="dib whether grey_bs ml10" for="opt0" name="chooseOne" selectedid="57"></label>
+									<input type="hidden" value="" id="opt0"></li>
+								<li><label>地址</label> <span id="deliver_address">
+																			北京市 丰台区
+																			丰台街道 
+																			45463 </span></li>
+								<li><label>邮编</label> <span id="deliver_code">ta</span></li>
+								<li><label>姓名</label> <span id="deliver_relName">atg</span></li>
+								<li><label>手机</label> <span id="deliver_phone">18654945120</span></li>
+								<li class=" plr20"><a name="updateAddress" selectedid="57" class="pay_btn_30 blue">修改</a></li>
+							</ul>
+
+							<ul class="oh mb20" style="display: none;">
+								<li><label class="dib whether grey_bs ml10" for="opt0" name="chooseOne" selectedid="56"></label>
+									<input type="hidden" value="" id="opt0"></li>
+								<li><label>地址</label> <span id="deliver_address">
+																			天津市 汉沽区
+																			寨上街道 白湖乡
+																			uytdud </span></li>
+								<li><label>邮编</label> <span id="deliver_code">ytsdry</span></li>
+								<li><label>姓名</label> <span id="deliver_relName">tyd</span></li>
+								<li><label>手机</label> <span id="deliver_phone">18645455555</span></li>
+								<li class=" plr20"><a name="updateAddress" selectedid="56" class="pay_btn_30 blue">修改</a></li>
+							</ul>
+
+							<ul class="oh mb20" style="display: none;">
+								<li><label class="dib whether grey_bs ml10" for="opt0" name="chooseOne" selectedid="49"></label>
+									<input type="hidden" value="" id="opt0"></li>
+								<li><label>地址</label> <span id="deliver_address">
+																			上海市 黄浦区
+																			外滩街道 
+																			test </span></li>
+								<li><label>邮编</label> <span id="deliver_code">468565</span></li>
+								<li><label>姓名</label> <span id="deliver_relName">6543</span></li>
+								<li><label>手机</label> <span id="deliver_phone">13578754545</span></li>
+								<li class=" plr20"><a name="updateAddress" selectedid="49" class="pay_btn_30 blue">修改</a></li>
+							</ul>
+
+							<ul class="oh mb20" style="display: none;">
+								<li><label class="dib whether grey_bs ml10" for="opt0" name="chooseOne" selectedid="38"></label>
+									<input type="hidden" value="" id="opt0"></li>
+								<li><label>地址</label> <span id="deliver_address">
+																			山西省 和平区
+																			劝业场街道 郭家屯镇
+																			45243434 </span></li>
+								<li><label>邮编</label> <span id="deliver_code">222222</span></li>
+								<li><label>姓名</label> <span id="deliver_relName">jlk</span></li>
+								<li><label>手机</label> <span id="deliver_phone">15487451245</span></li>
+								<li class=" plr20"><a name="updateAddress" selectedid="38" class="pay_btn_30 blue">修改</a></li>
+							</ul>
+
+						</div>
+						<ul id="address" class="form_list_1 oh pb20 hide pr">
+							<a href="javascript:void(0);" class="close dib pa"></a>
+							<li class="clear_both pr"><label>地址</label>
+								<div id="province" class="divselect province grey_bs dib">
+									<input type="hidden" id="sel_prov" value=""> <cite>请选择</cite>
+									<ul>
+										<li><a selectedid="11">北京市</a></li>
+										<li><a selectedid="12">天津市</a></li>
+										<li><a selectedid="13">河北省</a></li>
+										<li><a selectedid="14">山西省</a></li>
+										<li><a selectedid="15">内蒙古自治区</a></li>
+										<li><a selectedid="21">辽宁省</a></li>
+										<li><a selectedid="22">吉林省</a></li>
+										<li><a selectedid="23">黑龙江省</a></li>
+										<li><a selectedid="31">上海市</a></li>
+										<li><a selectedid="32">江苏省</a></li>
+										<li><a selectedid="33">浙江省</a></li>
+										<li><a selectedid="34">安徽省</a></li>
+										<li><a selectedid="35">福建省</a></li>
+										<li><a selectedid="36">江西省</a></li>
+										<li><a selectedid="37">山东省</a></li>
+										<li><a selectedid="41">河南省</a></li>
+										<li><a selectedid="42">湖北省</a></li>
+										<li><a selectedid="43">湖南省</a></li>
+										<li><a selectedid="44">广东省</a></li>
+										<li><a selectedid="45">广西壮族自治区</a></li>
+										<li><a selectedid="46">海南省</a></li>
+										<li><a selectedid="50">重庆市</a></li>
+										<li><a selectedid="51">四川省</a></li>
+										<li><a selectedid="52">贵州省</a></li>
+										<li><a selectedid="53">云南省</a></li>
+										<li><a selectedid="54">西藏自治区</a></li>
+										<li><a selectedid="61">陕西省</a></li>
+										<li><a selectedid="62">甘肃省</a></li>
+										<li><a selectedid="63">青海省</a></li>
+										<li><a selectedid="64">宁夏回族自治区</a></li>
+										<li><a selectedid="65">新疆维吾尔自治区</a></li>
+										<li><a selectedid="71">台湾省</a></li>
+										<li><a selectedid="81">香港特别行政区</a></li>
+										<li><a selectedid="82">澳门特别行政区</a></li>
+									</ul>
+								</div>
+								<div id="city" class="divselect city grey_bs dib">
+									<input type="hidden" id="sel_city" value=""> <cite>请选择</cite>
+									<ul></ul>
+								</div>
+								<div id="township" class="divselect township grey_bs dib">
+									<input type="hidden" id="sel_town" value=""> <cite>请选择</cite>
+									<ul></ul>
+								</div>
+								<div id="street" class="divselect street grey_bs dib">
+									<input type="hidden" id="sel_street" value=""> <cite>请选择</cite>
+									<ul></ul>
+								</div> <input name="address_detail" id="address_detail" type="text" style="width: 300px" maxlength="50" placeholder="如门牌号,楼层号，房间号">
+							</li>
+							<li class="clear_both"><label>邮编</label> <input name="zipCode" id="zipCode" type="text" class="w60" style="width: 100px" maxlength="6"></li>
+							<li class="clear_both"><label>姓名</label> <input name="realName" id="realName" type="text" class="w60" style="width: 100px"></li>
+							<li class="clear_both"><label>手机</label> <input name="phone" id="phone" type="text"></li>
+							<input id="deliverId" type="hidden" value="">
+							<li class="plr95 clear_both"><a id="saveAddress" class="pay_btn_35 pay_btn_30 violet_b white">确认</a></li>
+						</ul>
+						<!--修改 end-->
+						<div class="grey_bs p10 br mt15">支付方式</div>
+						<ul class="ptb20 payStyle">
+							<input id="bank" type="hidden" value="5">
+							<li class="mb10 grey_a"><label class="dib whether isUse grey_bs ml10 mr10"></label><span class="pay_btn_30 green_b white mr10 cursor">在线支付</span>支持：网银，银联，支付宝，微信</li>
+							<li class="grey_a"><label class="dib whether grey_bs ml10 mr10"></label><span class="pay_btn_30 mr10 black bg">货到付款</span>暂不支持，为您带来不便，敬请谅解！</li>
+						</ul>
+						<div class="grey_bs p10 br">商品信息</div>
+						<form id="form" method="post">
+
+							<dl class="order_list grey_bbs mt5">
+								<dd>
+									<ul class="order_list_detail">
+										<li class="checkL"><label class="dib whether isUse grey_bs ml10" name="checkProduct" selectedid=""></label></li>
+										<li class="product">
+											<div class="order_product tal">
+												<a target="_blank" href="http://192.168.1.223:8080/goods/detail/1706452447-1.html" class="fl grey_bs mr15"> <img src="http://bossimage.fyzjt.com/zoomfive/201604/fed9740f32ca4d8890dcbb25e856c385.jpg" width="80" height="80"></a>
+												<div class="fl">
+													<p class="fs12 grey">
+														万国
+													</p>
+													<p class="mt10">万国葡萄牙系列IW371482腕表</p>
+												</div>
+											</div>
+										</li>
+										<li class="money">
+											<p class="grey">售价/元</p>
+											<p>65800.00</p>
+
+										</li>
+
+										<li class="status">
+											<p class="grey">状态</p>
+
+											<p class="red">已销售</p>
+
+										</li>
+										<li class="operating"><a target="_blank" href="http://p.qiao.baidu.com//im/index?siteid=7855301&amp;ucid=18034750" class="pay_btn_30 blue_b white">在线客服</a></li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl class="order_list grey_bbs mt5">
+								<dd>
+									<ul class="order_list_detail">
+										<li class="checkL"><label class="dib whether isUse grey_bs ml10" name="checkProduct" selectedid=""></label></li>
+										<li class="product">
+											<div class="order_product tal">
+												<a target="_blank" href="http://192.168.1.223:8080/goods/detail/4420876104-1.html" class="fl grey_bs mr15"> <img src="http://bossimage.fyzjt.com/zoomfive/201604/f51efa117b8340429c839dc453668406.jpg" width="80" height="80"></a>
+												<div class="fl">
+													<p class="fs12 grey">
+														卡地亚
+													</p>
+													<p class="mt10">卡地亚路易卡地亚圆形系列W6801005腕表</p>
+												</div>
+											</div>
+										</li>
+										<li class="money">
+											<p class="grey">售价/元</p>
+											<p>55800.00</p>
+
+										</li>
+
+										<li class="status">
+											<p class="grey">状态</p>
+
+											<p class="red">已销售</p>
+
+										</li>
+										<li class="operating"><a target="_blank" href="http://p.qiao.baidu.com//im/index?siteid=7855301&amp;ucid=18034750" class="pay_btn_30 blue_b white">在线客服</a></li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl class="order_list grey_bbs mt5">
+								<dd>
+									<ul class="order_list_detail">
+										<li class="checkL"><label class="dib whether isUse grey_bs ml10" name="checkProduct" selectedid=""></label></li>
+										<li class="product">
+											<div class="order_product tal">
+												<a target="_blank" href="http://192.168.1.223:8080/goods/detail/7217127441-2.html" class="fl grey_bs mr15"> <img src="http://bossimage.fyzjt.com/zoomfive/201604/2ccad6b296d444b582f6de1ba6d663f8.jpg" width="80" height="80"></a>
+												<div class="fl">
+													<p class="fs12 grey">
+														LV
+													</p>
+													<p class="mt10">LV信使男包</p>
+												</div>
+											</div>
+										</li>
+										<li class="money">
+											<p class="grey">售价/元</p>
+											<p>7980.00</p>
+
+										</li>
+
+										<li class="status">
+											<p class="grey">状态</p>
+
+											<p class="red">已销售</p>
+
+										</li>
+										<li class="operating"><a target="_blank" href="http://p.qiao.baidu.com//im/index?siteid=7855301&amp;ucid=18034750" class="pay_btn_30 blue_b white">在线客服</a></li>
+									</ul>
+								</dd>
+							</dl>
+
+							<!-- 隐藏的bookOrderId -->
+							<input type="hidden" name="bookOrderId" value="">
+							<input type="hidden" name="isauction" value="">
+							<div class="p10 bg tar">
+
+								<input name="isCart" type="hidden" value="1"> <input type="hidden" name="goodsId" value="1706452447,4420876104,7217127441">
+
+								<span class="grey mr15">件数 <span class="yellow fs20">3</span></span>
+								</span>
+							</div>
+
+							<input name="bDeliverAddressId" type="hidden" value="100">
+
+							<ul class="p20 tar clear_both grey sum">
+								<!-- <li><span class="w44 dib tal"><span class="dib pr15 w60 tar">优惠</span><em class="ml5 mr5" id="finalAbatementPrice">￥0.00</em>元</span></li> -->
+								<li><span class="w44 dib tal"><span class="dib pr15 w60 tar">运费</span><em class="ml5 mr5 tar">￥0.00</em>元</span>
+								</li>
+								<li><span class="w44 dib tal"><span class="dib pr15 w60 tar">实付金额</span> <em class="ml5 mr5 red fs22" id="realTotalMoney">￥129850.00</em>元 </span>
+								</li>
+								<li class="plr10 promptInfo tal">
+									XXXXXX
+								</li>
+							</ul>
+							<div class="p20 bg grey_bts tar">
+								<a id="takeOrder" class="pay_btn_40 red_b white mr15">提交订单</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slogen black_b">
+			<ul class="wap clearfix grey_a tac">
+				<li class="fl fore1"><em class="dib"></em>100%正品保障</li>
+				<li class="fl fore2"><em class="dib"></em>顺丰极速包邮</li>
+				<li class="fl fore3"><em class="dib"></em>近100家体验店</li>
+				<li class="fl fore4"><em class="dib"></em>售后全国联保</li>
+				<li class="fl fore5"><em class="dib"></em>免费清洗养护</li>
+			</ul>
+		</div>
+		<!--版权-->
+		<div class="copyright tac fs12">
+			<p>友情链接：<a href="http://www.fyzjt.com/" target="_blank" class="mr15">奢侈品回收</a><a href="http://www.fyzjt.com/" target="_blank" class="mr15">黄金回收</a><a href="http://www.fyzjt.com/" target="_blank" class="mr15">名表回收</a><a href="http://www.fyzjt.com/" target="_blank"
+					class="mr15">钻石回收</a><a href="http://www.fyzjt.com/" target="_blank" class="mr15">金条回收</a><a href="http://m.kuaidi100.com" target="_blank" class="mr15">快递查询</a></p>
+			<p class="grey">© 2006-2016 聚奢网 版权所有，并保留所有权利。 ICP备案证书号：苏ICP备15044671号-1</p>
+			<p class="mt15">
+				<a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank"><img src="http://www.jushewang.com:80/img/foot01.jpg" width="108" height="40" alt="" /></a>
+				<a href="http://www.njga.gov.cn/www/njga/wsga/" target="_blank"><img src="http://www.jushewang.com:80/img/foot02.jpg" width="108" height="40" alt="" /></a>
+				<a href="https://www.alipay.com/" target="_blank"><img src="http://www.jushewang.com:80/img/foot03.jpg" width="108" height="40" alt="" /></a>
+				<a href="http://webscan.360.cn/index/checkwebsite/url/www.jushewang.com"><img border="0" height="40" src="http://img.webscan.360.cn/status/pai/hash/cd00c0904fc578a67bdf7198e3dacaeb" /></a>
+				<a key="56caa47cefbfb010cf4767cf" logo_size="83x30" logo_type="business" href="http://www.anquan.org">
+					<script src="http://static.anquan.org/static/outer/js/aq_auth.js"></script>
+				</a>
+			</p>
+		</div>
+		<!--版权结束-->
+
+	</body>
+
+</html>

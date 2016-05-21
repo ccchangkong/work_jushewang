@@ -1,0 +1,54 @@
+/*head*/
+body{
+	background:rgba(0,0,0,1);
+	}
+.view{
+	width:750px;
+	height:750px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-375px;
+	margin-top:-375px;
+	}
+.view .prev{
+	width:100px;
+	height:400px;
+	background:rgba(0,0,0,0.5);
+	color:rgba(255,255,255,0.5);
+	line-height:400px;
+	text-align:center;
+	font-size:100px;
+	position:absolute;
+	left:0;
+	top:50%;
+	margin-top:-200px;
+	cursor:pointer;
+	}
+.view .next{
+	width:100px;
+	height:400px;
+	background:rgba(0,0,0,0.5);
+	color:rgba(255,255,255,0.5);
+	line-height:400px;
+	text-align:center;
+	font-size:100px;
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-200px;
+	cursor:pointer;
+	}
+.picturesview{
+	width:750px;
+	height:750px;
+	float:left;
+	}
+.pictures{
+	height:750px;
+	width:99999px;
+	overflow:hidden;
+	}
+.pictures li{
+	float:left;
+	}

@@ -1,0 +1,156 @@
+﻿.activity * {
+	font-family: "微软雅黑";
+}
+
+.activity .full_screen {
+	height: 1123px;
+	background: url(../img/banner.jpg) no-repeat center top;
+}
+
+.activity .activitytitle {
+	background-color: #970982 !important;
+	width: 100%;
+	max-width: 1920px;
+	height: 500px;
+	margin: auto;
+	position: relative;
+	top: 623px;
+}
+
+.activitytitle ul {
+	width: 1000px;
+}
+
+.aCoupons {
+	margin-bottom: 14px;
+}
+
+.activityview {
+	background-color: #faf2f9 !important;
+}
+
+.activityview .a1box,
+.activityview .a2box,
+.activityview .a3box,
+.activityview .a4box {
+	width: 1000px;
+	min-height: 320px;
+	margin: auto;
+	position: relative;
+}
+
+.activityview .a1,
+.activityview .a2,
+.activityview .a3,
+.activityview .a4 {
+	width: 1000px;
+	margin: 0 auto;
+	/*	padding: 70px 0;*/
+}
+
+.aTitle {
+	width: 1022px;
+	height: 139px;
+	margin-left: -11px;
+}
+
+.a1Title {
+	background: url(../img/a1Title.png) no-repeat center;
+}
+
+.a2Title {
+	background: url(../img/a2Title.png) no-repeat center;
+}
+
+.a3Title {
+	background: url(../img/a3Title.png) no-repeat center;
+}
+
+.a4Title {
+	background: url(../img/a4Title.png) no-repeat center;
+}
+
+.activityview ul {
+	padding: 20px 0;
+	/*	background-color: #fef1f8;*/
+	margin: 0 auto;
+}
+
+.activityview li {
+	height: 330px;
+	width: 240px;
+	float: left;
+	padding: 0 5px;
+	text-align: center;
+}
+
+.activityview li img {
+	box-shadow: 2px 2px 10px #a3a2a3;
+}
+
+.activityview li img:hover {
+	box-shadow: 0 0 15px #970982;
+}
+
+.activityview h3 {
+	width: 100%;
+	height: 28px;
+	text-align: center;
+	overflow: hidden;
+	font-size: 17.5px;
+	color: #000000;
+	line-height: 30px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.activityview p {
+	width: 100%;
+	font-size: 20px;
+	line-height: 30px;
+	color: #000000;
+	margin: 5px auto;
+	vertical-align: bottom;
+	text-align: center;
+	background: url(../img/priceBg.png) no-repeat center;
+}
+
+.activityview p .yuan {
+	font-size: 12px;
+	color: #222222;
+	padding-top: 3px;
+}
+
+.activityview li .box {
+	width: 230px;
+	height: 230px;
+	background-color: #777;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -115px;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	border-radius: 3px;
+	pointer-events: none;
+}
+
+.activityview li .box span {
+	color: #fff;
+	font-size: 30px;
+	line-height: 0px;
+	height: 230px;
+	text-align: center;
+	padding-top: 40px;
+	display: block;
+}
+
+.activityview li .box span>p {
+	color: #fff;
+	font-size: 60px;
+	line-height: 80px;
+	height: 100px;
+}

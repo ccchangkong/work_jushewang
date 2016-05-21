@@ -1,0 +1,832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="二手奢侈品网站，二手奢侈品交易平台，二手奢侈品购物网站，二手手表网站，二手包包网站，奢侈品寄售，奢侈品寄卖" />
+		<meta name="description" content="5520，大牌嗨购 “耍”大牌，“勇敢爱”。" />
+		<title>520，大牌嗨购 “耍”大牌，“勇敢爱”。 - 「聚奢网」二手奢侈品综合服务平台！</title>
+
+		<link href="http://www.jushewang.com//css/public.css" rel="stylesheet" type="text/css" />
+		<link href="http://www.jushewang.com//css/all.css" rel="stylesheet" type="text/css" />
+		<link href="css/activity.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://www.jushewang.com//js/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com//js/jquery.lazyload.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com//js/load.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com//js/config.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com//js/all.js"></script>
+		<script type="text/javascript" src="js/activity.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com//js/home.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com//js/search.js"></script>
+	</head>
+
+	<body>
+
+		<!--头部-->
+		<div class="top grey_be">
+			<div class="wap fs12 grey_cf zi1">
+				<div class="fl"><span>佛阳子集团旗下购物商城!全国服务电话：400-880-9930</span></div>
+				<div class="fr"><span class="plr10"><a href="../../home.html" class="grey_cf">首页</a></span><span id="beforeLogin"><span class="plr10"><a href="../../login.html" class="grey_cf login_pop1" rel="nofollow">请登录</a></span><span class="plr10"><a href="../../register.html" class="grey_cf login_pop2" rel="nofollow">免费注册</a></span></span>
+					<span id="afterLogin"><a onclick="userInfo()" class="grey_cf"><span id="loginUserName"></span></a><span class="plr10"><a onclick="loginOut()" class="link-logout grey_cf" rel="nofollow">退出</a></span></span> <span class="pr my plr10"><a onclick="myOrder()" class="grey_cf" rel="nofollow">我的聚奢</a>
+      <ul class="pa white_b grey_bcs tac pt5 pb5">
+        <li><a class="db" href="../../userCenter">个人中心</a></li>
+        <li><a class="db" href="../../order/myOrder">我的订单</a></li>
+        <li><a class="db" href="../../cart/myCart">购物车</a></li>
+        <li><a class="db" href="../../focus/myFocus">我的收藏</a></li>
+        <li><a class="db" href="../../coupons/myCoupons">优惠券</a></li>
+      </ul>
+      </span> <span class="settleup plr10"><a onclick="myCart()" class="grey_cf dib" rel="nofollow"><samp class="shopping_hover">去结算</samp><samp>购物车</samp></a> <span id="cartNum">[0]</span></span> <span class="plr10"><a href="http://p.qiao.baidu.com/im/index?siteid=7855301&ucid=18034750" target="_blank" class="db grey_cf">在线客服</a></span>					</div>
+			</div>
+		</div>
+		<!--头部结束-->
+		<!--导航、搜索-->
+		<div class="headswap">
+			<div class="head wap">
+				<a href="/" class="logo fl"></a>
+				<div class="store_location fl pr dib tac cursor">
+					<div class="grey_bs grey br">实体店<i class="ci-right pr oh ml5"><s class="pr">&loz;</s></i></div>
+					<dl class="city grey_bs ptb10 pa white_b oh fs13">
+						<dt class="oh plr10 grey_bbs pb10"><span class="fl db cursor">热门城市：</span><a href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-11-0-0-0.html" class="grey fl db cursor">北京</a><a href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-31-0-0-0.html" class="grey fl db cursor">上海</a><a href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-5101-0-0-0.html" class="grey fl db cursor">成都</a><a href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-3201-0-0-0.html" class="grey fl db cursor">南京</a></dt>
+						<dd class="areaList oh grey_bbs"></dd>
+						<dd class="storeList oh"></dd>
+					</dl>
+				</div>
+				<div class="search fl">
+					<div class="search_input fl pr grey_bs">
+						<input id="goodsTital" class="fl plr10" name="goodsTital" type="text" placeholder="请输入您要查找的商品！" />
+						<input type="hidden" id="goodsType" />
+						<input type="hidden" id="mainCategoryId" />
+						<input type="hidden" id="mainBrandId" />
+						<div class="hotwords fl pa plr5"> <a href="/goods/listallgoods?url=/goods/list/0-0-0-756-0-0-0-0-0-0-0-0-0.html" class="grey grey_bf fs12">爱马仕</a><a href="/goods/listallgoods?url=/goods/list/0-0-0-31-0-0-0-0-0-0-0-0-0.html" class="grey grey_bf fs12">浪琴</a><a href="/goods/listallgoods?url=/goods/list/0-0-0-20-0-0-0-0-0-0-0-0-0.html"
+								class="grey grey_bf fs12">劳力士</a> </div>
+						<input type="button" class="cursor fr" id="search" value="" />
+					</div>
+					<div class="promise pr fl ml20 plr10 oh"> <span class="pa"><a href="javascript:void(0);" class="dib prev"></a><a href="javascript:void(0);" class="dib next"></a></span>
+						<div class="promiseSwap">
+							<ul class="fs14">
+								<li><i class="fl maintain"></i>一年免费养护
+									<p class="fs12 grey_ca">购买表、包、钻、戒指的新老客户均可以享受一年内免费养护服务。</p>
+								</li>
+								<li><i class="fl shunfeng"></i>顺丰包邮
+									<p class="fs12 grey_ca">所有商品顺丰极速包邮。</p>
+								</li>
+								<li><i class="fl genuine"></i>正品保障
+									<p class="fs12 grey_ca">聚奢网经营的商品均为正品，假一赔二。</p>
+								</li>
+								<li><i class="fl returns"></i>七天退货
+									<p class="fs12 grey_ca">购买表、包、钻、戒指的均可以享受七天内无理由退换货服务。</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navitems black_b">
+				<ul class="wap fs14 clearfix">
+					<li class="fl tac ptb15 gray_b"><a class="db" href="/goods/listallgoods?url=/goods/list/2-0-0-0-0-0-0-0-0-0-0-0-0.html">名包</a> </li>
+					<li class="fl tac ptb15 gray_b"><a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/1-0-0-0-0-0-0-0-0-0-0-0-0.html">名表</a> </li>
+					<li class="fl tac ptb15 gray_b"><a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/5-0-0-0-0-0-0-0-0-0-0-0-0.html">钻石</a> </li>
+					<li class="fl tac ptb15 gray_b"><a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/4-0-0-0-0-0-0-0-0-0-0-0-0.html">首饰</a> </li>
+					<li class="fl tac ptb15 gray_b"><a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/3-0-0-0-0-0-0-0-0-0-0-0-0.html">服饰</a> </li>
+					<li class="fl tac ptb15 gray_b"><a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/6-0-0-0-0-0-0-0-0-0-0-0-0.html">数码</a> </li>
+					<li class="fl tac ptb15"><a class="db" href="/addconsign">寄售</a></li>
+					<li class="fl tac ptb15"><a class="db grey_bls" href="/adddemand">求购</a></li>
+					<li class="fl tac ptb15"><a class="db grey_bls" href="/appointToShop.html">预约</a></li>
+					<li class="fl tac ptb15"><a class="db grey_bls" href="/auction/main.html">拍卖</a></li>
+					<li class="fl tac ptb15"><a class="db grey_bls" href="/brand/querySortedBrands">品牌</a></li>
+					<li class="fl tac ptb15"><a class="db grey_bls khaki" href="/repairGoods/packageRepair">养护</a></li>
+					<li class="fl tac ptb15"><a class="db grey_bls khaki" href="/recover.html">回收</a></li>
+					<li class="fl tac ptb15"><a class="db grey_bls khaki" href="/joinUs.html">加盟</a></li>
+					<li class="fl tac ptb15" style="width:60px"><a class="db grey_bls khaki" href="train.html">商学院</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导航、搜索结束-->
+
+		<!-- 活动开始 -->
+		<div class="activity clearfix pr">
+			<div class="full_screen pr">
+				<div class="activitytitle db ma">
+					<a href=""><img src="img/couponsTitle.png" class="db ma" /></a>
+					<ul class="aCoupons db ma clearfix">
+						<li class="fl">
+							<a href="http://www.jushewang.com/getCouponsByCouponCode?couponsTemplateCode=160519611000377" target="_blank"><img src="img/50.png" alt="500-50" /></a>
+						</li>
+						<li class="fl">
+							<a href="http://www.jushewang.com/getCouponsByCouponCode?couponsTemplateCode=160519614491605" target="_blank"><img src="img/100.png" alt="1000-100" /></a>
+						</li>
+						<li class="fl">
+							<a href="http://www.jushewang.com/getCouponsByCouponCode?couponsTemplateCode=160519616459988" target="_blank"><img src="img/200.png" alt="2000-200" /></a>
+						</li>
+						<li class="fl">
+							<a href="http://www.jushewang.com/getCouponsByCouponCode?couponsTemplateCode=160519614932319" target="_blank"><img src="img/500.png" alt="5000-500" /></a>
+						</li>
+					</ul>
+					<ul class="clearfix db ma">
+						<li class="fl">
+							<a href="http://www.jushewang.com/activity/20160520_2/activity.html" target="_blank"><img src="img/activity1.jpg" alt="包包会场" /></a>
+						</li>
+						<li class="fl">
+							<a href="http://www.jushewang.com/activity/20160520_4/activity.html" target="_blank"><img src="img/activity2.jpg" alt="表会场" /></a>
+						</li>
+						<li class="fl">
+							<a href="http://www.jushewang.com/activity/20160520/activity.html" target="_blank"><img src="img/activity3.jpg" alt="钻会场" /></a>
+						</li>
+						<li class="fl">
+							<a href="http://www.jushewang.com/activity/20160520_1/index.html" target="_blank"><img src="img/activity4.jpg" alt="饰品会场" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="activityview">
+				<!--包包会场-->
+				<div class="a1 anchor pr">
+					<div class="a1box">
+						<div class="aTitle a1Title ma"></div>
+						<ul class="oh">
+
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/7811236978-2.html" target="_blank">
+									<img src="img/product_01.jpg" alt="GUCCI古驰 女士牛皮单肩包" height="230" width="230" />
+									<h3>GUCCI古驰 女士牛皮单肩包</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>3580<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:block"><span><p>已售</p><br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/8487168919-2.html 
+" target="_blank">
+									<img src="img/product_02.jpg" alt="FENDI芬迪 女单肩包" height="230" width="230" />
+									<h3>FENDI芬迪 女单肩包</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>1580<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/020125100901-2.html 
+" target="_blank">
+									<img src="img/product_03.jpg" alt="GUCCI古驰 深棕色单肩女包" height="230" width="230" />
+									<h3>GUCCI古驰 深棕色单肩女包</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>4580<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/020045091908-2.html 
+" target="_blank">
+									<img src="img/product_04.jpg" alt="Dior迪奥 牛皮压纹男士手提包
+" height="230" width="230" />
+									<h3>Dior迪奥 牛皮压纹男士手提包
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>4980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/7310693826-2.html 
+" target="_blank">
+									<img src="img/product_05.jpg" alt="LV路易威登 女士紫红色手袋" height="230" width="230" />
+									<h3>LV路易威登 女士紫红色手袋</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>8800<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/020435102201-2.html 
+" target="_blank">
+									<img src="img/product_06.jpg" alt="LV路易威登 棕色棋盘格女包
+" height="230" width="230" />
+									<h3>LV路易威登 棕色棋盘格女包
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>4888<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/5283634928-2.html 
+" target="_blank">
+									<img src="img/product_07.jpg" alt="Prada普拉达 皮质铁锈红两用包
+" height="230" width="230" />
+									<h3>Prada普拉达 皮质铁锈红两用包
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>3980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/0696949340-2.html 
+" target="_blank">
+									<img src="img/product_08.jpg" alt="菲拉格慕 手提单肩包
+" height="230" width="230" />
+									<h3>菲拉格慕 手提单肩包
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>1880<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/7373252289-2.html 
+" target="_blank">
+									<img src="img/product_09.jpg" alt="爱马仕 大象灰色皮质长款钱夹
+" height="230" width="230" />
+									<h3>爱马仕 大象灰色皮质长款钱夹
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>6980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/5762967651-2.html 
+" target="_blank">
+									<img src="img/product_10.jpg" alt="PRADA普拉达 牛皮长款钱包
+" height="230" width="230" />
+									<h3>PRADA普拉达 牛皮长款钱包
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>3680<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/8552441017-2.html 
+" target="_blank">
+									<img src="img/product_11.jpg" alt="迈克·科尔斯MK 女士钱包
+" height="230" width="230" />
+									<h3>迈克·科尔斯MK 女士钱包
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>680<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/8978592501-2.html 
+" target="_blank">
+									<img src="img/product_12.jpg" alt="路易威登 荧光粉色水波纹钱包" height="230" width="230" />
+									<h3>路易威登 荧光粉色水波纹钱包</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>3980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--表会场-->
+				<div class="a2 anchor">
+					<div class="a2box">
+						<div class="aTitle a2Title ma"></div>
+						<ul class="oh">
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/1467578655-1.html
+" target="_blank">
+									<img src="img/product_13.jpg" alt="浪琴 康卡斯系列机械男表
+" height="230" width="230" />
+									<h3>浪琴 康卡斯系列机械男表
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>5280<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/2356044065-1.html
+" target="_blank">
+									<img src="img/product_14.jpg" alt="帝舵Tudor 机械女表
+" height="230" width="230" />
+									<h3>帝舵Tudor 机械女表
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>9680<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/2424631221-1.html
+" target="_blank">
+									<img src="img/product_15.jpg" alt="欧米茄 腕表
+" height="230" width="230" />
+									<h3>欧米茄 腕表
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>18880<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/0240033530-1.html
+" target="_blank">
+									<img src="img/product_16.jpg" alt="万宝龙 明星系列腕表" height="230" width="230" />
+									<h3>万宝龙 明星系列腕表</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>5980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/4275769321-1.html
+" target="_blank">
+									<img src="img/product_17.jpg" alt="雷达 晶萃系列腕表" height="230" width="230" />
+									<h3>雷达 晶萃系列腕表</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>4980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/2391640039-1.html
+" target="_blank">
+									<img src="img/product_18.jpg" alt="欧米茄 自动机械男士腕表
+" height="230" width="230" />
+									<h3>欧米茄 自动机械男士腕表
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>9900<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/1952130188-1.html
+" target="_blank">
+									<img src="img/product_19.jpg" alt="Tudor帝舵 银色提花盘腕表" height="230" width="230" />
+									<h3>Tudor帝舵 银色提花盘腕表</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>7280<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/9271464124-1.html
+" target="_blank">
+									<img src="img/product_20.jpg" alt="欧米茄 蝶飞女表
+" height="230" width="230" />
+									<h3>欧米茄 蝶飞女表
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>14800<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/2879557910-1.html
+" target="_blank">
+									<img src="img/product_21.jpg" alt="浪琴 制表传统系列" height="230" width="230" />
+									<h3>浪琴 制表传统系列</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>9800<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/8128509882-1.html
+" target="_blank">
+									<img src="img/product_22.jpg" alt="OMEGA/欧米茄 女式镶钻腕表" height="230" width="230" />
+									<h3>OMEGA/欧米茄 女式镶钻腕表</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>10800<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/5926131093-1.html
+" target="_blank">
+									<img src="img/product_23.jpg" alt="帝舵 黑色真皮表带腕表" height="230" width="230" />
+									<h3>帝舵 黑色真皮表带腕表</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>15800<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/0244574290-1.html
+" target="_blank">
+									<img src="img/product_24.jpg" alt="浪琴 康卡斯系列机械男表" height="230" width="230" />
+									<h3>浪琴 康卡斯系列机械男表</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>5280<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<!--钻会场-->
+				<div class="a3 anchor">
+					<div class="a3box">
+						<div class="aTitle a3Title ma"></div>
+						<ul class="oh">
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/7244625268-5.html
+" target="_blank">
+									<img src="img/product_25.jpg" alt="18k金1.00ct钻戒
+" height="230" width="230" />
+									<h3>18k金1.00ct钻戒
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>29800<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/2848851949-5.html
+" target="_blank">
+									<img src="img/product_26.jpg" alt="老庙pt950钻石戒指32分
+" height="230" width="230" />
+									<h3>老庙pt950钻石戒指32分
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>5280<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/3075264780-5.html
+" target="_blank">
+									<img src="img/product_27.jpg" alt="周生生40分经典5爪女士钻戒
+" height="230" width="230" />
+									<h3>周生生40分经典5爪女士钻戒
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>4980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/8059733089-5.html
+" target="_blank">
+									<img src="img/product_28.jpg" alt="珂兰2.01克拉梨形18K镶嵌钻戒" height="230" width="230" />
+									<h3>珂兰2.01克拉梨形18K镶嵌钻戒</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>98000<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/3383561781-5.html
+" target="_blank">
+									<img src="img/product_29.jpg" alt="1.03ct 钻戒" height="230" width="230" />
+									<h3>1.03ct 钻戒</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>28880<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/7395623817-5.html
+" target="_blank">
+									<img src="img/product_30.jpg" alt="0.30ct 女士 钻石戒指
+" height="230" width="230" />
+									<h3>0.30ct 女士 钻石戒指
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>4280<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-5477182415.19.qxUi01&id=527380498170
+" target="_blank">
+									<img src="img/product_31.jpg" alt="周大福 女士 克拉钻戒
+" height="230" width="230" />
+									<h3>周大福 女士 克拉钻戒
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>1280<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/30094113002-5.html
+" target="_blank">
+									<img src="img/product_32.jpg" alt="1.02克拉裸钻
+" height="230" width="230" />
+									<h3>1.02克拉裸钻
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>168000<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/030075083101-5.html
+" target="_blank">
+									<img src="img/product_33.jpg" alt="5.62克拉裸钻" height="230" width="230" />
+									<h3>5.62克拉裸钻</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>888888<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/030045091202-5.html
+" target="_blank">
+									<img src="img/product_34.jpg" alt="全新3.04克拉裸钻F色裸钻" height="230" width="230" />
+									<h3>全新3.04克拉裸钻F色裸钻</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>218000<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/4063969991-5.html
+" target="_blank">
+									<img src="img/product_35.jpg" alt="0.43克拉裸钻" height="230" width="230" />
+									<h3>0.43克拉裸钻</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>3280<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/030225091601-5.html
+" target="_blank">
+									<img src="img/product_36.jpg" alt="18K 750 镶钻石小天鹅耳钉" height="230" width="230" />
+									<h3>18K 750 镶钻石小天鹅耳钉</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>1680<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<!--饰品会场-->
+				<div class="a4 anchor">
+					<div class="a4box">
+						<div class="aTitle a4Title ma"></div>
+						<ul class="oh">
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/1301364336-3.html" target="_blank">
+									<img src="img/product_37.jpg" alt="爱马仕正品丝质丝巾90方巾
+" height="230" width="230" />
+									<h3>爱马仕正品丝质丝巾90方巾
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>1980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/3709531358-3.html" target="_blank">
+									<img src="img/product_38.jpg" alt="爱马仕女士丝巾
+" height="230" width="230" />
+									<h3>爱马仕女士丝巾
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>1980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/4047117846-3.html
+" target="_blank">
+									<img src="img/product_39.jpg" alt="Rene Caovilla女鞋
+" height="230" width="230" />
+									<h3>Rene Caovilla女鞋
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>680<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/2333438218-3.html" target="_blank">
+									<img src="img/product_40.jpg" alt="古驰42码男鞋
+" height="230" width="230" />
+									<h3>古驰42码男鞋
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>2280<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/0260833909-3.html
+" target="_blank">
+									<img src="img/product_41.jpg" alt="GUCCI 太阳镜 女士大眼镜框" height="230" width="230" />
+									<h3>GUCCI 太阳镜 女士大眼镜框</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>1580<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/8293117418-3.html
+" target="_blank">
+									<img src="img/product_42.jpg" alt="CK眼镜
+" height="230" width="230" />
+									<h3>CK眼镜
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>580<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/7949753046-4.html
+" target="_blank">
+									<img src="img/product_43.jpg" alt="施华洛世奇苹果水晶挂饰
+" height="230" width="230" />
+									<h3>施华洛世奇苹果水晶挂饰
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>780<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/6077108530-4.html
+" target="_blank">
+									<img src="img/product_44.jpg" alt="蒂芙尼18K 玫瑰金钻石戒指
+" height="230" width="230" />
+									<h3>蒂芙尼18K 玫瑰金钻石戒指
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>4980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/9919662713-3.html
+" target="_blank">
+									<img src="img/product_45.jpg" alt="菲拉格慕女士牛皮腰带
+" height="230" width="230" />
+									<h3>菲拉格慕女士牛皮腰带
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>1780<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/4901684137-3.html
+" target="_blank">
+									<img src="img/product_46.jpg" alt="巴宝莉女士腰带
+" height="230" width="230" />
+									<h3>巴宝莉女士腰带
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>1380<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/2072219031-3.html
+" target="_blank">
+									<img src="img/product_47.jpg" alt="万宝龙签字笔
+" height="230" width="230" />
+									<h3>万宝龙签字笔
+</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>3980<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+							<li class="pr">
+								<a href="http://www.jushewang.com/goods/detail/0859862304-3.html
+" target="_blank">
+									<img src="img/product_48.jpg" alt="万宝龙特别珍藏版钢笔" height="230" width="230" />
+									<h3>万宝龙特别珍藏版钢笔</h3>
+									<span class="oh"><p><span class="yuan">RMB:&nbsp;</span>2580<span class="yuan">.00</span></p>
+									</span>
+								</a>
+								<div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div>
+
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--end-->
+
+		<!--底部信息-->
+		<div class="bttomInfo bg grey_bts grey_bbs ptb20">
+			<div class="wap">
+				<ul class="oh">
+					<li class="fl">
+						<p>24小时客服服务热线</p>
+						<p class="fs22 red mt5">400-880-9930</p>
+						<p class="grey mt5">在全国范围内已有实体店近<em class="red">100</em>家</p>
+					</li>
+					<li class="fl ml90">
+						<p>关于我们</p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=1-1" class="grey">公司简介</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=1-2" class="grey">发展历程</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=1-3" class="grey">诚聘英才</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=1-4" class="grey">联系我们</a></p>
+					</li>
+					<li class="fl ml90">
+						<p>新手指南</p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=2-1" class="grey">注册新用户</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=2-2" class="grey">回收指南</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=2-3" class="grey">购买指导</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=2-4" class="grey">预约指导</a></p>
+					</li>
+					<li class="fl ml90">
+						<p>配送服务</p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=3-1" class="grey">收货指南</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=3-2" class="grey">体验店服务</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=3-3" class="grey">配送物流</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=3-4" class="grey">物流查询</a></p>
+					</li>
+					<li class="fl ml90">
+						<p>售后服务</p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=4-1" class="grey">退换货政策</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=4-2" class="grey">如何申请退款</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=4-3" class="grey">维修补件说明</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=4-4" class="grey">一年免费养护</a></p>
+					</li>
+					<li class="fl ml90">
+						<p>购物保障</p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=5-1" class="grey">正品保障</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=5-2" class="grey">注册协议</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=5-3" class="grey">隐私保护</a></p>
+						<p class="mt5"><a href="/common/toHelpJsp?jsp=5-4" class="grey">免责声明</a></p>
+					</li>
+					<li class="fl ml90">
+						<p>微信服务公众号</p>
+						<p class="mt5"><img src="../../img/weixin.png" width="96" height="94" alt="微信服务公众号" /></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--底部信息结束-->
+		<!--版权-->
+		<div class="copyright tac fs12">
+			<p>友情链接：<a href="http://www.fyzjt.com/" target="_blank" class="mr15">奢侈品回收</a><a href="http://www.fyzjt.com/" target="_blank" class="mr15">黄金回收</a><a href="http://www.fyzjt.com/" target="_blank" class="mr15">名表回收</a><a href="http://www.fyzjt.com/" target="_blank"
+					class="mr15">钻石回收</a><a href="http://www.fyzjt.com/" target="_blank" class="mr15">金条回收</a><a href="http://m.kuaidi100.com" target="_blank" class="mr15">快递查询</a></p>
+			<p class="grey">© 2006-2016 聚奢网 版权所有，并保留所有权利。 ICP备案证书号：苏ICP备15044671号-1</p>
+			<p class="mt15">
+				<a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank"><img src="../../img/foot01.jpg" width="108" height="40" alt="" /></a>
+				<a href="http://www.njga.gov.cn/www/njga/wsga/" target="_blank"><img src="../../img/foot02.jpg" width="108" height="40" alt="" /></a>
+				<a href="https://www.alipay.com/" target="_blank"><img src="../../img/foot03.jpg" width="108" height="40" alt="" /></a>
+				<a href="http://webscan.360.cn/index/checkwebsite/url/www.jushewang.com" target="_blank"><img border="0" height="40" src="http://img.webscan.360.cn/status/pai/hash/cd00c0904fc578a67bdf7198e3dacaeb" /></a>
+			</p>
+		</div>
+		<!--版权结束-->
+
+		<!--end-->
+	</body>
+
+</html>
