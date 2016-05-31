@@ -1,0 +1,257 @@
+#aftermarket {
+	background: #fff;
+}
+
+#aftermarket * {
+	font-family: "微软雅黑";
+}
+
+#aftermarket .sectitle {
+	margin: auto;
+	width: 750px;
+}
+
+#aftermarket .sectitle>p {
+	width: 258px;
+	height: 1px;
+	margin-top: 30px;
+	background: #ddd;
+	float: left;
+}
+
+#aftermarket .sectitle span {
+	float: left;
+	width: 222px;
+	text-align: center;
+}
+
+#aftermarket .sectitle span h2 {
+	font-size: 39px;
+	line-height: 50px;
+	font-weight: normal;
+}
+
+#aftermarket .sectitle span p {
+	font-size: 16px;
+	color: #999;
+	line-height: 30px;
+}
+
+#aftermarket .brand {
+	margin-top: 20px;
+}
+
+#aftermarket .brand ul {
+	width: 700px;
+	margin: 0 auto;
+	display: block;
+}
+
+#aftermarket .brand ul li {
+	margin: 20px 10px;
+	float: left;
+}
+
+#aftermarket .brand ul li img {
+	display: block;
+	border: 1px solid #ddd;
+	width: 144px;
+}
+
+#aftermarket .brand ul .button,
+#aftermarket .brand ul .button1 {
+	width: 144px;
+	height: 88px;
+	float: left;
+	background: #444;
+	font-size: 23px;
+	color: #fff;
+	text-align: center;
+	line-height: 88px;
+	cursor: pointer;
+}
+
+#aftermarket .brand ul li a:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+}
+
+#aftermarket .process ul {
+	width: 720px;
+	margin: 0 auto;
+}
+
+#aftermarket .process ul p {
+	text-align: center;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+#aftermarket .process ul img {
+	display: block;
+	margin: auto;
+	margin-top: 12px;
+	width: 320px;
+	height: 225px;
+}
+
+#aftermarket .process ul span {
+	color: #666;
+	display: block;
+	font-size: 25px;
+	line-height: 45px;
+	margin-top: 28px;
+}
+
+#aftermarket .process ul li {
+	width: 320px;
+	min-height: 575px;
+	margin: 15px 20px;
+	float: left;
+}
+
+#aftermarket .spa {
+	width: 750px;
+	background: #efefef;
+	margin: auto;
+	margin-top: 38px;
+	padding: 3px 0;
+}
+
+#aftermarket .spaapplication {
+	width: 750px;
+	margin: auto;
+}
+
+#aftermarket .spaapplication>span {
+	width: 750px;
+	float: right;
+	background: #FFF;
+}
+
+#aftermarket .spaapplication>span h2 {
+	font-size: 41px;
+	letter-spacing: 0.2em;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#aftermarket .spaapplication>span .parameter {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 28px;
+}
+
+#aftermarket .spaapplication>span .parameter>li {
+	width: 690px;
+	height: 80px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#aftermarket .spaapplication>span .parameter p {
+	font-size: 35px;
+	line-height: 80px;
+	width: 150px;
+	text-align: right;
+	float: left;
+}
+
+#aftermarket .spaapplication>span .parameter select,
+#aftermarket .spaapplication>span .parameter input {
+	width: 490px;
+	height: 80px;
+	font-size: 35px;
+	line-height: 80px;
+	float: right;
+	padding: 0;
+	margin: 0;
+	border: #ddd 1px solid;
+	box-sizing: border-box;
+}
+
+.btnPic {
+	display: inline-block;
+	width: 219px;
+	height: 77px;
+	background-color: #444444;
+	position: relative;
+}
+
+#aftermarket .btnPic p {
+	font-size: 25px !important;
+	line-height: 77px !important;
+	width: 100% !important;
+	text-align: center !important;
+	color: #fff !important;
+	letter-spacing: 0.1em;
+}
+
+#aftermarket .updataPic {
+	margin-left: 50px;
+}
+
+/*#aftermarket .photoPic {
+	float: right;
+}*/
+#aftermarket .photoPic {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    
+    display: none;
+}
+#aftermarket .updataPic img {
+
+}
+
+#confirm {
+	display: block;
+	width: 250px;
+	height: 95px;
+	background: #fe0000;
+	border: none;
+	color: #fff;
+	font-size: 35px;
+	line-height: 95px;
+	float: right;
+	margin-right: 60px;
+	margin-top: -10px;
+	margin-bottom: 25px;
+}
+
+#aftermarket .explanation {
+	width: 730px;
+	padding: 0 10px;
+	padding-bottom: 80px;
+	background: url(../img/explanation.jpg) no-repeat;
+	background-position: 95% 95%;
+}
+
+#aftermarket .explanation h2 {
+	font-size: 28px;
+	font-weight: normal;
+	color: #000000;
+	padding: 20px 0;
+}
+
+#aftermarket .explanation>div {}
+
+#aftermarket .explanation>div>ul {
+	color: #666;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#aftermarket .explanation>div>ul>li {
+	font-size: 24px;
+	line-height: 55px;
+}
+
+#aftermarket .explanation ul>span {
+	font-size: 24px;
+	line-height: 55px;
+	color: #399c0f;
+	padding-left: 80px;
+}

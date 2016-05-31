@@ -1,0 +1,49 @@
+.webuploader-container {
+	position: relative;
+	width: 490px;
+	float: right;
+}
+
+.webuploader-container img.upPic {
+	position: absolute;
+	top: 22px;
+	left: 25px;
+}
+
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	/* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.webuploader-pick {
+	display: inline-block;
+	cursor: pointer;
+	background: #444;
+	/*	padding: 10px 15px;*/
+	color: #fff;
+	text-align: center;
+/*	overflow: hidden;*/
+	/*	margin-left:10px;*/
+	/*	width: 219px;*/
+	width: 184px;
+	height: 77px;
+	line-height: 77px;
+	font-size: 25px !important;
+	letter-spacing: 0.1em;
+	border-radius: 6px !important;
+	padding-left: 35px;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.parentFileBox {
+	width: 490px;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}

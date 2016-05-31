@@ -1,0 +1,59 @@
+dd>p {
+	cursor: pointer;
+}
+
+.textMain h1 {
+	height: 45px;
+	line-height: 45px;
+	font-weight: normal;
+}
+
+.textMain li {
+	display: none;
+}
+
+.textMain h2 {
+	line-height: 40px;
+	height: 40px;
+}
+
+.textMain p {
+	text-indent: 2em;
+}
+
+
+.full_screen {
+	height: 570px;
+	background: url(../img/banner.jpg) no-repeat center top;
+}
+
+.amBtitle {
+	width: 1200px;
+	margin: auto;
+}
+
+.amBtitle {
+	width: 1200px;
+	margin: auto;
+}
+
+.amBtitle .amBtL {
+	width: 485px;
+	height: 443px;
+	margin-left: 46px;
+	padding-top: 127px;
+}
+
+.bT1 {
+	margin-bottom: 55px;
+}
+
+.bT3 {
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #f7e3d5;
+	margin-top: 85px;
+}
