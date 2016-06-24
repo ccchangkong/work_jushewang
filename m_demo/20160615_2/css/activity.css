@@ -1,0 +1,213 @@
+.activity {
+    background: #daf76c;
+    padding-bottom: 50px;
+}
+
+.activity * {
+    font-family: "微软雅黑";
+    box-sizing: border-box;
+}
+
+.full_screen {
+    background: url(../img/banner.jpg) no-repeat center;
+    height: 586px;
+}
+
+.at {
+    overflow: hidden;
+    padding-top: 455px;
+    width: 720px;
+    margin: 0 auto;
+}
+
+.at li {
+    float: left;
+    width: 75px;
+    margin: 0 7.5px;
+    text-align: center;
+}
+
+.at li img {
+    display: block;
+    margin: 20px auto;
+}
+
+.au ul {
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+.au li {
+    float: left;
+    height: 340px;
+    width: 250px;
+    margin: 0 31px;
+    text-align: center;
+    display: block;
+    /*box-shadow: 0 0 10px #a3a2a3;*/
+    background-color: #fff;
+    /*border: solid 1px #e0e0e0;*/
+}
+
+.au li img {
+    display: block;
+    margin: 20px 10px;
+}
+
+.activity h3 {
+    width: 220px;
+    text-align: left;
+    overflow: hidden;
+    font-size: 18.5px;
+    font-weight: 400;
+    color: #1a1a1a;
+    line-height: 30px;
+    height: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 30px;
+}
+
+.activity p {
+    width: 200px;
+    font-size: 22px;
+    color: #1a1a1a;
+    vertical-align: bottom;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.activity p .yuan {
+    font-size: 16px;
+    color: #808080;
+    padding-top: 3px;
+}
+
+.activity li .box {
+    width: 230px;
+    height: 230px;
+    background-color: #e1f39d;
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    margin-left: -115px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    pointer-events: none;
+}
+
+.box span {
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.box span p {
+    font-size: 45px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 65px;
+    margin-left: 0;
+    width: 100%;
+}
+
+.a1,
+.a2,
+.a3,
+.a4,
+.a5,
+.a6,
+.a7,
+.a8 {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #5ad0f6;
+}
+
+.activity .a1 {
+    background: url(../img/a1.jpg);
+    height: 835px;
+}
+
+.a1 ul {
+    padding-top: 160px;
+}
+
+
+/*a2*/
+
+.activity .a2 {
+    background: url(../img/a2.jpg);
+    height: 857px;
+}
+
+.a2 ul {
+    padding-top: 178px;
+}
+
+
+/*a3*/
+
+.activity .a3 {
+    background: url(../img/a3.jpg);
+    height: 842px;
+}
+
+.a3 ul {
+    padding-top: 167px;
+}
+
+
+/*a4*/
+
+.activity .a4 {
+    background: url(../img/a4.jpg);
+    height: 844px;
+}
+
+.a4 ul {
+    padding-top: 165px;
+}
+
+.activity .a5 {
+    background: url(../img/a5.jpg);
+    height: 859px;
+}
+
+.a5 ul {
+    padding-top: 169px;
+}
+
+.activity .a6 {
+    background: url(../img/a6.jpg);
+    height: 842px;
+}
+
+.a6 ul {
+    padding-top: 151px;
+}
+
+.activity .a7 {
+    background: url(../img/a7.jpg);
+    height: 838px;
+}
+
+.a7 ul {
+    padding-top: 160px;
+}
+
+.activity .a8 {
+    background: url(../img/a8.jpg);
+    height: 850px;
+}
+
+.a8 ul {
+    padding-top: 165px;
+}
+
+.au>a {
+    top: 181px;
+    left: 50px;
+}

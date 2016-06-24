@@ -1,0 +1,322 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style: normal;
+	outline: none;
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.viewport {
+	width: 100%;
+	position: relative;
+}
+
+body {
+	font-size: 1.3rem;
+	background-color: #fff;
+	font-family: Microsoft YaHei;
+}
+
+header {
+	height: 125px;
+	background-color: #282828;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	z-index: 500;
+}
+
+header .logo {
+	padding: 25px 10px;
+	text-align: left;
+}
+
+header .tel a img {
+	float: right;
+	padding: 25px 10px;
+}
+
+.screenFull {
+	padding-top: 125px;
+}
+
+.screenM750 {
+	max-width: 750px;
+	margin: 0 auto;
+	background-color: #f6f6f6;
+}
+
+.banner {
+	height: 350px;
+	background: url(../img/banner.jpg) no-repeat center;
+	background-color: #17212e;
+}
+
+.searchbox {
+	width: 750px;
+	margin: auto;
+}
+
+.searchbox h1 {
+	font-size: 33px;
+	line-height: 70px;
+	color: #697a8b;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: .2em;
+	padding-top: 65px;
+}
+
+.searchbox span {
+	width: 595px;
+	display: block;
+	height: 68px;
+	border: 1px solid rgba(102, 102, 102, 0.6);
+	border-radius: 5px;
+	background: rgba(40, 40, 40, 0.6);
+	margin: auto;
+	padding-left: 14px;
+	position: relative;
+}
+
+.searchbox input {
+	height: 68px;
+	line-height: 68px;
+	font-size: 24px;
+	width: 390px;
+	background: rgba(40, 40, 40, 0);
+	color: #888;
+}
+
+.banner .search {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/search.png) no-repeat center;
+	position: absolute;
+	right: 18px;
+	top: 12px;
+}
+
+.clsThree {
+	height: 200px;
+	background: #fff;
+}
+
+.clsThree>.col-4 {
+	height: inherit;
+	border-bottom: solid 2px #d6d6d6;
+}
+
+.clsT2 {
+	border-left: solid 2px #d6d6d6;
+	border-right: solid 2px #d6d6d6;
+}
+
+.clsThree p {
+	color: #272636;
+	font-size: 30px;
+	line-height: 60px;
+}
+
+.clsThreeAll {
+	height: 130px;
+	line-height: 130px;
+	background-color: #fff;
+	font-size: 28px;
+	color: #888;
+}
+
+.clsT1a {
+	padding: 0 60px;
+}
+
+.clsT3a {
+	padding: 0 120px;
+}
+
+.filter {
+	height: 80px;
+	background-color: #e1e1e1;
+	color: #333;
+	font-size: 24px;
+	line-height: 80px;
+}
+
+.filter ul {
+	margin-left: 10px;
+}
+
+.filter li {
+	float: left;
+	position: relative;
+	margin-right: 35px;
+}
+
+.filter li img {
+	position: absolute;
+	top: 20px;
+	right: -22px;
+}
+
+.filter li span {
+	margin-right: 20px;
+}
+
+.clear {
+	float: right;
+	width: 100px;
+	margin-right: 10px;
+}
+
+.clear img {
+	vertical-align: text-top;
+	margin-right: .1em;
+}
+
+.sequence {
+	height: 50px;
+	margin: 32px auto;
+}
+
+.sequence>.col-3 {
+	height: inherit;
+	line-height: 60px;
+	color: #666666;
+}
+
+.sequence p {
+	font-size: 28px;
+	width: 175px;
+	margin: 0 auto;
+	line-height: 50px;
+}
+
+.sPrice p {
+	font-size: 26px;
+}
+
+.sCd2 p,
+.sPe2 p {
+	font-size: 26px;
+	color: #666666;
+}
+
+.sCd2,
+.sPe2 {
+	background-color: #fff;
+}
+
+.pAct {
+	background-color: #fff;
+	color: #333 !important;
+	border-bottom: none !important;
+}
+
+.sequence p>img {
+	vertical-align: middle;
+}
+
+.ginfo p {
+	text-align: left;
+	text-indent: .5em;
+}
+
+.g {
+	border-top: solid 2px #d6d6d6;
+}
+
+.g .gBox {
+	background-color: #fff;
+	margin-bottom: 10px;
+	padding: 20px 15px;
+}
+
+.gbrands {
+	font-size: 24px;
+	color: #888;
+}
+
+.gname {
+	font-size: 30px;
+	color: #333;
+	line-height: 50px;
+}
+
+.gprice {
+	font-size: 24px;
+	color: #333;
+	line-height: 82px;
+}
+
+.gprice em {
+	font-size: 16px;
+}
+
+.gBtns {}
+
+.gChart {
+	width: 135px;
+	height: 50px;
+	margin: 0 auto;
+	font-size: 20px;
+	line-height: 50px;
+	color: #019805;
+	border: solid 2px #dddddd;
+	border-radius: 5px;
+}
+
+.gJoin {
+	width: 135px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 46px;
+	color: #0460bd;
+	border: solid 2px #dddddd;
+	border-radius: 5px;
+}
+
+.gBuy {
+	width: 135px;
+	height: 50px;
+	float: right;
+	font-size: 24px;
+	line-height: 46px;
+	color: #fefeff;
+	background-color: #414c5c;
+}
+
+.btnBox {
+	padding-bottom: 120px;
+}
+
+.moreBtn {
+	width: 430px;
+	height: 64px;
+	margin: 50px auto;
+	font-size: 30px;
+	color: #414c5c;
+	line-height: 64px;
+	text-align: center;
+	border: solid 2px #414c5c;
+	border-radius: 5px;
+}
+
+nav {
+	height: 120px;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	width: 750px;
+}
+
+nav p {
+	font-size: 24px;
+	color: #888;
+}

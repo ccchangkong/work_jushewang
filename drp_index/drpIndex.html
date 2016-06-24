@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<title>分销 -「聚奢网」二手奢侈品综合服务平台！</title>
+		<meta name="keywords" content="二手奢侈品网站，二手奢侈品交易平台，二手奢侈品购物网站，二手手表网站，二手包包网站，奢侈品寄售，奢侈品寄卖" />
+		<meta name="description" content="「聚奢网」二手奢侈品综合服务平台，国内领先的二手奢侈品交易平台！最高价回收各类名表、包包、钻石、奢侈品饰品、奢侈品数码等，全国近100家线下门店为客户提供安全便捷的奢侈品回收服务！" />
+		<meta name="viewport" content="target-densitydpi=320,width=750,user-scalable=no" />
+		<!--等比例缩放-->
+		<link href="css/drpIndex.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/drpIndex.js"></script>
+	</head>
+
+	<body>
+		<div class="viewport ">
+			<header class="row">
+				<div class="col-05 logo ">
+					<a class="button" href=""><img src="img/logo.png" alt="" /></a>
+				</div>
+				<div class="col-05 tel">
+					<a class="button" href=""><img src="img/tel.png" /></a>
+				</div>
+			</header>
+			<div class="screenFull">
+				<div class="banner">
+					<div class="searchbox">
+						<h1>快速寻找您想要的！</h1>
+						<span>
+            	<input type="text" id="goodsTital" value="" placeholder="搜索您想要的">
+                <a onclick="pageDate('searchContent','')" class="search"></a>
+            </span>
+					</div>
+				</div>
+
+				<div class="screenM750">
+					<ul class="row clsThree">
+						<li class="col-4 clsT1" id="clsT1">
+							<div class="clst11"><img src="img/at1.png" style="padding-top:50px ;" />
+								<p>类型</p>
+							</div>
+							<div class="clst12" style="display: none;"><img src="img/at1a.png" style="padding-top:50px ;" />
+								<p>类型</p>
+							</div>
+						</li>
+						<li class="col-4 clsT2" id="clsT2"><img src="img/at2.png" style="padding-top:44px ;" />
+							<p>品牌</p>
+						</li>
+						<li class="col-4 clsT3" id="clsT3">
+							<div class="clst31"><img src="img/at3.png" style="padding-top:51px ;" />
+								<p>适合人群</p>
+							</div>
+							<div class="clst32" style="display: none;"><img src="img/at3a.png" style="padding-top:50px;" />
+								<p>适合人群</p>
+							</div>
+						</li>
+					</ul>
+					<div class="cls">
+						<ul class="row clsThreeAll clsT1a" style="display: none;">
+							<li class="col-02">包袋</li>
+							<li class="col-02">腕表</li>
+							<li class="col-02">钻石</li>
+							<li class="col-02">首饰服饰</li>
+							<li class="col-02">数码</li>
+						</ul>
+						<ul class="row clsThreeAll clsT3a" style="display: none;">
+							<li class="col-4">男性</li>
+							<li class="col-4">女性</li>
+							<li class="col-4">中性</li>
+						</ul>
+
+					</div>
+
+					<div class="filter row" style="display:none ;">
+						<ul class="filterList">
+							<li class="clsT1"></li>
+							<li class="clsT2"></li>
+							<li class="clsT3"></li>
+						</ul>
+						<!--<ul class="filterList">
+							<li class="clsT1">钻石<img src="img/close.png" /></li>
+							<li class="clsT2"><span>+</span>Parmigiani Fleurie/帕玛强尼<img src="img/close.png" /></li>
+							<li class="clsT3"><span>+</span>男性<img src="img/close.png" /></li>
+						</ul>-->
+						<div class="clear">
+							<img src="img/allClear.png" />清除
+						</div>
+					</div>
+					<ul class="row sequence">
+						<li class="col-3 sClick">
+							<p>默认</p>
+						</li>
+						<li class="col-3 sSale">
+							<p>促销</p>
+						</li>
+						<li class="col-3 sCondition">
+							<div class="sCd1">
+								<p>成色<img src="img/navd.png" alt="" /></p>
+							</div>
+							<div class="sCd2 sm" style="display: none;">
+								<p>全新</p>
+								<p>非全新</p>
+							</div>
+						</li>
+						<li class="col-3 sPrice">
+							<div class="sPe1">
+								<p>价格<img src="img/navd.png" alt="" /></p>
+							</div>
+							<div class="sPe2 sm" style="display: none;">
+								<p>价格从高到低</p>
+								<p>价格从低到高</p>
+							</div>
+						</li>
+					</ul>
+
+					<ul class="g">
+
+						<li class="gBox row">
+							<div class="gAjax">
+								<div class="gPic col-4">
+									<img class="fl" src="http://bossimage.fyzjt.com/zoom/201606/35e9a26bfbe74bac9c5cd43fe4eb1838.JPG" width="215" height="215" alt="巴宝莉包">
+								</div>
+								<div class="ginfo col-8">
+									<p class="gbrands">Burberry/博柏利 </p>
+									<p class="gname">巴宝莉包</p>
+									<p class="gprice"><em>￥</em>2000.00</p>
+								</div>
+							</div>
+							<div class="col-8 gBtns">
+								<div class="col-4 ">
+									<div class="gChart">与TA交谈</div>
+								</div>
+								<div class="col-4 ">
+									<div class="gJoin">加入购物车</div>
+								</div>
+								<div class="col-4 ">
+									<div class="gBuy">立即购买</div>
+								</div>
+							</div>
+
+						</li>
+						<li class="gBox row">
+							<div class="gAjax">
+								<div class="gPic col-4">
+									<img class="fl" src="http://bossimage.fyzjt.com/zoom/201606/35e9a26bfbe74bac9c5cd43fe4eb1838.JPG" width="215" height="215" alt="巴宝莉包">
+								</div>
+								<div class="ginfo col-8">
+									<p class="gbrands">Burberry/博柏利 </p>
+									<p class="gname">巴宝莉包</p>
+									<p class="gprice"><em>￥</em>2000.00</p>
+								</div>
+							</div>
+							<div class="col-8 gBtns">
+								<div class="col-4 ">
+									<div class="gChart">与TA交谈</div>
+								</div>
+								<div class="col-4 ">
+									<div class="gJoin">加入购物车</div>
+								</div>
+								<div class="col-4 ">
+									<div class="gBuy">立即购买</div>
+								</div>
+							</div>
+
+						</li>
+
+						<li class="gBox row">
+							<div class="gAjax">
+								<div class="gPic col-4">
+									<img class="fl" src="http://bossimage.fyzjt.com/zoom/201606/35e9a26bfbe74bac9c5cd43fe4eb1838.JPG" width="215" height="215" alt="巴宝莉包">
+								</div>
+								<div class="ginfo col-8">
+									<p class="gbrands">Burberry/博柏利 </p>
+									<p class="gname">巴宝莉包</p>
+									<p class="gprice"><em>￥</em>2000.00</p>
+								</div>
+							</div>
+							<div class="col-8 gBtns">
+								<div class="col-4 ">
+									<div class="gChart">与TA交谈</div>
+								</div>
+								<div class="col-4 ">
+									<div class="gJoin">加入购物车</div>
+								</div>
+								<div class="col-4 ">
+									<div class="gBuy">立即购买</div>
+								</div>
+							</div>
+
+						</li>
+						<li class="gBox row">
+							<div class="gAjax">
+								<div class="gPic col-4">
+									<img class="fl" src="http://bossimage.fyzjt.com/zoom/201606/35e9a26bfbe74bac9c5cd43fe4eb1838.JPG" width="215" height="215" alt="巴宝莉包">
+								</div>
+								<div class="ginfo col-8">
+									<p class="gbrands">Burberry/博柏利 </p>
+									<p class="gname">巴宝莉包</p>
+									<p class="gprice"><em>￥</em>2000.00</p>
+								</div>
+							</div>
+							<div class="col-8 gBtns">
+								<div class="col-4 ">
+									<div class="gChart">与TA交谈</div>
+								</div>
+								<div class="col-4 ">
+									<div class="gJoin">加入购物车</div>
+								</div>
+								<div class="col-4 ">
+									<div class="gBuy">立即购买</div>
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+					<div class="btnBox">
+						<div class="moreBtn">
+							加载更多
+						</div>
+					</div>
+
+					<nav class="row">
+						<div class="col-02"><img src="img/nIndex.png" / style="padding-top: 19px;">
+							<p>首页</p>
+						</div>
+						<div class="col-02"><img src="img/nOnline.png" style="padding-top: 16px;" />
+							<p>在线客服</p>
+						</div>
+						<div class="col-02"><img src="img/nQQ.png" style="padding-top: 18px;" />
+							<p>渠道客服</p>
+						</div>
+						<div class="col-02"><img src="img/nReg.png" style="padding-top: 20px;" />
+							<p>注册/登陆</p>
+						</div>
+						<div class="col-02"><img src="img/nBuy.png" style="padding-top: 16px;" />
+							<p>购物车</p>
+						</div>
+					</nav>
+
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+
+</html>

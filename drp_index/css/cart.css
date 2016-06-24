@@ -1,0 +1,156 @@
+.viewport {
+	background-color: #fff;
+}
+
+.sort {
+	height: 105px;
+	background-color: #fff;
+	/*line-height: 105px;*/
+}
+
+.sort li {
+	float: left;
+	font-size: 30px;
+	color: #333333;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.sort p {
+	margin-top: 33px;
+	padding-right: 20px;
+}
+
+.allgoods p,
+.stock p {
+	border-right: solid 2px #999;
+}
+
+.act {
+	font-weight: bold;
+	color: #414c5c !important;
+}
+
+.sort li em {
+	color: #fa8902;
+	margin-right: 5px;
+}
+
+.chose {
+	width: 26px;
+	height: 26px;
+	display: block;
+	border: solid 2px #bebebe;
+	margin-top: 80px;
+	margin-left: 10px;
+	/*line-height: 260px;*/
+}
+
+.g span img {
+	margin-top: -9px;
+}
+
+.g {
+	background-color: #fff;
+}
+
+.g .gBox {
+	background-color: #f3f3f3;
+	position: relative;
+}
+
+.ginfo {
+	padding-left: 20px;
+}
+
+.gbrands {
+	margin-top: 10px;
+}
+
+.gname {
+	margin-bottom: 26px;
+}
+
+.gstate,
+.gprice {
+	font-size: 24px;
+	color: #666;
+	line-height: 30px;
+}
+
+.gprice span {
+	padding-left: 20px;
+	color: #fa8902;
+}
+
+.gBox>img {
+	position: absolute;
+	right: 15px;
+}
+
+.paying {
+	background-color: #fff;
+	padding-bottom: 140px;
+}
+
+.gAllInfo {
+	text-align: left;
+}
+
+.gAllInfo .chose {
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: 25px;
+	margin-right: 10px;
+}
+
+.gAllInfo .chose img {
+	position: absolute;
+	top: 45px;
+}
+
+.select {
+	font-size: 30px;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.slPrice,
+.slsave {
+	font-size: 24px;
+	color: #444444;
+	padding-left: 20px;
+}
+
+.slPrice em {
+	color: #fa8902;
+}
+
+.slPrice .yuan {
+	font-size: 20px;
+}
+
+.slP {
+	font-size: 30px;
+	color: #fa8902;
+}
+
+.btnBuy {
+	width: 213px;
+	height: 85px;
+	font-size: 32px;
+	color: #fff;
+	line-height: 85px;
+	text-align: center;
+	background-color: #414c5c;
+	margin-top: 65px;
+	margin-left: 30px;
+}
+
+.selectA {
+	margin-right: 20px;
+}
+
+.selectB {
+	margin-left: 20px;
+}
