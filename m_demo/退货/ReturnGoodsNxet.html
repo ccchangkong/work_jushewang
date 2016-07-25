@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<title>退货/退款 -「聚奢网」二手奢侈品综合服务平台！</title>
+		<meta name="keywords" content="二手奢侈品网站，二手奢侈品交易平台，二手奢侈品购物网站，二手手表网站，二手包包网站，奢侈品寄售，奢侈品寄卖" />
+		<meta name="description" content="「聚奢网」二手奢侈品综合服务平台，国内领先的二手奢侈品交易平台！最高价回收各类名表、包包、钻石、奢侈品饰品、奢侈品数码等，全国近100家线下门店为客户提供安全便捷的奢侈品回收服务！" />
+		<meta name="viewport" content="target-densitydpi=320,width=750,user-scalable=no" />
+		<!--等比例缩放-->
+		<link href="css/ReturnGoods.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/ReturnGoods.js"></script>
+	</head>
+
+	<body>
+		<div class="viewport next">
+			<header class="row">
+				<div class="col-2 back ">
+					<a href="javascript:history.back(-1)"><i class="backPic"></i></a>
+				</div>
+				<div class="col-8 headP">
+					退货/退款
+				</div>
+				<div class="col-2 home">
+					<a class="" href=""><i class="homePic"></i></a>
+				</div>
+			</header>
+			<div class="screenFull">
+
+				<div class="screenM750">
+					<div class="oAT">
+						<p class="oApadd">邮寄地址</p>
+					</div>
+					<div class="rBox">
+						<p class="choseP">请选择</p>
+						<select id="chooseExpress">
+							<option value="">快递公司</option>
+							<option value="1"> Patek Philippe/百达翡丽</option>
+							<option value="2"> A.Lange&amp;Sohne/朗格</option>
+							<option value="3"> Breguet/宝玑</option>
+						</select>
+						<div class="ExpressN">
+							<label for="ExpressNs" class="choseP">快递单号</label><input type="text" id="ExpressNs" value="" />
+						</div>
+					</div>
+
+					<div class="oAddress">
+						<p class="oAp">查看邮寄地址</p>
+						<ul class="oAul">
+							<li>
+								<p class="oAL ">收件人：</p>
+								<p class="oAR">南京聚奢网络科技有限公司</p>
+							</li>
+							<li>
+								<p class="oAL">电话：</p>
+								<p class="oAR">025-83765455</p>
+							</li>
+							<li>
+								<p class="oAL">地址：</p>
+								<p class="oAR">南京市鼓楼区中山北路2号紫峰大厦1518#</p>
+							</li>
+						</ul>
+					</div>
+					<div class="oArefund">
+						<p class="oArP">选择退款方式</p>
+					</div>
+					<div class="oAuls">
+						<ul>
+							<li class="oArli">
+								<div class="oAli1"><i class="oAPic2"></i></div>
+								<div class="oAli2"><i class="oAzfb"></i></div>
+								<div class="oAli3">
+									<p class="oArPs">退回到支付宝</p>
+								</div>
+								<ul class="ul" style="display: none" id="oA1">
+									<li class="oaMlist oaMlist1">
+										<i class="zhPic"></i>
+										<input type="text" class="oaM1" name="" id="" value="" placeholder="请输入您的账号" /></li>
+									<li class="oaMlist oaMlist2">
+										<i class="yhmPic"></i>
+										<input type="text" class="oaM2" name="" id="" value="" placeholder="请输入您的用户名" /></li>
+									<li class="oaMlist oaMlist3">
+										<p class="oaM3P">手机号码：<em class="oaM3n">15487451245</em></p>
+									</li>
+									<li class="oaMlist oaMlist4"><input class="oaM4" type="text" id="" value="" placeholder="请输入验证码" />
+										<p class="oaM4P">获取验证码</p>
+									</li>
+									<li class="oaMlist oaMlist5">
+										<p class="oaMbtn">确 定</p>
+									</li>
+								</ul>
+
+								<ul class="zfb2 ul" style="display: none;"id="oA1a">
+									<li class="zfb2li">
+										<i class="zh2Pic"></i>
+										<p class="zfb2P">3589120354</p>
+									</li>
+									<li class="zfb2li">
+										<i class="yhm2Pic"></i>
+										<p class="zfb2P">PPPPPP</p>
+									</li>
+									<p class="zfbsuccess">
+										<i class="wcPic"></i>验证成功
+									</p>
+								</ul>
+							</li>
+
+							<li class="oArli">
+								<div class="oAli1"><i class="oAPic2"></i></div>
+								<div class="oAli2"><i class="oAwx"></i></div>
+								<div class="oAli3">
+									<p class="oArPs">退回到微信</p>
+								</div>
+
+								<ul class="ul" style="display:none "id="oA2">
+									<li class="oaMlist oaMlist1">
+										<i class="zhPic"></i>
+										<input type="text" class="oaM1" name="" id="" value="" placeholder="请输入您的账号" /></li>
+									<li class="oaMlist oaMlist3">
+										<p class="oaM3P">手机号码：<em class="oaM3n">15487451245</em></p>
+									</li>
+									<li class="oaMlist oaMlist4"><input class="oaM4" type="text" id="" value="" placeholder="请输入验证码" />
+										<p class="oaM4P">获取验证码</p>
+									</li>
+									<li class="oaMlist oaMlist5">
+										<p class="oaMbtn">确 定</p>
+									</li>
+								</ul>
+								<ul class="zfb2 wx2 ul" style="display:none ;"id="oA2a">
+
+									<li class="zfb2li wx2li">
+										<i class="yhm2Pic"></i>
+										<p class="zfb2P">PPPPPP</p>
+									</li>
+									<p class="zfbsuccess">
+										<i class="wcPic"></i>验证成功
+									</p>
+								</ul>
+
+							</li>
+							<li class="oArli">
+								<div class="oAli1"><i class="oAPic2"></i></div>
+								<div class="oAli2"><i class="oAyl"></i></div>
+								<div class="oAli3">
+									<p class="oArPs">退回到银行卡<em class="oArPss">(已绑定的账号)</em></p>
+								</div>
+								<ul style="display: none;"id="oA3"class="ul">
+									<li class="yhkli">
+										<div class="yhkBox">
+											<p class="yYh">中国农业银行</p>
+											<p class="yKh">卡号：<em class="yKh1">****</em><em class="yKh2">****</em><em class="yKh3">****</em><em class="yKh3">1234</em></p>
+											<p class="yYhm">用户名：<em class="yYhms">张三</em></p>
+										</div>
+
+									</li>
+									<li class="yhkli">
+										<div class="yhkBox">
+											<p class="yYh">中国农业银行</p>
+											<p class="yKh">卡号：<em class="yKh1">****</em><em class="yKh2">****</em><em class="yKh3">****</em><em class="yKh3">1234</em></p>
+											<p class="yYhm">用户名：<em class="yYhms">张三</em></p>
+										</div>
+									</li>
+									<li class="oaMlist oaMlist3">
+										<p class="oaM3P">手机号码：<em class="oaM3n">15487451245</em></p>
+									</li>
+									<li class="oaMlist oaMlist4"><input class="oaM4" type="text" id="" value="" placeholder="请输入验证码" />
+										<p class="oaM4P">获取验证码</p>
+									</li>
+									<li class="oaMlist oaMlist5">
+										<p class="oaMbtn">确 定</p>
+									</li>
+								</ul>
+
+								<ul class="zfb2 wx2 yhk2 ul" style="display: none"id="oA3a">
+									<li class="yhkli yhkAct">
+										<div class="yhkBox">
+											<p class="yYh">中国农业银行</p>
+											<p class="yKh">卡号：<em class="yKh1">****</em><em class="yKh2">****</em><em class="yKh3">****</em><em class="yKh3">1234</em></p>
+											<p class="yYhm">用户名：<em class="yYhms">张三</em></p>
+										</div>
+
+									</li>
+
+									<p class="zfbsuccess">
+										<i class="wcPic"></i>验证成功
+									</p>
+								</ul>
+
+							</li>
+							<li class="oArli">
+								<div class="oAli1"><i class="oAPic2"></i></div>
+								<div class="oAli2"><i class="oAyl"></i></div>
+								<div class="oAli3">
+									<p class="oArPs">退回到银行卡<em class="oArPss">(未绑定的账号)</em></p>
+								</div>
+								<ul class="yhk3 ul"  style="display: none" id="oA4">
+									<li class="oaMlist oaMlist1">
+
+										<input type="text" class="oaM1" name="" id="" value="" placeholder="请输入您的银行卡账号" /></li>
+									<li class="oaMlist oaMlist2">
+
+										<input type="text" class="oaM2" name="" id="" value="" placeholder="请输入持卡人姓名" /></li>
+									<li class="oaMlist oaMlist2">
+
+										<input type="text" class="oaM2" name="" id="" value="" placeholder="请输入开户行" /></li>
+
+									<li class="oaMlist oaMlist3">
+										<p class="oaM3P">手机号码：<em class="oaM3n">15487451245</em></p>
+									</li>
+									<li class="oaMlist oaMlist4"><input class="oaM4" type="text" id="" value="" placeholder="请输入验证码" />
+										<p class="oaM4P">获取验证码</p>
+									</li>
+									<li class="oaMlist oaMlist5">
+										<p class="oaMbtn">确 定</p>
+									</li>
+								</ul>
+
+								<ul class="zfb2 wx2 yhk2 ul" style="display: none"id="oA4a">
+									<li class="yhkli yhkAct">
+										<div class="yhkBox">
+											<p class="yYh">中国农业银行</p>
+											<p class="yKh">卡号：<em class="yKh1">****</em><em class="yKh2">****</em><em class="yKh3">****</em><em class="yKh3">1234</em></p>
+											<p class="yYhm">用户名：<em class="yYhms">张三</em></p>
+										</div>
+
+									</li>
+
+									<p class="zfbsuccess">
+										<i class="wcPic"></i>验证成功
+									</p>
+								</ul>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="nextBtn2" style="display: ;">
+						<!--<div class="nextBtn2 nextBtn2act"  style="display: ;">-->
+						提交
+					</div>
+					<nav class="row" style="display: ;">
+						<div class="col-02"><img src="img/nIndex.png" / style="padding-top: 19px;">
+							<p>首页</p>
+						</div>
+						<div class="col-02"><img src="img/nOnline.png" style="padding-top: 16px;" />
+							<p>在线客服</p>
+						</div>
+						<div class="col-02"><img src="img/nQQ.png" style="padding-top: 18px;" />
+							<p>渠道客服</p>
+						</div>
+						<div class="col-02"><img src="img/nReg.png" style="padding-top: 20px;" />
+							<p>注册/登陆</p>
+						</div>
+						<div class="col-02"><img src="img/nBuy.png" style="padding-top: 16px;" />
+							<p>购物车</p>
+						</div>
+					</nav>
+
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+
+</html>
