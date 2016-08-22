@@ -1,0 +1,1428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="keywords" content="二手奢侈品网站，二手奢侈品交易平台，二手奢侈品购物网站，二手手表网站，二手包包网站，奢侈品寄售，奢侈品寄卖" />
+    <meta name="description" content="" />
+    <title> - 「聚奢网」二手奢侈品综合服务平台！</title>
+    <link href="http://www.jushewang.com/css/public.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.jushewang.com/css/all.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    .toHelps {
+        display: none;
+    }
+    </style>
+    <script type="text/javascript" src="http://www.jushewang.com:80/js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="http://www.jushewang.com/js/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="http://www.jushewang.com/js/load.js"></script>
+    <script type="text/javascript" src="http://www.jushewang.com/js/config.js"></script>
+    <script type="text/javascript" src="http://www.jushewang.com/js/all.js"></script>
+    <script type="text/javascript" src="http://www.jushewang.com/js/home.js"></script>
+    <script type="text/javascript" src="http://www.jushewang.com/js/search.js"></script>
+</head>
+
+<body>
+    <!--topBanner结束-->
+    <!--头部-->
+    <div class="top grey_be">
+        <div class="wap fs12 grey_cf zi1">
+            <div class="fl"><span>佛阳子集团旗下购物商城!全国服务电话：400-880-9930</span></div>
+            <div class="fr"><span id="beforeLogin"><span class="plr10"><a href="/login.html" class="grey_cf login_pop1" rel="nofollow">请登录</a></span><span class="plr10"><a href="/register.html" class="grey_cf login_pop2" rel="nofollow">免费注册</a></span></span> <span id="afterLogin"><a onclick="userInfo()" class="grey_cf"><span id="loginUserName"></span></a><span class="plr10"><a onclick="loginOut()" class="link-logout grey_cf" rel="nofollow">退出</a></span></span> <span class="pr my plr10"><a onclick="myOrder()" class="grey_cf" rel="nofollow">我的聚奢</a>
+      <ul class="pa white_b grey_bcs tac pt5 pb5">
+		  <li><a class="db" href="/userCenter">个人中心</a></li>
+		  <li><a class="db" href="/order/myOrder">我的订单</a></li>
+		  <li><a class="db" href="/cart/myCart">购物车</a></li>
+		  <li><a class="db" href="/focus/myFocus">我的收藏</a></li>
+		  <li><a class="db" href="/coupons/myCoupons">优惠券</a></li>
+	  </ul>
+      </span> <span class="settleup plr10"><a onclick="myCart()" class="grey_cf dib" rel="nofollow"><samp class="shopping_hover">去结算</samp><samp>购物车</samp></a> <span id="cartNum">[0]</span></span> <span class="plr10"><a href="http://p.qiao.baidu.com/im/index?siteid=7855301&ucid=18034750" target="_blank" class="db grey_cf">在线客服</a></span><span class="plr10" style="display: none"><a href="/common/toHelpJsp?jsp=1-1" target="_blank" class="db grey_cf">公司简介</a></span> </div>
+        </div>
+    </div>
+    <!--头部结束-->
+    <!--导航、搜索-->
+    <div class="headswap">
+        <div class="head wap pr">
+            <a href="/" class="logo fl"></a>
+            <div class="store_location fl pr dib tac cursor">
+                <div class="grey_bs grey br">实体店<i class="ci-right pr oh ml5"><s class="pr">&loz;</s></i></div>
+                <dl class="city grey_bs ptb10 pa white_b oh fs13">
+                    <dt class="oh plr10 grey_bbs pb10"><span class="fl db cursor">热门城市：</span><a href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-11-0-0-0-0.html" class="grey fl db cursor">北京</a><a href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-31-0-0-0-0.html" class="grey fl db cursor">上海</a><a href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-5101-0-0-0-0.html" class="grey fl db cursor">成都</a><a href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-3201-0-0-0-0.html" class="grey fl db cursor">南京</a></dt>
+                    <dd class="areaList oh grey_bbs"></dd>
+                    <dd class="storeList oh"></dd>
+                </dl>
+            </div>
+            <div class="search fl">
+                <div class="search_input fl pr grey_bs">
+                    <input id="goodsTital" class="fl plr10" name="goodsTital" type="text" placeholder="请输入您要查找的商品！" />
+                    <input type="hidden" id="goodsType" />
+                    <input type="hidden" id="mainCategoryId" />
+                    <input type="hidden" id="mainBrandId" />
+                    <div class="hotwords fl pa plr5">
+                        <a href="/goods/listallgoods?url=/goods/list/0-0-0-756-0-0-0-0-0-0-0-0-0-0.html" class="grey grey_bf fs12">爱马仕</a>
+                        <a href="/goods/listallgoods?url=/goods/list/0-0-0-31-0-0-0-0-0-0-0-0-0-0.html" class="grey grey_bf fs12">浪琴</a>
+                        <a href="/goods/listallgoods?url=/goods/list/0-0-0-20-0-0-0-0-0-0-0-0-0-0.html" class="grey grey_bf fs12">劳力士</a>
+                    </div>
+                    <input type="button" class="cursor fr" id="search" value="" />
+                </div>
+                <div class="promise pr fl ml20 plr10 oh"> <span class="pa"><a href="javascript:void(0);" class="dib prev"></a><a href="javascript:void(0);" class="dib next"></a></span>
+                    <div class="promiseSwap">
+                        <ul class="fs14">
+                            <li><i class="fl maintain"></i>一年免费养护
+                                <p class="fs12 grey_ca">购买表、包、钻、戒指的新老客户均可以享受一年内免费养护服务。</p>
+                            </li>
+                            <li><i class="fl shunfeng"></i>顺丰包邮
+                                <p class="fs12 grey_ca">所有商品顺丰极速包邮。</p>
+                            </li>
+                            <li><i class="fl genuine"></i>正品保障
+                                <p class="fs12 grey_ca">聚奢网经营的商品均为正品，如假包退。</p>
+                            </li>
+                            <li><i class="fl returns"></i>七天退货
+                                <p class="fs12 grey_ca">购买表、包、钻、戒指的均可以享受七天内无理由退换货服务。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navitems black_b">
+            <ul class="wap fs14 clearfix">
+                <li class="fl tac ptb15 gray_b">
+                    <a class="db" href="/goods/listallgoods?url=/goods/list/2-0-0-0-0-0-0-0-0-0-0-0-0-0.html">包袋</a>
+                </li>
+                <li class="fl tac ptb15 gray_b">
+                    <a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/1-0-0-0-0-0-0-0-0-0-0-0-0-0.html">腕表</a>
+                </li>
+                <li class="fl tac ptb15 gray_b">
+                    <a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/5-0-0-0-0-0-0-0-0-0-0-0-0-0.html">钻石</a>
+                </li>
+                <li class="fl tac ptb15 gray_b">
+                    <a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/4-0-0-0-0-0-0-0-0-0-0-0-0-0.html">首饰</a>
+                </li>
+                <li class="fl tac ptb15 gray_b">
+                    <a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/3-0-0-0-0-0-0-0-0-0-0-0-0-0.html">服饰</a>
+                </li>
+                <li class="fl tac ptb15 gray_b">
+                    <a class="db grey_bls" href="/goods/listallgoods?url=/goods/list/6-0-0-0-0-0-0-0-0-0-0-0-0-0.html">数码</a>
+                </li>
+                <li class="fl tac ptb15">
+                    <a class="db" href="/addconsign">寄售</a>
+                </li>
+                <li class="fl tac ptb15">
+                    <a class="db grey_bls" href="/adddemand">求购</a>
+                </li>
+                <li class="fl tac ptb15">
+                    <a class="db grey_bls" href="appointToShop.html">预约</a>
+                </li>
+                <li class="fl tac ptb15">
+                    <a class="db grey_bls" href="/auction/main.html">拍卖</a>
+                </li>
+                <li class="fl tac ptb15">
+                    <a class="db grey_bls" href="/brand/querySortedBrands">品牌</a>
+                </li>
+                <li class="fl tac ptb15 pr oh">
+                    <a class="db grey_bls khaki navrepair fl">养护</a>
+                    <ul class="fl">
+                        <li class="fl tac ptb15 gray_b bagrepair pa">
+                            <a class="db gray_b" href="/repairGoods/packageRepair">包</a>
+                        </li>
+                        <li class="fl tac ptb15 gray_b watchrepair pa">
+                            <a class="db gray_b" href="/repairGoods/watchRepair">表</a>
+                        </li>
+                    </ul>
+                </li>
+                <script>
+                $(".navitems li.pr").mouseenter(function() {
+                    $(this).stop().animate({
+                        width: 150
+                    });
+                }).mouseleave(function() {
+                    $(this).stop().animate({
+                        width: 50
+                    });
+                })
+                </script>
+                <li class="fl tac ptb15">
+                    <a class="db grey_bls khaki" href="recover.html">回收</a>
+                </li>
+                <li class="fl tac ptb15">
+                    <a class="db grey_bls khaki" href="joinUs.html">加盟</a>
+                </li>
+                <li class="fl tac ptb15" style="width:60px">
+                    <a class="db grey_bls khaki" href="train.html">商学院</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 开始 -->
+    <div class="bg pb15">
+        <div class="wap oh">
+            <div class="lndividual_center_left fl">
+                <h2 class="fs14 red_bds"><i class="lndividual_center_icon"></i>帮助中心</h2>
+                <dl class="white_b grey_bs">
+                    <dt>关于我们</dt>
+                    <dd>
+                        <a href="">公司简介</a>
+                    </dd>
+                    <dd>
+                        <a href="">发展历程</a>
+                    </dd>
+                    <dd>
+                        <a href="">诚聘英才</a>
+                    </dd>
+                    <dd>
+                        <a href="">联系我们</a>
+                    </dd>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <a href="">注册新用户</a>
+                    </dd>
+                    <dd>
+                        <a href="">回收指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">购买指导</a>
+                    </dd>
+                    <dd>
+                        <a href="">预约指导</a>
+                    </dd>
+                    <dt>配送服务</dt>
+                    <dd>
+                        <a href="">收货指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">体验店服务</a>
+                    </dd>
+                    <dd>
+                        <a href="">配送物流</a>
+                    </dd>
+                    <dd>
+                        <a href="">物流查询</a>
+                    </dd>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="">退换货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="">如何申请退款</a>
+                    </dd>
+                    <dd>
+                        <a href="">维修补件说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">一年免费养护</a>
+                    </dd>
+                    <dt>购物保障</dt>
+                    <dd>
+                        <a href="">正品保障</a>
+                    </dd>
+                    <dd>
+                        <a href="">注册协议</a>
+                    </dd>
+                    <dd>
+                        <a href="">隐私保护</a>
+                    </dd>
+                    <dd>
+                        <a href="">免责声明</a>
+                    </dd>
+                    <dd>
+                        <a href="">在线售卖协议</a>
+                    </dd>
+                    <dt>微信服务公众号</dt>
+                    <dd><img src="http://pic.jushewang.com/b2c_web/images/common/weixin.png" width="96" height="94"></dd>
+                </dl>
+            </div>
+            <ul class="lndividual_center_right fr">
+                <!--1-1-->
+                <li class="toHelps">
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">关于我们</a>&gt;-->
+                        <a href="http://www.jushewang.com:80/common/toHelpJsp?jsp=1-1">公司简介</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">公司简介</h2>
+                        <div class="p20 pr pl">
+                            <p style="text-indent:2em">聚奢网www.jushewang.com，隶属于南京聚奢网络科技有限公司。总部位于南京，在北京、上海、、深圳、广州、天津、重庆、成都、沈阳等全国一二线城市设有分支机构，是“中国互联网电商十强品牌”，“江苏最具成长性‘互联网+’企业”，隶属南京佛阳子集团。</p>
+                            <p style="text-indent:2em">系国内二手奢侈品交易平台领先拓荒者，依托集团庞大的实体经济，聚奢网一举打造成为中国最大的二手奢侈品交易平台。2015年，聚奢网引进全新的O2O模式，首创“线上购物，线下体验”的服务理念，利用集团全国近100家实体店，为高端消费人群提供了“线上+线下”的一流奢侈品服务体验，开创了国内二手奢侈品交易的先河。</p>
+                            <p>2016年，聚奢网荣获“中国品牌之星100强”、“中国互联网电商十强品牌”等称号。</p>
+                            <p>2015年，聚奢网荣获“江苏最具成长性‘互联网+’企业”称号，江苏省苏商发展促进会理事单位。</p>
+                        </div>
+                    </div>
+                </li>
+                <!--1-1-->
+                <li class="toHelps">
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">关于我们</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=1-2">发展历程</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">发展历程</h2>
+                        <div class="p20 pr pl">
+                            <p>　　聚奢网是一家集黄金、铂金、钻石、名表等回收、销售，奢侈品典当典押为一体，“立足南京，辐射全国，走向世界”做中国最大奢侈品交易平台的企业。聚奢网以佛为先启，以道为导向，指引向上，指引积极。聚奢网，以同富为宗旨、以共富为理念。为黄金、珠宝的同仁搭建平台，提供机遇!聚奢网，与志者同谋，与意者同进。</p>
+                            <p>　　经过十几年的发展，聚奢网分别在北京、上海、南京、杭州、青岛、淮安等地建立公司，深圳、西安公司正在筹划中。公司目前是长三角最具规模的奢侈品交易平台，成为长三角地区的奢侈品交易行业的方向标。聚奢网因为专业所以信赖，因为用心所以超越。聚奢网本着对“客户至上，用心服务”的态度赢得众多客户的好评。</p>
+                            <p>　　聚奢网与国内多家金融机构、贵金属生产厂家联合。采用先进技术，及时地把握和传递国际、国内最新的行情资讯，为业界同仁和零散客户提供公开、公平、公正的贵金属交易平台;为政府、企业、个人提供优质的金制品;为广大市民和企业提供专业贴心的典当融资服务。</p>
+                        </div>
+                    </div>
+                </li>
+                <!--1-3-->
+                <li class="toHelps">
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">关于我们</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=1-3">诚聘英才</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">诚聘英才</h2>
+                        <div class="p20 pr pl">
+                            <p>
+                                <font color=#ff0000><strong>一、前端工程师</strong></font>
+                            </p>
+                            <p>　　<strong>职位职能：</strong>软件UI设计师/工程师 Web前端开发</p>
+                            <p>　　<strong>职位描述：</strong></p>
+                            <p>　　1、在产品的视觉图上，实现html页面;</p>
+                            <p>　　2、对公司现有平台，网站从前端角度进行深入的优化;</p>
+                            <p>　　3、与美工、开发人员配合完成前台页面设计和编辑，编写高质量的前端页面代码，保证浏览器兼容性;</p>
+                            <p>　　4、 研究最新的前端技术并推动其在产品中实现。</p>
+                            <p>　　<strong>岗位要求：</strong></p>
+                            <p>　　1、大专以上学历，计算机相关专业，2年以上前端开发经验;</p>
+                            <p>　　2、熟悉W3C标准及规范，熟练编写HTML、CSS及JS代码;</p>
+                            <p>　　3、熟练掌握Bootstrap样式框架，并能在此基础上进行定制开发;</p>
+                            <p>　　4、熟悉IE 、firefox、webkit 等系列浏览器差异，确保代码对各种浏览器的良好兼容性，保证页面显示效果与用户体验的最佳比;</p>
+                            <p>　　5、熟悉jquery 框架，能编写及调试常见 jquery 插件。</p>
+                            <p>　　<strong><font color=#ff0000>二、java工程师</font></strong></p>
+                            <p>　　<strong>职位描述：</strong></p>
+                            <p>　　1.大型web应用系统的设计和研发</p>
+                            <p>　　2.改善大型web平台系统的性能，提升用户使用体验</p>
+                            <p>　　3.为快速发展的网站部开发高质量的软件应用与工具</p>
+                            <p>　　<strong>岗位要求：</strong></p>
+                            <p>　　1.本科或以上学历，1年以上互联网开发经验</p>
+                            <p>　　2.精通Java，熟练掌握Java网络编程，熟练运用开源框架，spring，mybatis，springMVC</p>
+                            <p>　　3.熟悉互联网开发模式，清晰理解缓存，缓存设计和模式</p>
+                            <p>　　4.熟练掌握SQL语句，熟练使用数据库(MySQL、Oracle)</p>
+                            <p>　　5.熟练使用Eclipse/Maven /SVN等软件开发工具</p>
+                            <p>　　6.熟悉HTML/JavaScript/CSS/Ajax 等页面技术</p>
+                            <p>　　7.精通TCP/IP、HTTP等网络协议，熟悉socket网络编程，有用Java做大访问量高压力网络应用的经验</p>
+                            <p>　　8.熟悉Linux/Nginx，熟练配置维护Apache、Tomcat,等应用服务器，掌握shell等系统脚本工具</p>
+                            <p>　　9.有大型网站项目开发经验者、电子商务系统开发经验者优先</p>
+                            <p>
+                                <font color=#ff0000><strong>三、网站产品经理</strong></font>
+                            </p>
+                            <p>　　<strong>岗位职责：</strong></p>
+                            <p>　　1.根据公司和产品战略，负责电子商务网站产品策划和管理工作;</p>
+                            <p>　　2.完成产品的策划、功能流程设计、实施和运营，协调产品开发、测试、上线，以及运营过程中的不断优化改进;</p>
+                            <p>　　3.负责产品上线前的产品文档整理，商务推广，市场宣传等配合工作;</p>
+                            <p>　　4.负责产品运营期内的数据分析，竞争对手产品分析，并适时对产品进行调整。</p>
+                            <p>　　<strong>职位要求：</strong></p>
+                            <p>　　1.本科或以上学历，5年以上互联网产品工作经验;</p>
+                            <p>　　2.对于互联网市场有着深刻的理解，对互联网用户的心理特点有比较准确的把握，并能有针对性地设计相关产品和功能;</p>
+                            <p>　　3.具备独立撰写产品文档的能力，熟练掌握产品需求分析、设计的技巧，对交互设计过程有深入的了解，有成功的产品策划案例;</p>
+                            <p>　　4.具有较强的领导和组织协调能力、判断力与决策能力，沟通能力、计划与执行能力，具备突出的团队合作精神，能承受较大的工作压力;</p>
+                            <p>　　5.有电子商务网站产品规划经验者优先。</p>
+                            <p>　　<strong><font color=#ff0000>四、移动开发工程师</font></strong></p>
+                            <p>　　<strong>岗位职责：</strong></p>
+                            <p>　　1、app服务器端业务开发;</p>
+                            <p>　　2、营销活动逻辑开发;</p>
+                            <p>　　3、数据监测功能开发。</p>
+                            <p>　　<strong>职位要求：</strong></p>
+                            <p>　　1、本计算机或相关专业， 2年以上移动(Java语言)开发经验;</p>
+                            <p>　　2、精通Java编程语言，熟练掌握Struts、Spring、Hibernate、Mybatis等主流框架;</p>
+                            <p>　　3、熟悉HTML，CSS，JavaScript/Jquery，Ajax，Json;</p>
+                            <p>　　4、熟悉mysql数据库、熟悉Linux操作系统;</p>
+                            <p>　　5、具备良好的团队合作精神和沟通能力，较强的责任心，抗压力强。</p>
+                            <p>　　<strong><font color=#ff0000>五、营销策划经理</font></strong></p>
+                            <p>　　<strong>岗位职责：</strong></p>
+                            <p>　　1. 策划网站网络营销活动、制定网络营销规划和战略并执行;</p>
+                            <p>　　2. 参与策划和管理网站互联网广告和网络推广工作;</p>
+                            <p>　　3. 负责收集、分析网站内外部信息，了解网站的网络营销现状，撰写分析报告和建议;</p>
+                            <p>　　4. 网络营销策略的制定，网络营销项目的策划和实施;</p>
+                            <p>　　5. 策划、组织、执行网络的宣传及推广活动。</p>
+                            <p>　　<strong>职位要求：</strong></p>
+                            <p>　　1. 专科以上学历，2年以上相关工作经验;</p>
+                            <p>　　2. 熟悉网络销售业务流程与销售方法;</p>
+                            <p>　　3. 擅长网络营销方案的撰写，熟悉网络的宣传和营销推广;</p>
+                            <p>　　4. 熟悉互联网络，熟练使用网络交流工具和各种办公软件;</p>
+                            <p>　　5. 沟通表述能力强，工作认真踏实，心细，有责任心，善于交流。</p>
+                            <p>　　<strong><font color=#ff0000>六、数据分析师</font></strong></p>
+                            <p>　　<strong>岗位职责：</strong></p>
+                            <p>　　1.进行深入的网站流量和商业运营指标分析，提出督导的分析结果或者业务改进意见;</p>
+                            <p>　　2.与业务部门沟通，展示数据分析结果，推进业务改进意见的实施;</p>
+                            <p>　　3.独立设计公司业务需要的报表;</p>
+                            <p>　　4.对公司bi业务报表的指标进行维护;</p>
+                            <p>　　5.其他数据分析的相关工作和部门经理指派的任务。</p>
+                            <p>　　<strong>职位要求：</strong></p>
+                            <p>　　1. 正规大学本科及以上学历，数据统计、经济管理等相关专业优先</p>
+                            <p>　　2.熟悉电子 商务行业运营指标，具备丰富的电商行业数据分析经验;</p>
+                            <p>　　3.优秀的商业敏感度，能够独立开展数据分析项目，从海量数据中提取出关键信息，根据数据分析提出业 务改进意见;</p>
+                            <p>　　4.精通数据结果的展示，主要是ppt的制作;</p>
+                            <p>　　5.熟练运用常用的数据分析工具excel;</p>
+                            <p>　　6.熟练掌握sql语言，能够从数据库提取数据;</p>
+                            <p>　　7.不少于3年的商业分析工作。</p>
+                        </div>
+                    </div>
+                </li>
+                <!--1-4-->
+                <li class="toHelps">
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">关于我们</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=1-4">联系我们</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">联系我们</h2>
+                        <div class="p20 pr pl">
+                            <p>
+                                <font color=#ff0000 size=4><strong>全国统一服务热线：4008809930</strong></font>
+                            </p>
+                            <p>
+                                <font color=#ffa020 size=3><strong>•南京聚奢网络科技有限公司</strong></font>
+                            </p>
+                            <p>　　世界第七高 - 紫峰大厦</p>
+                            <p>　　公司电话： 025-83765455</p>
+                            <p>　　公司网址：http://www.jushewang.com</p>
+                            <p>　　公司地址：南京市鼓楼区中山北路2号紫峰大厦1518#</p>
+                            <p>　　附近路线：1路, 3路内环, 25路, 28路, 33路, 35路, 801路, 802路, 游1路 鼓楼北站站下即到地铁鼓楼北站下车即到。</p>
+                            <p>　　地铁路线：鼓楼站下 ，4号地铁出口出来就是紫峰大厦</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--2-1-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">新手指南</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=2-1">注册新用户</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">注册新用户</h2>
+                        <div class="p20 pr pl">
+                            <p>　　通过首页注册，点击页面右上角的免费注册按钮</p>
+                            <p>
+    
+                            </p>
+                            <p>　　您可通过提示信息进行注册，按照提示填写准确信息，点击提交“立即注册”。</p>
+                            <p>
+
+                            </p>
+                            <p>　　用户名注册格式要求：
+                                <font color=#ff0000><strong>英文，数字，下划线</strong></font>(其它格式符号不能注册)</p>
+                            <p>　　密码：密码和确认密码要
+                                <font color=#ff0000><strong>一致</strong></font>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--2-2-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">新手指南</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=2-2">回收指南</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">回收指南</h2>
+                        <div class="p20 pr pl">
+                            <p>　　<strong><big><font color=#ff0000>高价回收 有“奢”有得</font></big></strong></p>
+                            <p>　　<big><em><strong>名表回收</strong></em></big> ◆尊贵服务 ◆估价合理 ◆安全保密</p>
+                            <p>　　佛阳子聚奢网拥有一支经验丰富的评估鉴定团队，从业十年，数以万计客户见证!发掘每一块名表背后的价值。在平等、自愿、诚信、互利的原则基础上，公司会给予每一件物品合理的估价，为客户提供“高效、便捷、专业、周到”的高端服务。</p>
+                            <p>　　【业务范围】</p>
+                            <p>　　各类世界名表：百达翡丽、爱彼、江诗丹顿、宝珀、芝柏、雅典、帕玛强尼、万国、宝矶、伯爵、劳力士、积家、帝舵、欧米茄、豪爵、香奈儿、卡地亚、雷达、米陀、浪琴、天梭、梅花等。</p>
+                            <p>　　【名表回收价格】</p>
+                            <p>　　最高可至7.5折，鉴定师会根据品牌、款式、新旧成色等进行专业合理的估价，多渠道、高价格是我们永恒不变的承诺。</p>
+                            <p>　　◇鉴定地点：您所在区域分公司VIP接待室，确保安全与隐私。</p>
+                            <p>　　◇携带物件：名表及其附件、您本人身份证明。</p>
+                            <p>　　◇交易方式：现金或转账，方便快捷。</p>
+                            <p>　　◇详情咨询：请点击在线客服!!!</p>
+                            <p>　　<big><strong><em>包包回收</em></strong></big> ◆贴心服务 ◆估价合理 ◆方便快捷</p>
+                            <p>　　每一款包包都有自己的故事，都在等待真正所属的主人。您想购买或者想要置换其他包包，不妨来聚奢网看看。我们拥有一支专业回收、销售、鉴定与养护团队，为您提供全方位的奢侈品置换、收售服务，并可免费鉴定和养护。</p>
+                            <p>　　【业务范围】</p>
+                            <p>　　各类奢侈品牌：爱马仕、LV、DIOR、CHANEL、BV、纪梵希、克洛伊、罗意威、GUCCI、Burberry、普拉达、TOD’S、FENDI、COACH、MIUMIU、MK等。</p>
+                            <p>　　【包包回收价格】</p>
+                            <p>　　最高可至7.5折，鉴定师会根据您所持包包的品牌、款式、新旧成色等进行专业合理的估价，闲置变现金，给您一个惊喜的价格!</p>
+                            <p>　　◇鉴定地点：您所在区域分公司VIP接待室，贴心安全。</p>
+                            <p>　　◇携带物件：包包及其附件、您本人身份证明。</p>
+                            <p>　　◇交易方式：现金或转账，方便快捷。</p>
+                            <p>　　◇详情咨询：请点击在线客服!!!</p>
+                            <p>　　<strong><em><big>钻石回收</big></em></strong> ◆高端专业 ◆估价合理 ◆正规保障</p>
+                            <p>　　流光溢彩，永久深邃，每颗钻石都闪耀着它独特的光芒。聚奢网拥有专业的鉴定机构和团队，保证为您的钻石提供专业合理的估价和养护，让您的钻石更加熠熠生辉。</p>
+                            <p>　　【钻石回收价格】</p>
+                            <p>　　上海钻石交易所是聚奢网专业合作单位，所有的钻石会通过交易所报价回收。确保行业最高价!</p>
+                            <p>　　◇详情咨询：请点击在线客服!!!</p>
+                            <p>　　【高端服务】</p>
+                            <p>　　每家分公司都设置了VIP接待室，让您享受到安全保密的贵宾级服务，提供专业的真假鉴定服务。</p>
+                            <p>　　<strong>专业授权</strong></p>
+                            <p>　　上海钻石交易所成员，指定钻石原料提供商。</p>
+                            <p>　　<strong>行业领先</strong></p>
+                            <p>　　公司拥有高端专业的光谱法分析仪，1分钟内就能鉴定出钻石纯色、级别、净度。</p>
+                            <p>　　<strong>方便快捷</strong></p>
+                            <p>　　现金或转账交易，客户可自由选择。</p>
+                            <p>　　<strong><em><big>饰品、数码回收</big></em></strong> ◆行业领先 ◆估价合理 ◆安全可靠</p>
+                            <p>　　珠宝首饰，高端数码，身份地位的象征。聚奢网专注高端消费多年，在这一领域拥有丰富的行业经验与优势，一直以价格合理、服务周到、品质保障而备受高端消费人群的青睐。</p>
+                            <p>　　【回收价格】</p>
+                            <p>　　根据品牌、款式、新旧成色等进行专业合理的估价。</p>
+                            <p>　　◇鉴定地点：您所在区域分公司VIP接待室，贴心安全。</p>
+                            <p>　　◇携带物件：包包及其附件、您本人身份证明。</p>
+                            <p>　　◇详情咨询：请点击在线客服!!!</p>
+                            <p>　　【行业领先】</p>
+                            <p>　　钻研高端消费十多年，独特的经营模式，现代化的科学管理，聚奢网在同行中一直处于领先地位。</p>
+                            <p>　　<strong>免费鉴定</strong></p>
+                            <p>　　对客户所售物品，提供专业的真假鉴定、估值估价服务。</p>
+                            <p>　　<strong>高端服务</strong></p>
+                            <p>　　高效、私密，一对一服务，并为贵宾客户定期各类资讯推送，随时把握行情。</p>
+                            <p>　　<strong>方便快捷</strong></p>
+                            <p>　　现金或转账交易，客户可自由选择。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--2-3-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">新手指南</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=2-3">购买指导</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">购买指导</h2>
+                        <div class="p20 pr pl">
+                            <p>　　<strong><font size=4>一、挑选商品</font></strong></p>
+                            <p>　　1.您可以通过搜索功能输入关键字的方法查找您想要购买的商品, 还可以通过分类导航查看商品分类并找到您想要购买的商品。</p>
+                            <p>
+
+                            </p>
+                            <p>　　<strong><font size=4>二、加入购物车</font></strong></p>
+                            <p>　　1.在您想要购买的详情页点击“加入购物车”，商品会添加到您的购物车中，您可以继续挑选商品。您也可以点击“立即购买”，马上结算商品。</p>
+                            <p>
+
+                            </p>
+                            <p>
+                                <font size=4><strong>三、确认购买</strong></font>
+                            </p>
+                            <p>　　当您挑选好需购买的商品后，点击购物车图标或者“结算”按钮跳转至订单信息页面。</p>
+                            <p>
+
+                            </p>
+                            <p>
+                                <font size=4><strong>四、填写订单信息</strong></font>
+                            </p>
+                            <p>　　1.填写收货人信息：收货人姓名，地址及电话等信息，并点击确认收货地址。</p>
+                            <p>　　请填写正确完整的收货人姓名、收货人联系方式、详细的收货地址和邮编，否则将会影响您订单的处理或配送。</p>
+                            <p>
+   
+                            </p>
+                            <p>　　<strong><font size=4>五、提交订单</font></strong></p>
+                            <p>　　1.以上信息核实无误后，请点击“提交订单”，系统生成一个订单号，提示您已经成功提交订单。</p>
+                            <p>　　2.订单提交成功后，您可以登陆“我的订单 ”管理订单信息。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--2-4-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">新手指南</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=2-4">预约指导</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">预约指导</h2>
+                        <div class="p20 pr pl">
+                            <p>　　目前聚奢网国内预约地点有南京、上海、杭州、北京、青岛、淮安、成都、武汉、西安、沈阳、天津、重庆、长沙、合肥、深圳、太原、石家庄、济南、榆林、乌鲁木齐、广州、金湖、贵阳、哈尔滨、南昌、珠海、厦门、郑州、宁波、马鞍山、苏州、温州、昆明、大连、常州、福州、无锡、长春、台州、信阳、南宁、扬州、上饶等。</p>
+                            <p>　　您在网站提交预约订单后，待订单状态显示“待看货”或者收到网站的短信或邮件通知后,可前往相应预约地点提货(其他订单状态请勿前来自提)。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--3-1-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">配送服务</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=3-1">收货指南</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">收货指南</h2>
+                        <div class="p20 pr pl">
+                            <p>
+                                <font size=4><strong>1.关于收货信息</strong></font>
+                            </p>
+                            <p>　　1)收件人请填写中文名字，如使用非中文名字，请务必与身份证或护照保持完全一致，以保证您的包裹可以准确送达。</p>
+                            <p>　　2)寄件地址请填写详细地址，以避免因地址不详造成您无法按时收到商品。</p>
+                            <p>　　3) 如因收件人信息有误，造成包裹无法送达或丢失，聚奢网不承担任何责任。</p>
+                            <p>　　<strong><font size=4>2.关于发货</font></strong></p>
+                            <p>　　1)聚奢网在核对您所订购的商品、邮寄地址、款项支付等信息无误后确认订单，订单确认后会尽快给您发货。</p>
+                            <p>　　2)发货时间：在您订购时，商品详情页面有预计发货时间，供您参考。</p>
+                            <p>　　3)当包裹发出时，我们会将订单号、配送的物流公司名称及包裹单号等内容以短信形式通知，请注意保存便于收货时进行相应的核对。</p>
+                            <p>　　4)包裹发出后，您可以在账户的订单信息中，通过“物流跟踪”功能查询包裹在途情况。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--3-2-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">配送服务</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=3-2">体验店服务</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">体验店服务</h2>
+                        <div class="p20 pr pl">
+                            <p>　　目前聚奢网国内预约地点有北京、上海、成都、合肥、马鞍山、温州、宁波、常州、大连、厦门、深圳、沈阳等。</p>
+                            <p>
+                                <font size=4><strong>一、提货流程</strong></font>
+                            </p>
+                            <p>　　1. 您在网站提交预约订单后，待订单状态显示“待看货”或者收到网站的短信或邮件通知后,可前往相应预约地点提货(其他订单状态请勿前来自提)。</p>
+                            <p>　　2. 客户到达自提点后,请将订单编号提供给工作人员。</p>
+                            <p>　　3. 提货时请出示收货人身份证，非本人提货时取货人请出示收货人与取货人身份证。</p>
+                            <p>　　4. 货物交接时请提供订单编号、收货人姓名并支付货款。</p>
+                            <p>　　5. 客户签收后取走货物，具体验货签收标准请查看商品验货与签收说明</p>
+                            <p>
+                                <font size=4><strong>二、注意事项</strong></font>
+                            </p>
+                            <p>　　1. 到店自提的订单需先支付10%的预订金。</p>
+                            <p>　　2. 商品到达自提点后，我们将为您保留3天，超过3天默认取消订单。</p>
+                            <p>　　3. 货款和商品请在自提点前台当面点清，离开提货前台后我司将不再对货款和商品数量负责。</p>
+                            <p>　　4. 自提点暂不接收任何形式的退换货，请勿将货品邮递或主动送回自提点。</p>
+                            <p>　　5.
+                                <font color=#ff0000>国内所有自提点的到店自提时间为早10：00-晚19：00</font>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--3-3-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">配送服务</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=3-3">配送物流</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">配送物流</h2>
+                        <div class="p20 pr pl">
+                            <p>　　<strong><font size=4>配送政策</font></strong></p>
+                            <p>　　1.“聚奢网”商品全场免运费。</p>
+                            <p>　　2.货到付款客户需加收2%的商品保险费用，详细请查阅配送范围及时间的相关说明。</p>
+                            <p>　　3.到店自提的客户，需支付10%预订金，到店后再付90%尾款，详细请查阅配送范围及时间的相关说明。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--3-4-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">配送服务</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=3-4">物流查询</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">物流查询</h2>
+                        <div class="p20 pr pl">
+                            <p>
+                                <font size=4><strong>1.关于收货信息</strong></font>
+                            </p>
+                            <p>　　1)收件人请填写中文名字，如使用非中文名字，请务必与身份证或护照保持完全一致，以保证您的包裹可以准确送达。</p>
+                            <p>　　2)寄件地址请填写详细地址，以避免因地址不详造成您无法按时收到商品。</p>
+                            <p>　　3) 如因收件人信息有误，造成包裹无法送达或丢失，聚奢网不承担任何责任。</p>
+                            <p>　　<strong><font size=4>2.关于发货</font></strong></p>
+                            <p>　　1)聚奢网在核对您所订购的商品、邮寄地址、款项支付等信息无误后确认订单，订单确认后会尽快给您发货。</p>
+                            <p>　　2)发货时间：在您订购时，商品详情页面有预计发货时间，供您参考。</p>
+                            <p>　　3)当包裹发出时，我们会将订单号、配送的物流公司名称及包裹单号等内容以短信形式通知，请注意保存便于收货时进行相应的核对。</p>
+                            <p>　　4)包裹发出后，您可以在账户的订单信息中，通过“物流跟踪”功能查询包裹在途情况。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--4-1-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">售后服务</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=4-2">退换货政策</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">退换货政策</h2>
+                        <div class="p20 pr pl">
+                            <p class="tac fs15">
+                                <font color="#c0c0c0">聚奢网退换货流程</font>
+                                <table width="943" border="0" align="center" cellpadding="0" cellspacing="5">
+                                    <tr>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">联系客服（在线客服、400电话）</td>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&rarr;</td>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">填写退换货申请单</td>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&rarr;</td>
+                                        <td colspan="2" align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">等待申请单审核</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&darr;</td>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&darr;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">物品到达对应公司</td>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&larr;</td>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">邮寄物品并填写物流单</td>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&larr;</td>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">审核通过</td>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">审核不通过</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&darr;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&darr;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&darr;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">物品审核</td>
+                                        <td style="color:#00CACA; padding:10px;" align="center">&rarr;</td>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">物品异常</td>
+                                        <td colspan="2" align="center" style="color:#00CACA; padding:10px;">&rarr;</td>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">退换货不成功</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="color:#00CACA; padding:10px;">&darr;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="background:#80FFFF;border:solid 1px #0FF;padding:10px;">退款成功</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                        <td align="center">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <p>聚奢网承诺</p>
+                                <p>　　对于聚奢网售出的商品，我们为您提供七天退换货保障(部分商品或在仓库或流动实体店，已经看过实物自取货品的情况除外，详情请见各品类细则)。 </p>
+                                <p>　　考虑到本站奢侈品的特性，大多数商品只有一件，因此这类商品暂不支持换同款。</p>
+                                <p>　　所有商品凭质量保证单均可以享受聚奢网提供的全国联保服务或指定服务商联保服务，商家将严格按照国家三包政策、新消法以及本《退换货政策》，对 所售商品履行换货和退货的义务。本退换货政策分为总则和细则两部分，总则为聚奢网退换货的通用规则，适用于聚奢网销售的所有品类商品。由于各品类商品 的特性不同，退换货政策的实施存在差异，另请参照具体品类的退换货细则。
+                                </p>
+                                <p>
+                                    <font color="#ff0000">关于无理由退换货：</font>
+                                </p>
+                                <p>　　“无理由退换货”是指您在购买支持无理由退换货的商品后，自实际收货日期的次日起七天内，在保证商品完好的情况下，可无理由退换货（部分商品及 类目除外，详见各品类细则），需由您承担商品发出与返回的运费，销售方和您另有约定的，按照约定执行。
+                                </p>
+                            </p>
+                            <p>聚奢网各场景下退换货规则：</p>
+                            <table width="943" border="1" cellpadding="0" align="center" cellspacing="0" class="tac">
+                                <tr>
+                                    <th>退换类别</th>
+                                    <th>货物状态</th>
+                                    <th>支持退换货</th>
+                                    <th>退换货时间</th>
+                                    <th>是否收取运费</th>
+                                    <th colspan="3">备注</th>
+                                </tr>
+                                <tr>
+                                    <td>未收货或收货前想退货</td>
+                                    <td>商品完好</td>
+                                    <td>√</td>
+                                    <td>√</td>
+                                    <td>×</td>
+                                    <td colspan="3">聚奢网商品非商品本身或商家问题的退货，您需要承担已产生的运费。</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">收货验货时对商品不满意</td>
+                                    <td>开箱验机外观完好</td>
+                                    <td>√</td>
+                                    <td>√</td>
+                                    <td>×</td>
+                                    <td rowspan="2" colspan="3">
+                                        <p>1.请注意签收前验货；</p>
+                                        <p>2.商品验货时的外观有损、缺少附件类问题，您可指出并选择退换货。</p>
+                                        <p>3.聚奢网商品非商品本身问题的拒收退货，您需要承担已产生的运费。（商品自身或运输原因造成退货除外）</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>开箱验机外观破损瑕疵、缺漏附件等</td>
+                                    <td>√</td>
+                                    <td>√</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">签收后对商品不满意</td>
+                                    <td>未拆包装</td>
+                                    <td>√</td>
+                                    <td>自收货次日起七天（不支持无理由换同型）</td>
+                                    <td>√</td>
+                                    <td rowspan="2" colspan="3">
+                                        <p>1.不支持收货后办理退换货的品类除外；</p>
+                                        <p>2.无质量问题或因您自身原因造成的退货，由您承担退货产生的运费；</p>
+                                        <p>3.已安装的商品，出现性能故障，在故障经过确认后即可免费办理退换货；</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>已拆包装未使用或仅试用（无人为损坏）</td>
+                                    <td>√</td>
+                                    <td>自收货次日起七天（不支持无理由换同型）</td>
+                                    <td>√</td>
+                                </tr>
+                                <tr>
+                                    <td>已拆包装商品有人为损坏</td>
+                                    <td>×</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td colspan="3">因商品使用后的污损、磕碰、划伤等影响商品二次销售的情形，则不支持无理由退换货；</td>
+                                </tr>
+                                <tr>
+                                    <td>无需安装产品性能或质量问题退换货</td>
+                                    <td>√</td>
+                                    <td>自收货次日起确认故障存在，七天退15天换</td>
+                                    <td>×</td>
+                                    <td colspan="3">您可在订单中心自助申请退/换货，或者咨询在线客服，根据提示由指定的服务商或授权网点核实，确认故障现象后即可免费办理退换货；</td>
+                                </tr>
+                            </table>
+                            <p>1、送达时间判定标准：</p>
+                            <p>　　（1)&nbsp;顺丰配送或者您自提的订单：以您实际签收日期为准；</p>
+                            <p>　　（2）退换货定义：交易平台买家购买支持 “七天无理由退换货”的商品，在签收货物(以物流签收单时间为准)后七天内(如有准确签收时间的，以该签收时间后的168小时为七天;如签收时间仅有日期的，以 该日后的第二天零时起计算时间，满168小时为七天)，若因买家主观原因不愿完成本次交易，卖家有义务向买家提供退换货服务。
+                            </p>
+                            <p>2、配送与签收： </p>
+                            <p>　　(1)在您收到商品时，请务必检查是否存在因运输过程造成的损坏、漏液、破碎等外观损坏，或原装配件缺失、缺少发票等缺少附件问题，如您发现 以上情况，请选择拒收，并可第一时间与聚奢网客服联系。部分城市会有所差异，请按照物流工人指导进行验货、收货。
+                            </p>
+                            <p>　　(2)如因您个人或您授权的 其他个人代签收的商品，视同您已在收货时确认商品完好。
+                            </p>
+                            <p>3、退换货商品附件要求：</p>
+                            <p>　　退换货(包含有质量问题的商品）时，请务必将商品的 内带附件、赠品（如有）、保修卡、说明书、发票、检测报告（针对需凭检测报告办理退换货的商品）等随同商品一起退回。
+                            </p>
+                            <p>　　友情提示：建议产品外 包装自收货之日起保留15日，退换货时附商品的原外包装。且退换货过程中产生的任何损失由顾客自行承担。
+                            </p>
+                            <p>4、办理申请方式：</p>
+                            <p>　　如果您需要 办理退换货，请优先选择您原购物渠道进行反馈，目前支持的申请方式：（1）自助页面申请“我的订单—退/换货”（2）登录聚奢网点击在线客服；（3）贵宾 热线：400-880-9930；退换货流程请见附录。
+                            </p>
+                            <p>5、退换货说明：</p>
+                            <p>　　1) 自商品售出之日（以商品实际签收日期为准）起7日内提出退货请求。 </p>
+                            <p>　　2) 商品未经使用，原质原貌。</p>
+                            <p>　　3) 商品所有附属配件资料（如产品标识、包装、吊牌、三包卡、说明书、发票、赠品、配件、鉴定证书 等）齐全。
+                            </p>
+                            <p>　　4) 腕表、黄金、珠宝、一口价、及标有“本商品无质量问题不支持退换货”的商品，如无质量问题，不支持退换货。</p>
+                            <p>　　5) 对 于套装商品或者组合销售商品，无法为您办理部分商品退换货。
+                            </p>
+                            <p>6、以下情况，不予办理退换货：</p>
+                            <p>　　(1)任何非聚奢网出售的商品（序列号不符 ）；
+                            </p>
+                            <p>　　(2)过保商品（超过退换货期限的商品）；</p>
+                            <p>　　(3)未经授权的维修、误用、碰撞、疏忽、滥用、进液、事故、改动、不正确的安装所造 成的商品质量问题，或撕毁、涂改标贴、机器序号、防伪标记；
+                            </p>
+                            <p>　　(4)商品的附件、赠品（需要和主商品一起退换）、发票缺失或涂改等影响商品完好 的情形；
+                            </p>
+                            <p>　　(5)购买时明确说明不支持退换货的商品；</p>
+                            <p>　　（6）因使用造成磨损的；</p>
+                            <p>　　(7)其他不应办理退换货的情况。</p>
+                            <p>7、 以下商品因特殊性，不参加无理由退换货：
+                            </p>
+                            <p>　　(1)个人定制类商品或服务；</p>
+                            <p>　　(2)服装鞋帽类商品已洗涤的；</p>
+                            <p>　　(3)代金券、团购本 地生活类商品(备注不参加未消费退款的本地化生活服务类商品)、实体服务等服务类商品；
+                            </p>
+                            <p>　　(4)无法保证退回商品完好的；</p>
+                            <p>　　(5)其他根据 商品性质不宜适用无理由退换货的商品；
+                            </p>
+                            <p>8、温馨提示：</p>
+                            <p>　　1) 订单状态显示为“已发货”或“已签收”可自助办理退换货申请。</p>
+                            <p>　　2) 七天内未做售后申请，订单将自动变为已完成状态，此时我们将不再接受您的无理由退换货申请。
+                            </p>
+                            <p>　　3) 退换货申请受理之日起两周内，聚奢网如未收到 退货包裹，将自动取消售后申请，订单状态自动改为已完成状态。
+                            </p>
+                            <p>　　4) 如未经客服同意办理退货申请，直接将商品寄回网站，网站不承担保管、重新 发货、退款责任，必要时网站有权处置滞留商品。
+                            </p>
+                            <p>　　5) 图片及信息仅供参考，不属质量问题。因拍摄灯光及不同显示器色差等问题可能造成商品图片 与实物有色差，一切以实物为准。
+                            </p>
+                            <p>　　6) 退换货产生的运费如是客户原因将由客户承担，如因商品本身质量工艺问题，经质检合格后您可以致电客服申 请报销运费。
+                            </p>
+                            <p>　　8) 不属于特殊商品。特殊商品：如化妆品、贴身衣物、珠宝、腕表、黄金饰品、赠品等，如非质量问题，不予退换货；</p>
+                            <p>　　9) 赠品不能单独退；
+                            </p>
+                            <p>　　10）建议妥善保管商品的外包装、附件、赠品至少15天</p>
+                            <p>　　 11）在商品退货时（包含已付款已发货和已付款未发货的情况），需扣除相应的手续费（手续费=实际成交金额*0.006）和获赠的积分及优惠券，如账户积分及优惠券已使用，则会从商品退款中扣除。退货成功后，您在购物时使用的优惠券将退至原账户且有效期限不变，请注意查收。 </p>
+                            <p>
+                                <font color="#ff0000">退换货细则：</font>
+                            </p>
+                            <p>腕表</p>
+                            <p>　　1. 退换货说明：</p>
+                            <p>　　1) 腕表类商品自签收日期7日内，商品本身出现质 量问题，如机芯故障影响使用，经鉴定属实，我们可以为您提供退换货或维修服务。
+                            </p>
+                            <p>　　2) 腕表类商品均属于高档特殊商品， 购买成功后，非质量问题 ，不予退换货。
+                            </p>
+                            <p>　　3) 凡保修卡都无法进行涂改，一经涂改便影响该商品的正常保修及鉴定，如您在未经授权的情况下涂写、更改，商品不予退换货。 </p>
+                            <p>　　4) 在您签收24小时之内，腕表类商品出现外观问题（不属于国家三包政策规定的质量问题），如：表壳、盘面、表针、表冠、表镜等外观固定件及 表带磨损、污渍等，我方可提供退换货服务。如超出签收24小时出现上述情况，我们可提供对应的售后流程。
+                            </p>
+                            <p>　　2. 不可办理退货条件：</p>
+                            <p>　　1) 非商品本身质量问题的。
+                            </p>
+                            <p>　　2) 商品任何因不当使用及未妥善保管而导致的质量问题的。</p>
+                            <p>　　3) 因非正常使用/滥用、粗心大意、过失、意外（ 撞击、敲击、挤压、表面破损及其他)、 不正确使用、不遵守品牌提供的使用说明而造成的手表任何部件的任何破损。</p>
+                            <p>　　4) 商品防损吊牌出现变形、 破损、断裂等与出库原貌不同的。
+                            </p>
+                            <p>　　5) 商品产品标识、包装、吊牌、三包卡、说明书、发票、赠品、配件等缺失的。</p>
+                            <p>　　6) 商品经使用、佩 戴、遭污损、损坏、磨损等情形的。
+                            </p>
+                            <p>　　7) 腕表类商品出现外观问题（不属于国家三包政策规定的质量问题），如：如壳、面、针、柄头、玻璃，外观 固定件及表带等。
+                            </p>
+                            <p>　　8) 电池的使用寿命，非腕表本身质量问题。</p>
+                            <p>　　9) 手表表带经过调整，不予退换货。</p>
+                            <p>　　10）其他聚奢网认定不 可办理退货的情况。
+                            </p>
+                            <p>包袋</p>
+                            <p>　　1. 包袋类商品退货说明，请您参阅退换货总则。</p>
+                            <p>　　2. 温馨提示</p>
+                            <p>　　因拍摄灯光及不同显示器色 差等问题可能造成商品图片与实物有色差，一切以实物为准。
+                            </p>
+                            <p>首饰、黄金珠宝</p>
+                            <p>　　1. 退换货说明：</p>
+                            <p>　　1) 黄金珠宝类商品，属于特殊商 品，一经售出不予退换货，但有下列情况的除外：
+                            </p>
+                            <p>　　贵金属、珠宝及其镶嵌制品与发票或饰品签标注等级不符的。</p>
+                            <p>　　贵金属、珠宝及其镶嵌 制品不合格或经市黄金协会的授权检测部门检测为不合格产品的。
+                            </p>
+                            <p>　　2) 部分高档首饰附带国家级宝玉石鉴定中心出具的鉴定证书，如果您对此有任何 质疑，请到出具该证书的鉴定机构进行复检，经检测证明商品存在不符问题的。
+                            </p>
+                            <p>　　3) 限量版或其他稀缺商品，可能无法更换，但可以为您退货。 </p>
+                            <p>　　4) 网站上商品的图片因拍摄灯光及不同显示器色差等问题可能造成商品图片与实物有一定色差，不属质量问题，请您予以理解。</p>
+                            <p>　　5) 商 品退回时请您使用塑料袋将品牌原包装包好，切勿将快递单或粘胶直接粘在商品的品牌原包装上（特别是商品品牌原包装盒表面），如因此造成污损的，将会影 响商品的二次销售，不予退换，请您理解。
+                            </p>
+                            <p>　　2. 注意事项：</p>
+                            <p>　　1) 佩戴饰品时不慎造成变色、斑点、污染、折断、变形、开裂、松动、掉石 、出现擦痕等不予退换货；
+                            </p>
+                            <p>　　2) 黄金、钻石、18K金、铂金、玫瑰金等贵金属类商品，非质量问题一经售出不予退换货；</p>
+                            <p>　　3) 在退换货过程 中，如您未经聚奢网平台审核通过即将商品退回的，与商品有关的毁损、灭失、被盗等一切风险由您自行承担，聚奢网不提供商品保管、重发、退款等服务，聚 奢网对于邮件或包裹等物品的签收不视为聚奢网对您退回商品负有任何义务，必要时聚奢网有权处置您擅自退回的商品。
+                            </p>
+                            <p>服饰</p>
+                            <p>　　1. 退换货说明 ：
+                            </p>
+                            <p>　　1) 出于安全和卫生考虑，贴身用品如内衣裤，袜子，泳衣类商品，一经售出不予退换货，经权威部门检测商品存在质量问题者除外。</p>
+                            <p>　　 2) 因个人原因造成的商品损坏（如自行修改尺寸，洗涤，皮具打油，刺绣，长时间穿着等），不予退换货。</p>
+                            <p>　　3) 如商品吊牌、包装及商品附件（如纽 扣等）标签破损或丢失，不予办理退换货。
+                            </p>
+                            <p>　　4) 因使用或保管不当，造成磨损、破损或有明显穿着痕迹的（如鞋面褶皱、鞋底磨痕、商品上的金属制 品使用后出现氧化、褪色、商品装饰掉落），均不予退换货。
+                            </p>
+                            <p>　　2. 注意事项：</p>
+                            <p>　　1) 因拍摄灯光及不同显示器色差等问题可能造成商品图片 与实物存在色差，此类情况不属质量问题；
+                            </p>
+                            <p>　　2) 遇过敏问题产生退换货需要提供医院的相关证明；</p>
+                            <p>　　3) 请您务必保证商品所有附属配件资 料完好齐全（如产品标识、包装、吊牌、三包卡、说明书、发票、赠品、配件、鉴定证书等）。如果寄回商品出现缺少附件或包装破损/丢失等情况，即便在退换 货期内，也无法为您办理。
+                            </p>
+                            <p>数码产品</p>
+                            <p>　　数码类商品包含聚奢网站销售的3C数码类，高档手机等电子产品</p>
+                            <p>　　1. 退换货说明：</p>
+                            <p>　 1) 商品包装拆封，影响二次销售的情况下，不支持无理由退换货。</p>
+                            <p>　　2) 擅自撕毁或涂改商品标贴、序列号、防伪标记、发票、保修凭证以及保修凭 证上的商品型号或序列号与商品实物不符等不支持退换货
+                            </p>
+                            <p>　　3) 未经授权的疏忽、误用、滥用、拆装、碰撞、进液、事故、改动、不正确的安装或保管 而导致的商品质量问题，不予退换货。
+                            </p>
+                            <p>　　4) 由非生产厂商指定或授权维修点进行拆装或维修而导致的商品质量问题，不予退换货。</p>
+                            <p>　　5) 手 机，数码含授权或激活信息的，包括但不限于于序列号SN、激活码、CDKEY等，一旦产生授权或激活程序，将不支持七天无理由退换货。
+                            </p>
+                            <p>　　6) 包装含防 伪码的商品防伪码一经刮开不予退换货。
+                            </p>
+                            <p>　　2. 注意事项：</p>
+                            <p>　　1) 建议外包装在收货之日起保留七天，以免影响您的退换货。</p>
+                            <p>　　2) 手 机、数码类商品通过软件升级可以排除的故障，只要送至当地生产厂家指定或特约售后服务中心升级即可，无需退换货。
+                            </p>
+                            <p>　　3) 对于存储类商品，我们 不提供数据导出服务，请务必在返修前将里面的数据自行导出，否则若有数据遗失、损坏等我们概不承担相应的责任。
+                            </p>
+                            <p>　　4) 商品出现质量问题，请先 行联系生产厂家服务服务中心检测并开具检测报告（维修检验单据），同时将其与商品、附件、说明书、发票、保卡、购物凭证、包装一并保留好，等待我司安 排办理退换货。
+                            </p>
+                            <p>　　5) 因拍摄灯光及不同显示器色差等问题可能造成商品图片与实物存在色差，此类情况不属质量问题。</p>
+                            <p>　　6) 商品寄出前， 请您务必妥善包装，以免运输过程发生损毁影响您的退换货办理。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--4-2-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">售后服务</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=4-2">如何申请退款</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">如何申请退款</h2>
+                        <div class="p20 pr pl">
+                            <p>　　<strong><font size=4>退款方式及时间</font></strong></p>
+                            <p>　　<strong>一、 退款说明</strong></p>
+                            <p>　　为保证退款的及时性,我们只采取在线原路返回退款方式。</p>
+                            <p>
+                                <font color=#ff0000>*温馨提示：</font>
+                            </p>
+                            <p>　　1.如订单使用优惠券支付，订单取消或发生退货，优惠券不予返还。</p>
+                            <p>　　2.若商家订单使用礼券支付，订单取消/未送达、未签收/发生退货/部分商品缺货，礼券不予返还。</p>
+                            <p>　　3.若您想了解您订单的退款情况，您可通过“我的订单”进行查看。</p>
+                            <p>　　4.如您所购买的商品不是聚奢网导致所造成的，有关退款手续费0.6%以及退货运费由买家承担。</p>
+                            <p>　　<strong>二、 退款成功提醒</strong></p>
+                            <p>　　聚奢网将退款申请提交成功后，以短信的方式告知您，请您根据以上到账时间进行查询。</p>
+                            <p>
+                                <font color=#ff0000>*特别提示：</font>
+                            </p>
+                            <p>　　1.中国银行的卡的退款时间较长。</p>
+                            <p>　　2.信用卡无卡支付退款到账时间7-15天。</p>
+                            <p>　　3.为了确保用户资金安全，当您需要把退款转账到指定帐号时，需提前联系客服登记信息，且退款的接受帐号户名必须与订单接收人姓名一致。</p>
+                            <p>　　4.货到付款的订单，订单发货后，如商品拒签或退货，2%商品保险费不予退款。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--4-3-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">售后服务</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=4-2">维修补件说明</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">维修补件说明</h2>
+                        <div class="p20 pr pl">
+                            <p>　　<strong><font size=4>维修补件说明</font></strong></p>
+                            <p>　　<strong><font size=3>如果货物在送到您家时(或您在物流公司领取货时)，请务必检查产品的包装：</font></strong></p>
+                            <p>　　(1)包装破损，请先不要在货运单上签字，请您立即与聚奢网客服联系，经客服确认后，请在货运单上注明：“异常签收”。</p>
+                            <p>　　(2)打开包装后检查，请拍摄以下照片做证据：产品破损地方、产品包装上的产品型号、产品批次号、包装等。第一时间上传给聚奢网客服，聚奢网的售后人员会在两个工作日内给您回复，协商处理方案。</p>
+                            <p>　　如果您的家具出现了货损的情况，请提供损坏部位清晰的图片、生产批号和外包装给我们的客服人员，联系售后部门进行鉴定。如果符合维修条件的，我们将联系当地售后服务点为您维修。如果不符合维修条件的，我们可以通过补件等方式为您处理。补件条件详见补件说明。</p>
+                            <p>　　<strong><font size=3>奢侈品属于贵重物品，运输途中有可能会有一些小损伤，请您配合以下工作，方便聚奢网为您提供免费补件服务：</font></strong></p>
+                            <p>
+                                <font color=#ff0000><strong>收到商品后请妥善保管产品的外包装，直至您确认没有任何问题需要解决。</strong></font>（因为在补件时，需要提供损坏部位的清晰图片，如在问题没解决前扔掉外包装可能会导致不能补件)</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--4-4-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">售后服务</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=4-4">一年免费养护</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">一年免费养护</h2>
+                        <div class="p20 pr pl">
+                            <p>　　<span class="fwb">聚奢网承诺：</span>
+                            </p>
+                            <p>　　凡聚奢网出售的表、包、钻、戒指，自下单起非人为原因均可享受一年内免费养护服务。
+                            </p>
+                            <p>　　<span class="fwb">关于一年免费养护：</span>
+                            </p>
+                            <p>　　一年免费养护是佛阳子聚奢网推出的一站式服务，彻底解决消费者的售后服务问题，本着让消费者享受无忧售后为宗旨，致力于高档箱包、高端腕表、钻石首饰、高档配饰等奢侈品的修复养护工作。
+                            </p>
+                            <p>　　2015年，集团斥巨资在南京市白下区高新科技园，筹备建成高规格、多元化、专业化服务于一体的奢侈品养护中心，专业的奢侈品养护团队可为国内外上百个奢侈品品牌做全套基础及深度养护服务。集团以专业真挚的态度为每一位高端消费者提供服务。
+                            </p>
+                            <p>　　<span class="fwb">服务范围：</span>
+                            </p>
+                            <p>　　1、名表养护
+                            </p>
+                            <p>　　测试走时精度
+                            </p>
+                            <p>　　调节表带、更换电池
+                            </p>
+                            <p>　　外观清洗、打磨修复
+                            </p>
+                            <p>　　2、皮具养护
+                            </p>
+                            <p>　　真皮箱包修复及保养
+                            </p>
+                            <p>　　皮革服装洗护及保养
+                            </p>
+                            <p>　　名贵鞋履的维护及保养
+                            </p>
+                            <p>　　3、钻石首饰养护
+                            </p>
+                            <p>　　专业钻石首饰清洗
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--5-1-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">购物保障</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=5-1">正品保障</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">正品保障</h2>
+                        <div class="p20 pr pl">
+                            <p>　　<strong>如假包退：</strong></p>
+                            <p>　　聚奢网销售的商品均为正品，有正规的物品来源，从不销售假货、仿制品，欢迎您到任何鉴定机构检测，如假包退。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--5-2-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">购物保障</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=5-2">注册协议</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">注册协议</h2>
+                        <div class="p20 pr pl">
+                            <p>　　本协议是您与jushewang.com(简称"本站"，网址：www.jushewang.com)所有者(以下简称为"聚奢网")之间就聚奢网网站的商品、服务销售等相关事宜所订立的契约，请您仔细阅读本注册协议，您选择注册成为聚奢网会员时，或者选择从本站购买任何商品或服务，或使用本站的任何服务本协议，即构成对双方有约束力的法律文件。</p>
+                            <p>　　<strong>第1条 本站服务条款的确认和接纳</strong></p>
+                            <p>　　1.1如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。</p>
+                            <p>　　1.2用户点击同意本协议的，即视为用户确认自己具有享受本站服务、下单购物等相应的权利能力和行为能力，能够独立承担法律责任。</p>
+                            <p>　　1.3本站的各项电子服务的所有权和运作权归聚奢网所有。用户同意所有注册协议条款并完成注册程序，才能成为本站的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。</p>
+                            <p>　　1.4聚奢网保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。</p>
+                            <p>　　<strong>第2条 本站服务</strong></p>
+                            <p>　　2.1聚奢网通过互联网依法为用户提供各类商品及各项服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。</p>
+                            <p>　　2.2用户必须自行准备如下设备和承担如下开支：(1)上网设备，包括并不限于电脑或者其他上网终端、调制解调器及其他必备的上网装置;(2)上网开支，包括并不限于网络接入费、上网设备租用费、手机流量费等。</p>
+                            <p>　　<strong>第3条 用户信息</strong></p>
+                            <p>　　3.1用户应自行诚信向本站提供注册资料，用户同意其提供的注册资料真实、准确、完整、合法有效，用户注册资料如有变动的，应及时更新其注册资料。如果用户提供的注册资料不合法、不真实、不准确、不详尽的，用户需承担因此引起的相应责任及后果，并且聚奢网保留终止用户使用聚奢网各项服务的权利。</p>
+                            <p>　　3.2用户在本站进行浏览、下单购物等活动时，涉及用户真实姓名/名称、通信地址、联系电话、电子邮箱等隐私信息的，本站将予以严格保密，除非得到用户的授权或法律另有规定，本站不会向外界披露用户隐私信息。</p>
+                            <p>　　3.3用户注册成功后，将产生用户名和密码等账户信息，您可以根据本站规定改变您的密码。用户应谨慎合理的保存、使用其用户名和密码。用户若发现任何非法使用用户账号或存在安全漏洞的情况，请立即通知本站并向公安机关报案。</p>
+                            <p>　　3.4用户同意，聚奢网拥有通过邮件、短信电话等形式，向在本站注册、购物用户、收货人发送订单信息、促销活动等告知信息的权利。</p>
+                            <p>　　3.5用户不得将在本站注册获得的账户借给他人使用，否则用户应承担由此产生的全部责任，并与实际使用人承担连带责任。</p>
+                            <p>　　3.6用户同意，聚奢网有权使用用户的注册信息、用户名、密码等信息，登录进入用户的注册账户，进行证据保全，包括但不限于公证、见证等。</p>
+                            <p>　　<strong>第4条 用户依法言行义务</strong></p>
+                            <p>　　本协议依据国家相关法律法规规章制定，用户同意严格遵守以下义务：</p>
+                            <p>　　(1)不得传输或发表：煽动抗拒、破坏宪法和法律、行政法规实施的言论，煽动颠覆国家政权，推翻社会主义制度的言论，煽动分裂国家、破坏国家统一的的言论，煽动民族仇恨、民族歧视、破坏民族团结的言论;</p>
+                            <p>　　(2)从中国大陆向境外传输资料信息时必须符合中国有关法规;</p>
+                            <p>　　(3)不得利用本站从事洗钱、窃取商业秘密、窃取个人信息等违法犯罪活动;</p>
+                            <p>　　(4)不得干扰本站的正常运转，不得侵入本站及国家计算机信息系统;</p>
+                            <p>　　(5)不得传输或发表任何违法犯罪的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、伤害性的、庸俗的，淫秽的、不文明的等信息资料;</p>
+                            <p>　　(6)不得传输或发表损害国家社会公共利益和涉及国家安全的信息资料或言论;</p>
+                            <p>　　(7)不得教唆他人从事本条所禁止的行为;</p>
+                            <p>　　(8)除作为相关商品的供应商从而向聚奢网供应商品和登陆后台查询商品销售情况外，不得利用在本站注册的账户进行牟利性经营活动;</p>
+                            <p>　　(9)不得发布任何侵犯他人著作权、商标权等知识产权或合法权利的内容;</p>
+                            <p>　　用户应不时关注并遵守本站不时公布或修改的各类合法规则规定。</p>
+                            <p>　　本站保有删除站内各类不符合法律政策或不真实的信息内容而无须通知用户的权利。</p>
+                            <p>　　若用户未遵守以上规定的，本站有权作出独立判断并采取暂停或关闭用户帐号等措施。用户须对自己在网上的言论和行为承担法律责任。</p>
+                            <p>　　<strong>第5条 商品信息</strong></p>
+                            <p>　　本站上的实物及服务类商品的价格、数量、是否有货等各项商品信息随时都有可能发生变动，本站不作特别通知。为表述便利，商品和服务于本站中均简称为"商品"</p>
+                            <p>　　由于网站上商品信息的数量极其庞大，虽然本站会尽最大努力保证您所浏览商品信息的准确性，但由于众所周知的互联网技术因素等客观原因存在，本站网页显示的信息可能会有一定的滞后性或差错，对此情形您知悉并理解;聚奢网欢迎纠错，并会视情况给予纠错者一定的奖励。</p>
+                            <p>　　<strong>第6条 订单</strong></p>
+                            <p>　　6.1在您下订单时，请您仔细确认所购商品的名称、价格、数量、型号、规格、尺寸、联系地址、电话、收货人等信息。收货人与用户本人不一致的，收货人的行为和意思表示视为用户的行为和意思表示，用户应对收货人的行为及意思表示的法律后果承担连带责任。</p>
+                            <p>　　6.2聚奢网及用户等各方均确认如下：本站上销售方展示的商品和价格等信息仅仅是要约邀请，您下单时须填写您希望购买的商品数量、价款及支付方式、收货人、联系方式、收货地址(合同履行地点)、合同履行方式等内容;系统生成的订单信息是计算机信息系统根据您填写的内容自动生成的数据，仅是您向聚奢网发出的合同要约;聚奢网收到您的订单信息后，只有在聚奢网将您在订单中订购的商品从仓库实际直接向您发出时( 以商品出库为标志)，或者聚奢网就您所购买的服务向您进行最终确认时，方视为您与聚奢网之间就实际直接向您发出的商品建立了合同关系;如果您在一份订单里订购了多种商品并且聚奢网只给您发出了部分商品时，您与聚奢网之间仅就实际直接向您发出的商品建立了合同关系;只有在聚奢网实际直接向您发出了订单中订购的其他商品时，您和聚奢网之间就订单中该其他已实际直接向您发出的商品才成立合同关系。您可以随时登录您在本站注册的账户，查询您的订单状态。</p>
+                            <p>　　6.3由于市场变化及各种以合理商业努力难以控制的因素的影响，本站无法保证您提交的订单信息中希望购买的商品都会有货;如您拟购买的商品，发生缺货，您有权取消订单。</p>
+                            <p>　　<strong>第7条 支付及配送</strong></p>
+                            <p>　　7.1聚奢网或聚奢网认可的供应商会负责将商品送到您所指定的收货地址，或将服务按照承诺的方式向您送达，所有在本站上列出的送货时间为参考时间，参考时间的计算是根据库存状况、正常的处理流程及手续、送货地点的基础上估计得出的。</p>
+                            <p>　　7.2因如下情况造成订单延迟或无法配送等，聚奢网不承担延迟配送的责任：</p>
+                            <p>　　(1)用户提供的信息错误、地址不详细等原因导致的;</p>
+                            <p>　　(2)商品送达后无人签收，导致无法配送或延迟配送的;</p>
+                            <p>　　(3)情势变更因素导致的;</p>
+                            <p>　　(4)不可抗力因素导致的，例如：自然灾害、交通戒严、突发战争等。</p>
+                            <p>　　7.3本网站部分商品因所在地不在中国大陆地区，物流配送时间会比国内商品稍长。如用户确认下单则视为接受配送方式及时间安排。如有疑问，用户可随时咨询本站客服人员。</p>
+                            <p>　　7.4 收货人可以为用户本人也可以为本人以外的其他人。聚奢网将按照通过审核后的订单上所述的配送地址、收货人姓名和电话进行配送。如果收货人在配送过程中要求变更接收地址的，聚奢网视同已经过用户本人的同意。原则上收货人应当亲自接收，如遇特殊情况收货人可以与聚奢网客服中心联系申请由他人代为签收。如果配送地点属于办公区域，则前台人员代为签收视为已经经过用户的同意。如果配送地点属于设有物业管理公司或机构的住宅区域，则物业工作人员(包括小区保安等)代为签收视为已经经过用户的同意。大额订单进行配送签收时，聚奢网有权要求收货人出示有效身份证明。若用户无正当理由多次拒收商品，则聚奢网有权取消该用户以后的订单。情形恶劣的，聚奢网有权采取冻结、关闭账户，永久禁止注册等措施，并保留追究赔偿责任的权利。</p>
+                            <p>　　7.5 付款与退款。付款方式将在聚奢网网站予以公示。用户应在确认订单时，选择付款方式，并严格按照已选择的方式付款。用户未能按照所选择的方式或所要求的时间完成付款的，聚奢网有权单方取消订单。退货或换货商品缺货时产生的现金款项，退回方式视支付方式的不同而不同，以聚奢网公示为准。</p>
+                            <p>　　<strong>第8条 有关平台服务</strong></p>
+                            <p>　　8.1 平台服务。聚奢网网站销售的商品主要系由聚奢网以其自身名义直接向您进行销售并由聚奢网承担物流及售后等相关责任;但部分商品、服务由于其本身的特殊性或给予聚奢网与供应商之间的约定，系由第三方直接提供，聚奢网仅作为平台方提供中介服务。</p>
+                            <p>　　8.2 对于平台服务下产生的订单，将由商户直接将相关商品发送给您，或在特定地点为您提供相关服务，并将由商户直接对详情页中的商品描述及其他相关产品质量承担责任。聚奢网将严格要求供应商按照最快的速度，或根据订单提报时所允许的指定时间向您提供商品或者服务，同时聚奢网将为您尽可能的提供协助以确保您的权益得到实现。</p>
+                            <p>　　<strong>第9条 所有权及知识产权条款</strong></p>
+                            <p>　　9.1用户一旦接受本协议，即表明该用户主动将其在任何时间段在本站发表的任何形式的信息内容(包括但不限于客户评价、客户咨询、各类话题文章等信息内容)的财产性权利等任何可转让的权利，如著作权财产权(包括并不限于：复制权、发行权、出租权、展览权、表演权、放映权、广播权、信息网络传播权、摄制权、改编权、翻译权、汇编权以及应当由著作权人享有的其他可转让权利)，全部独家且不可撤销地转让给聚奢网所有，用户同意聚奢网有权就任何主体侵权而单独提起诉讼。</p>
+                            <p>　　9.2本协议已经构成《中华人民共和国著作权法》第二十五条(条文序号依照2011年版著作权法确定)及相关法律规定的著作财产权等权利转让书面协议，其效力及于用户在聚奢网网站上发布的任何受著作权法保护的作品内容，无论该等内容形成于本协议订立前还是本协议订立后。</p>
+                            <p>　　9.3用户同意并已充分了解本协议的条款，承诺不将已发表于本站的信息，以任何形式发布或授权其它主体以任何方式使用(包括但限于在各类网站、媒体上使用)。</p>
+                            <p>　　9.4聚奢网是本站的制作者,拥有此网站内容及资源的著作权等合法权利,受国家法律保护,有权不时地对本协议及本站的内容进行修改，并在本站张贴，无须另行通知用户。在法律允许的最大限度范围内，聚奢网对本协议及本站内容拥有解释权。</p>
+                            <p>　　9.5除法律另有强制性规定外，未经聚奢网明确的特别书面许可,任何单位或个人不得以任何方式非法地全部或部分复制、转载、引用、链接、抓取或以其他方式使用本站的信息内容，否则，聚奢网有权追究其法律责任。</p>
+                            <p>　　9.6本站所刊登的资料信息(诸如文字、图表、标识、按钮图标、图像、声音文件片段、数字下载、数据编辑和软件)，均是聚奢网或其内容提供者的财产，受中国和国际版权法的保护。本站上所有内容的汇编是聚奢网的排他财产，受中国和国际版权法的保护。本站上所有软件都是聚奢网或其关联公司或其软件供应商的财产，受中国和国际版权法的保护。</p>
+                            <p>　　<strong>第10条 责任限制及不承诺担保</strong></p>
+                            <p>　　除非另有明确的书面说明,本站及其所包含的或以其它方式通过本站提供给您的全部信息、内容、材料、产品(包括软件)和服务，均是在"按现状"和"按现有"的基础上提供的。</p>
+                            <p>　　如因不可抗力或其它本站无法控制的原因使本站销售系统崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等，聚奢网会合理地尽力协助处理善后事宜。</p>
+                            <p>　　<strong>第11条 协议更新及用户关注义务</strong></p>
+                            <p>　　根据国家法律法规变化及网站运营需要，聚奢网有权对本协议条款不时地进行修改，修改后的协议一旦被张贴在本站上即生效，并代替原来的协议。<strong>用户可随时登录查阅最新协议;用户有义务不时关注并阅读最新版的协议及网站公告。如用户不同意更新后的协议，可以且应立即停止接受聚奢网网站依据本协议提供的服务;如用户继续使用本网站提供的服务的，即视为同意更新后的协议。聚奢网建议您在使用本站之前阅读本协议及本站的公告。</strong> 如果本协议中任何一条被视为废止、无效或因任何理由不可执行，该条应视为可分的且并不影响任何其余条款的有效性和可执行性。</p>
+                            <p>　　<strong>第12条 法律管辖和适用</strong></p>
+                            <p>　　本协议的订立、执行和解释及争议的解决均应适用在中华人民共和国大陆地区适用之有效法律(但不包括其冲突法规则)。 如发生本协议与适用之法律相抵触时，则这些条款将完全按法律规定重新解释，而其它有效条款继续有效。 如缔约方就本协议内容或其执行发生任何争议，双方应尽力友好协商解决;协商不成时，任何一方均应向甲方住所地人民法院提起诉讼。</p>
+                            <p>　　<strong>第13条 其他</strong></p>
+                            <p>　　13.1聚奢网网站所有者是指在政府部门依法许可或备案的聚奢网网站经营主体。</p>
+                            <p>　　13.2聚奢网尊重用户和消费者的合法权利，本协议及本网站上发布的各类规则、声明等其他内容，均是为了更好的、更加便利的为用户和消费者提供服务。本站欢迎用户和社会各界提出意见和建议，聚奢网将虚心接受并适时修改本协议及本站上的各类规则。</p>
+                            <p>　　13.3本协议内容中以黑体、加粗、下划线、斜体等方式显著标识的条款，请用户着重阅读。</p>
+                            <p>　　13.4您选择注册为聚奢网的会员即视为您完全接受本协议，在点击之前请您再次确认已知悉并完全理解本协议的全部内容。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--5-3-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">购物保障</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=5-3">隐私保护</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">隐私保护</h2>
+                        <div class="p20 pr pl">
+                            <p>　　欢迎访问和使用聚奢网( www.jushewang.com )(以下简称“本商城”)， 我们以本隐私申明对访问者隐私作保护的许诺。以下文字公开“本商城”对信息收集和使用的情况。一旦您访问、使用了“本商城”，即表示您同意我们按照本隐私声明来使用和披露您的个人信息。</p>
+                            <p>　　“本商城”尊重用户个人隐私，未经合法用户授权，“本商城”不会公开、编辑或透露其注册资料及保存在“本商城”的非公开内容，除非有法律许可要求或经合法用户授权在诚信的基础上认为透露这些信息是必要的：</p>
+                            <p>　　<strong>1、注册用户隐私保护</strong></p>
+                            <p>　　用户一旦注册成功，成为“本商城”的合法用户，将得到一个密码和用户名。用户对用户名和密码安全负全部责任。另外，每个用户都要对其用户名进行的所有活动和事件负全责。您可随时根据规则改变您的密码。用户若发现任何非法使用用户帐号或存在安全漏洞的情况，请立即联系“本商城”。</p>
+                            <p>　　<strong>2、公开的交易信息</strong></p>
+                            <p>　　您提供发布的贸易物品信息或报价被显示在公共区域，对任何用户来说是公开的。请注意所有在这些场所公开的信息会成为公共信息，请您在决定公布您的个人信息前仔细考虑。</p>
+                            <p>　　<strong>3、Cookie 的使用</strong></p>
+                            <p>　　我们使用cookie来使我们的网站对用户更友好。它可以帮您省去为使用我们的服务而重复输入注册信息和跟踪您的浏览器的状态。</p>
+                            <p>　　<strong>4、第三方</strong></p>
+                            <p>　　我们的网站公布了用户提交的商业机会和报价，而其他用户可以查询这些报价和商业机会。我们不会向任何第三方提供、出售、出租、分享和交易用户的个人信息，除非第三方为“本商城”会员，提供服务在该服务结束后将禁止访问，包括以前能够访问的所有这些资料。当我们被法律强制或依照政府要求提供您的信息时，我们将善意地披露您的资料。</p>
+                            <p>　　<strong>5、外部链接</strong></p>
+                            <p>　　“本商城”含有其他网站的链接。“本商城”对那些网站的隐私保护措施不负任何责任。我们可能在任何需要的时候增加商业伙伴或共用品牌网站，但是提供给他们的将仅仅是综合信息，我们将不会公开您的身份。</p>
+                            <p>　　<strong>6、安全</strong></p>
+                            <p>　　我们网站有相应的安全措施来确保我们掌握的信息不丢失，不被滥用和变造。这些安全措施包括向其它服务器备份数据和对用户密码加密。尽管我们有这些安全措施，但请注意在因特网上不存在“完善的安全措施”。</p>
+                            <p>　　<strong>7、联系我们</strong></p>
+                            <p>　　“本商城”的隐私申明正在不断改进中，随着“本商城”服务范围的扩大，我们会随时更新我们的隐私申明。我们欢迎您随时来查看本申明。如果你对“本商城”的隐私声明以及您在使用中的问题有任何意见和建议，请联系： 0574-62620015, 我们会马上做出答复。</p>
+                            <p>　　<strong>注：本隐私条款的修改及更新权属于“聚奢网”( www.jushewang.com )。</strong></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <!--5-4-->
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">购物保障</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=5-4">免责声明</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">免责声明</h2>
+                        <div class="p20 pr pl">
+                            <p>　　jushewang.com及相关的APP、WAP站点等均系聚奢网面向社会、服务大众的网络窗口，向广大客户销售各类商品及服务，提供各类信息服务以及多项网络实用功能，凡浏览本网站及相关网页的用户，均表示接受以下条款。聚奢网保留对本声明包含的条款、条件和说明变更的权利。变更自公布时生效，您继续使用本网站，则视为您接受这些更改。您应当经常浏览本网站声明，以了解本网站信息的变化。</p>
+                            <p>　　<strong>网站进入</strong></p>
+                            <p>　　您通过其他网站的链接进入本网站可能存在登录假冒聚奢网商城网站的风险，建议您采用安全的方式(如在浏览器地址栏直接键入网址http://www.jushewang.com或点击收藏夹内记录的正确网址)访问本网站。</p>
+                            <p>　　<strong>信息声明</strong></p>
+                            <p>　　浏览者可以下载本网站上显示的资料，但这些资料只限用于个人学习研究使用，不得用于任何商业用途，无论是否在资料上明示，所有此等资料都是受到版权法的法律保护。浏览者没有获得聚奢网商城或各自的版权所有者明确的书面同意下，不得分发、修改、散布、再使用、再传递或使用本网站的内容用于任何公众商业用途。</p>
+                            <p>　　<strong>意见声明</strong></p>
+                            <p>　　未由本站以本网站名义正式表述，出现在本站中的任何其他发言或意见均属于个人观点，并不代表聚奢网商城的意见。</p>
+                            <p>　　<strong>合法权益</strong></p>
+                            <p>　　1、任何使用聚奢网商城的用户均应仔细阅读本声明，用户使用聚奢网商城的行为将被视为对本声明全部内容的认可。</p>
+                            <p>　　2、聚奢网商城尊重并保护所有使用本站用户的个人隐私权，用户注册的用户名、电子邮件地址等个人资料，非经用户亲自许可或根据相关法律的强制性规定，本站不会泄露给第三方。</p>
+                            <p>　　3、任何单位或个人认为通过聚奢网商城的内容可能涉嫌侵犯其合法权益，应该及时向聚奢网商城网站书面反馈，并提供身份证明、权属证明及详细侵权情况证明，我们在收到上述法律文件后，将会尽快安排处理。</p>
+                            <p>　　<strong>版权与商标声明</strong></p>
+                            <p>　　聚奢网商城网站版权聚奢网商城网，所有权利在中国大陆范围内受法律保护。“聚奢网”是我公司的注册商标，其他机构未经我公司书面同意不得引用和展示该商标。</p>
+                            <p>　　1、本站用户出于传递更多信息之目的公开的任意信息，并不意味我公司赞同其观点或证实其内容的真实性。</p>
+                            <p>　　2、由于工作的复杂性，工作中难免有人员存在疏漏或遗忘，如若转载作品侵犯作者署名权，并非出于本网故意，在接到相关权利人通知后，本站会加以更正。</p>
+                            <p>　　<strong>网站链接</strong></p>
+                            <p>　　当本网站以链接形式推荐其他网站内容时，本网站并不对这些网站或资源的可用性负责，且不保证从这些网站获取的任何内容、产品、服务或其他材料的真实性、合法性，对于任何因使用或信赖从此类网站或资源上获取的内容、产品、服务或其他材料而造成(或声称造成)的任何直接或间接损失，本网站均不承担任何责任。</p>
+                            <p>　　<strong>个人资料保密</strong></p>
+                            <p>　　1、您通过本网站提供的任何个人资料，将仅由聚奢网商城使用，以改善聚奢网商城提供给您的服务。聚奢网商城尽力保证按您提供的个人资料的原始真实性收集、传送和存储个人资料。聚奢网商城将不使用您的个人资料给您提供不重要的消息或信息，同时，未经您的许可，聚奢网商城将不与第三方共享资料或将资料销售给第三方，但根据法律或政府的强制性规定予以提供的，聚奢网商城均得免责。</p>
+                            <p>　　2、您不得向或从本网站邮寄或发送任何带有病毒的、涉及侮辱、诽谤、造谣的或其他中国相关法律规定的非法或侵权的材料和信息。聚奢网有权对您输入到本网站上的信息进行监视和/或检查，聚奢网保留完全依其决定不必事先通知且不必说明理由而检查您输入的信息和删除您输入的信息的权利。</p>
+                            <p>　　3、任何由于计算机问题、黑客攻击、计算机病毒侵入或发作、因政府管制而造成的暂时性关闭等影响网络正常经营的不可抗力而造成的个人资料泄露、丢失、被盗用或被窜改等，聚奢网均得免责。</p>
+                            <p>　　<strong>购物成功判断标准</strong></p>
+                            <p>　　由于商品的特殊性，本站很多商品都是唯一一件，这些商品在聚奢网官网及各店铺都是同时销售，如果发生了重复订单，我们以确认付款先后为唯一判断标准，与在线放入购物车的时间，或在实体库会所内浏览商品时间的长短无关，请周知。如果您选中的商品在您付款前被其他顾客抢先付款了，请您联络我们的销售人员，我们尽量与品牌及供应商协调为您提供同价同款的商品。</p>
+                            <p>　　<strong>服务中断与提醒声明</strong></p>
+                            <p>　　1、不担保或保证网络服务一定能满足用户的要求，也不担保网络服务不会中断，对网络服务的及时性、安全性、准确性也都不作任何担保或保证。用户须独立承担前述风险。聚奢网对于用户使用聚奢网商城服务或无法使用网络服务所导致的计算机软、硬件的损害或发生资料的流失等任何直接、间接、附带、特别、衍生的损害不承担任何责任。</p>
+                            <p>　　2、由于聚奢网中国货品单一特性，聚奢网会员下订单完成之后，需要等待聚奢网中国客服确认接受该订单之后，该订单才算做成立。聚奢网履行上述提醒后，不再承担订单成立提醒之外的任何提示义务。</p>
+                            <p>　　<strong>不可抗力</strong></p>
+                            <p>　　对于因不可抗力或聚奢网不能控制的原因造成的网络服务中断或其它缺陷，聚奢网不承担任何责任，但将尽力减少因此而给用户造成的损失和影响。</p>
+                            <p>　　<strong>不声称或保证准确性</strong></p>
+                            <p>　　尽管聚奢网尽力确保本网站所有信息的正确性和适时性，但并不能保证其为完全准确，聚奢网对本网站信息的准确性、完整性和真实性不作任何承诺;对信息的迟延、失误和遗漏不承担任何责任。</p>
+                            <p>　　<strong>责任限定</strong></p>
+                            <p>　　聚奢网明确声明：不承担您因接入或使用本网站而产生的直接、间接、附带的、后继的或特殊的损失，包括因病毒影响您的计算机设备或依赖从本网站获得的信息等而造成的损失。</p>
+                            <p>　　<strong>声明内容的更新</strong></p>
+                            <p>　　聚奢网保留根据业务需要随时对本声明内容进行更新的权利，请您在每次登录本网站时访问此网页，查看本网站的当前声明内容。</p>
+                            <p>　　<strong>第三方通知</strong></p>
+                            <p>　　如第三方通知聚奢网网站存在侵权信息、材料，聚奢网将在核实有关情况后，及时对该等信息、材料采取删除、屏蔽、断开链接等必要措施。聚奢网尽到上述义务后，不再承担任何责任。</p>
+                            <p>　　<strong>聚奢网账户</strong></p>
+                            <p>　　1、聚奢网网有权在发生恶意购买、套利、套现等扰乱市场正常交易秩序的情形下，执行包括但不限于冻结注册账户、注册账户内余额、礼品卡/礼券金额、关闭相应交易订单、拒绝发货等操作。聚奢网网保留在中华人民共和国法律允许的范围内独自决定拒绝服务、关闭账户、清除或编辑内容或取消订单的权利。</p>
+                            <p>　　2、当您访问网站或给我们发送电子邮件时，您与我们用电子方式进行联系。您同意以电子方式接受我们的信息。我们将用电子邮件或通过在聚奢网网上发布通知的方式与您进行联系。您同意我们用电子方式提供给您的所有协议、通知、披露和其他信息是符合此类通讯必须是书面形式的法定要求的。如果聚奢网能够证明以电子形式的信息已经发送给您或者聚奢网立即在聚奢网网站上张贴这样的通知，将被视为您已收到所有协议、声明、披露和其他信息。</p>
+                            <p>　　3、聚奢网网保留通过邮件和短信的形式，对本网站注册、购物用户发送订单信息、促销活动等告知服务的权利。如果您在聚奢网网注册、购物，表明您已默示同意接受此项服务。 若您不希望接收聚奢网网的邮件，请在邮件下方输入您的E-mail地址自助完成退阅; 若您不希望接收聚奢网网的短信，请提供您的手机号码联系客服处理。</p>
+                            <p>　　<strong>合同的订立</strong></p>
+                            <p>　　1、在您下订单时，请您仔细确认所购商品的名称、价格、数量、型号、规格、尺寸、联系地址、电话、收货人等信息。收货人与用户本人不一致的，收货人的行为和意思表示视为用户的行为和意思表示，用户应对收货人的行为及意思表示的法律后果承担连带责任。</p>
+                            <p>　　2、除法律另有强制性规定外，双方约定如下：本网站上聚奢网展示的商品和价格等信息仅仅是要约邀请，您下单时须填写您希望购买的商品数量、价款及支付方式、收货人、联系方式、收货地址(合同履行地点)、合同履行方式等内容;系统生成的订单信息是计算机信息系统根据您填写的内容自动生成的数据，仅是您向聚奢网发出的合同要约;聚奢网收到您的订单信息后，只有在聚奢网将您在订单中订购的商品从仓库实际直接向您发出时( 以商品出库为标志)，方视为您与聚奢网之间就实际直接向您发出的商品建立了合同关系;如果您在一份订单里订购了多种商品并且聚奢网只给您发出了部分商品时，您与聚奢网之间仅就实际直接向您发出的商品建立了合同关系;只有在聚奢网实际直接向您发出了订单中订购的其他商品时，您和聚奢网之间就订单中该其他已实际直接向您发出的商品才成立合同关系。您可以随时登录您在本网站注册的账户，查询您的订单状态。</p>
+                            <p>　　<strong>商品信息：</strong></p>
+                            <p>　　本站上的实物及服务类商品的价格、数量、是否有货等各项商品信息随时都有可能发生变动，本站不作特别通知。为表述便利，商品和服务于本协议中均简称为"商品"或"货物"。</p>
+                            <p>　　由于网站上商品信息的数量极其庞大，虽然本站会尽最大努力保证您所浏览商品信息的准确性，但由于众所周知的互联网技术因素等客观原因存在，本站网页显示的信息可能会有一定的滞后性或差错，对此情形您知悉并理解;聚奢网欢迎纠错，并会视情况给予纠错者一定的奖励。</p>
+                            <p>　　<strong>价格</strong></p>
+                            <p>　　直到您发出订单，我们才能确认商品的价格。尽管我们做出最大的努力，我们的商品目录里的一小部分商品可能仍然存在定价错误。如果我们发现错误定价，我们将采取下列之一措施：</p>
+                            <p>　　(1) 如果某一商品的正确定价低于我们的错误定价，我们将按照较低的定价向您销售交付该商品。</p>
+                            <p>　　(2) 如果某一商品的正确定价高于我们的错误定价，我们会根据我们的情况决定，在交付前联系您寻求您的指示，或者取消订单、停止发货并通知您，或在其他情况下与您告知其他解决方案。</p>
+                            <p>　　<strong>价格变化和缺货</strong></p>
+                            <p>　　产品的价格和可获性都在聚奢网网站上指明，这类信息将随时更改且不发任何通知。送货费将可能另外结算，费用根据您选择的送货方式的不同而异，最终价格将于您支付前显示，但最终订单之确认仍应以聚奢网最终发出商品或提供服务为准。如果发生了意外情况，在确认了您的订单后，由于供应商提价，税额变化引起的价格变化，或是由于网站的错误等造成商品价格变化，聚奢网有权视情况取消您的订单。 您所订购的商品，如果发生缺货，聚奢网有权取消订单。</p>
+                            <p>　　<strong>付款与退款</strong></p>
+                            <p>　　1、付款方式将在“聚奢网”官方网站予以公示。用户应在确认订单时，选择付款方式，并严格按照已选择的方式付款。用户未能按照所选择的方式或所要求的时间完成付款的，“聚奢网”有权单方取消订单。</p>
+                            <p>　　2、退货或换货商品缺货时产生的现金款项，退回方式视支付方式的不同而不同：</p>
+                            <p>　　(1) 网上支付的订单，退款退回至原支付卡;</p>
+                            <p>　　(2) 银行转账支付的订单，退款退回至下订单账户的账户余额中。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="toHelps">
+                    <div class="personal_notice grey">
+                        <a href="/home.html">首页</a>&gt;
+                        <!--<a href="#">帮助中心</a>&gt;<a href="#">购物保障</a>&gt;-->
+                        <a href="<%=basePath%>/common/toHelpJsp?jsp=5-5">在线售卖协议</a>
+                    </div>
+                    <div class="white_b grey_bs oh ptb51">
+                        <h2 class="lndividual_center_title fs14 grey_bbs">在线售卖协议</h2>
+                        <div class="p20 pr pl">
+                            <p>　　甲方(委托方)：</p>
+                            <p>　　乙方(受托方)：南京聚奢网络科技有限公司</p>
+                            <p>　　经双方友好协商，甲方同意按照本协议中约定的方式和条件将该表中列明的交易物品的所有权转让给乙方。</p>
+                            <p>　　根据诚实信用、平等互利的原则，本协议双方达成协议如下，以兹共同遵守：</p>
+                            <p>　　一、交易：</p>
+                            <p>　　1、本协议所称“交易”是指甲方按照本协议中约定的方式和条件将该表中列明的交易物品的所有权转让给乙方，</p>
+                            <p>　　自本协议签署之日起甲方通过在线提交申请并发货到乙方指定地址之后甲方取得交易物品的所有权。</p>
+                            <p>　　2、本协议为线上协议，甲方提交货品后，乙方默认为甲方已经仔细阅读并同意且有意愿遵守该协议。</p>
+                            <p>　　二、交易物品流程：</p>
+                            <p>　　1、甲方与乙方交易物品时，必须携带本人有效证件，在乙方留存身份证件复印件或电子文档供乙方公司存档。</p>
+                            <p>　　向乙方提供虚假信息证明者，乙方查处后报送公安机关处理，并承担赔偿由此给乙方造成的一切损失。</p>
+                            <p>　　2、甲方在线提交该物品，乙方为甲方信息安全、保密负责。乙方以收到甲方所发出的货品为准。</p>
+                            <p>　　3、乙方只收符合行业正品标准的货品，不符合乙方收获标准的货品，乙方有权利拒绝接受并联系甲方退还。</p>
+                            <p>　　三、快递费用</p>
+                            <p>　　1、物品邮寄到乙方：甲方在线提交卖货申请之后，将物品发送到乙方，运输费用由甲方先行垫付(建议走顺丰)，</p>
+                            <p>　　交易成功后乙方将根据甲方运输单据支付甲方运输费用。未达成交易，则该费用由甲方承担。</p>
+                            <p>　　2、物品未售出，乙方联系甲方退货，乙方支付退货运输费用。</p>
+                            <p>　　3、物品未售出，甲方联系乙方退货，甲方支付退货运输费用。</p>
+                            <p>　　4、甲方售卖物品为非正品的，乙方在收到货品24小时之内做出鉴定和在线回复，并48小时内联系甲方退货，甲方支付所有运输费用。</p>
+                            <p>　　5、运输过程中物品丢失、损坏等责任：运输委托方负责。</p>
+                            <p>　　四、甲方对于交易物品的承诺和保证</p>
+                            <p>　　1、甲方必须严格遵守法律法规规定的物品，不得向乙方提供所有权不明或者来源不合法的物品，</p>
+                            <p>　　甲方承诺对物品的合法性、真实性负全部法律责任,并承诺按照法律法规及本协议的约定对交易物品承担一切法律责任及法律后果。</p>
+                            <p>　　2、甲方保证所交易物品符合《中华人民共和国产品质量法》、《中华人民共和国消费者权益保护法》及其他法律、法规、部门规章和国家强制性标准的规定。</p>
+                            <p>　　经查处核实或第三方权威机构书面证明置换物品为假冒伪劣、涉嫌侵权、过期失效、来源非法等违法违规物品的情况下，</p>
+                            <p>　　乙方有权自行与相关部门联系处理，并将处理结果告知甲方。甲方需承担交易物品因前述情况而引起的全部不利法律后果，</p>
+                            <p>　　并应赔偿乙方因此而遭受的一切损失，赔偿金额为本协议项下交易物品最终由乙方售出时成交价格(或乙方从甲方购买该交易物品所支付的价格，以较高者为准)的10倍，</p>
+                            <p>　　且甲方必须以公开信或其他另乙方满意的形式向乙方赔礼道歉。在前述金额不足弥补乙方因此而遭受的损失的情况下，甲方应进一步赔偿直至乙方全部损失得到赔偿为止。</p>
+                            <p>　　3、物品交付乙方后，乙方负责物品安全。所有在乙方售出的货品，售后服务均由乙方负责。</p>
+                            <p>　　五、结算方式</p>
+                            <p>　　售出后结算：甲方在聚奢网售卖的货品完成订单 三 个工作日内，乙方将等值虚拟货币自动转入甲方虚拟支付帐户，</p>
+                            <p>　　可即刻在聚奢网网上商城消费，余下部分的余额可以在该货品售出的次月15日起登录http://www.jushewang.com在线(我的订单-帐户余额)申请提现;</p>
+                            <p>　　六、附则</p>
+                            <p>　　1、本协议自双方签订后生效，一式三份，甲方、乙方各执一份,乙方财务一份。交易单与协议同时出示方有效。</p>
+                            <p>　　未经乙方书面授权，甲方不得在其他渠道展示乙方的一切凭证、票据，且不得向任何第三方透露本次交易的相关情况，</p>
+                            <p>　　否则甲方应承担由此产生的一切不利后果，并应赔偿乙方因此而遭受的全部损失。</p>
+                            <p>　　2、本协议未尽事宜，双方应在本协议达成的原则基础上以补充条款的方式明确，补充条款与本协议具有同等的法律效力。</p>
+                            <p>　　七、争议解决</p>
+                            <p>　　双方如对本协议发生争议，应先经过友好协商解决，不能解决时，应提交乙方所在地人民法院解决。</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end-->
+    <!--底部信息-->
+    <div class="bttomInfo bg grey_bts grey_bbs ptb20">
+        <div class="wap">
+            <ul class="oh">
+                <li class="fl">
+                    <p>24小时客服服务热线</p>
+                    <p class="fs22 red mt5">400-880-9930</p>
+                    <p class="grey mt5">在全国范围内已有实体店近<em class="red">100</em>家</p>
+                </li>
+                <li class="fl ml90">
+                    <p>关于我们</p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=1-1" class="grey">公司简介</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=1-2" class="grey">发展历程</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=1-3" class="grey">诚聘英才</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=1-4" class="grey">联系我们</a>
+                    </p>
+                </li>
+                <li class="fl ml90">
+                    <p>新手指南</p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=2-1" class="grey">注册新用户</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=2-2" class="grey">回收指南</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=2-3" class="grey">购买指导</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=2-4" class="grey">预约指导</a>
+                    </p>
+                </li>
+                <li class="fl ml90">
+                    <p>配送服务</p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=3-1" class="grey">收货指南</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=3-2" class="grey">体验店服务</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=3-3" class="grey">配送物流</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=3-4" class="grey">物流查询</a>
+                    </p>
+                </li>
+                <li class="fl ml90">
+                    <p>售后服务</p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=4-1" class="grey">退换货政策</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=4-2" class="grey">如何申请退款</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=4-3" class="grey">维修补件说明</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=4-4" class="grey">一年免费养护</a>
+                    </p>
+                </li>
+                <li class="fl ml90">
+                    <p>购物保障</p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=5-1" class="grey">正品保障</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=5-2" class="grey">注册协议</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=5-3" class="grey">隐私保护</a>
+                    </p>
+                    <p class="mt5">
+                        <a href="/common/toHelpJsp?jsp=5-4" class="grey">免责声明</a>
+                    </p>
+                </li>
+                <li class="fl ml90">
+                    <p>微信服务公众号</p>
+                    <p class="mt5"><img src="http://pic.jushewang.com/b2c_web/images/common/weixin.png" width="96" height="94" alt="微信服务公众号" /></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--底部信息结束-->
+    <!--版权-->
+    <div class="copyright tac fs12">
+        <p>友情链接：
+            <a href="http://www.fyzjt.com/" target="_blank" class="mr15">奢侈品回收</a>
+            <a href="http://www.fyzjt.com/" target="_blank" class="mr15">黄金回收</a>
+            <a href="http://www.fyzjt.com/" target="_blank" class="mr15">名表回收</a>
+            <a href="http://www.fyzjt.com/" target="_blank" class="mr15">钻石回收</a>
+            <a href="http://www.fyzjt.com/" target="_blank" class="mr15">金条回收</a>
+            <a href="http://m.kuaidi100.com" target="_blank" class="mr15">快递查询</a>
+        </p>
+        <p class="grey">© 2006-2016 聚奢网 版权所有，并保留所有权利。 ICP备案证书号：苏ICP备15044671号-1</p>
+        <p class="mt15">
+            <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank"><img src="../../img/foot01.jpg" width="108" height="40" alt="" /></a>
+            <a href="http://www.njga.gov.cn/www/njga/wsga/" target="_blank"><img src="../../img/foot02.jpg" width="108" height="40" alt="" /></a>
+            <a href="https://www.alipay.com/" target="_blank"><img src="../../img/foot03.jpg" width="108" height="40" alt="" /></a>
+            <a href="http://webscan.360.cn/index/checkwebsite/url/www.jushewang.com" target="_blank"><img border="0" height="40" src="http://img.webscan.360.cn/status/pai/hash/cd00c0904fc578a67bdf7198e3dacaeb" /></a>
+        </p>
+    </div>
+    <!--版权结束-->
+    <!--end-->
+    <script type="text/javascript">
+    $(function() {
+        //跳转链接
+        var i = window.location.hash.split('#')[1];
+        $('.toHelps').eq(i).show().siblings('.toHelps').hide();
+        document.title = $('.toHelps').eq(i).find('a').eq(1).html() + '-帮助中心 「聚奢网」二手奢侈品综合服务平台！';
+
+        //左侧链接			
+        $(".lndividual_center_left dd").click(function() {
+            var i = $(".lndividual_center_left dd").index(this);
+            $('.toHelps').eq(i).show().siblings().hide();
+            document.title = $('.toHelps').eq(i).find('a').eq(1).html() + '-帮助中心 「聚奢网」二手奢侈品综合服务平台！';
+            return false;
+        });
+
+        //底部链接
+        $(".bttomInfo a").click(function() {
+            var i = $(".bttomInfo a").index(this);
+            $('.toHelps').eq(i).show().siblings().hide();
+            document.title = $('.toHelps').eq(i).find('a').eq(1).html() + '-帮助中心 「聚奢网」二手奢侈品综合服务平台！';
+            return false;
+        });
+        //右侧内部链接
+        $(".personal_notice a:odd").click(function() {
+            return false;
+        });
+    });
+    </script>
+</body>
+
+</html>
