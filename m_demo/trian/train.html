@@ -1,0 +1,635 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>聚奢网商学院奢侈品培训基地-「聚奢网」二手奢侈品综合服务平台</title>
+    <meta name="keywords" content="二手奢侈品网站，二手奢侈品交易平台，二手奢侈品购物网站，二手手表网站，二手包包网站，奢侈品寄售，奢侈品寄卖" />
+    <meta name="description" content="聚奢网商学院奢侈品培训基地-「聚奢网」二手奢侈品综合服务平台！" />
+    <meta name="viewport" content="target-densitydpi=320,width=750,user-scalable=no" />
+    <!--等比例缩放-->
+    <link href="http://m.jushewang.com/css/public.css" rel="stylesheet" type="text/css" />
+    <link href="http://m.jushewang.com/css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+    #train {
+        background-color: #fff;
+        width: 750px;
+        margin: auto;
+    }
+    
+    .TopTel {
+        line-height: 35px;
+        width: 100%;
+        background-color: #efefef;
+        font-size: 20px;
+        color: #b2b2b2;
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    
+    .TopTelPic {
+        background-image: url(img/TopTelPic.png);
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        vertical-align: text-bottom;
+    }
+    
+    .bannerUl {
+        position: relative;
+    }
+    
+    .bannerUlLi {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .banner {
+        width: 750px;
+        height: 402px;
+    }
+    
+    .bannerQ {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    .bannerQLi {
+        float: left;
+        width: 32px;
+        height: 4px;
+        background-color: rgba(68, 68, 68, 0.7);
+        margin: 0 8px;
+    }
+    
+    #train .actQ {
+        background-color: rgba(256, 256, 256, 0.7);
+    }
+    
+    .tClass {
+        background-color: #f6454e;
+        padding: 20px 10px;
+        font-size: 0;
+        overflow: hidden;
+    }
+    
+    .tClass1 {
+        background-image: url(img/tClass1.jpg);
+        width: 730px;
+        height: 195px;
+        box-sizing: border-box;
+        padding-left: 90px;
+        position: relative;
+    }
+    
+    .tClass1Box {
+        background-color: rgba(133, 122, 115, 0.71);
+        position: absolute;
+        top: 0px;
+        width: 140px;
+        height: 160px;
+        color: #fff;
+        display: inline-block;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 28px;
+    }
+    
+    .tClassP {
+        font-size: 26px;
+        line-height: 35px;
+        position: relative;
+    }
+    
+    .tClassP::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 36px;
+        height: 4px;
+        background-color: #fff;
+    }
+    
+    .tClassPMore {
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 36px;
+    }
+    
+    .tClassUl {
+        display: inline-block;
+        width: 475px;
+        height: 140px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        margin-left: 158px;
+    }
+    
+    .tClassTime {
+        color: #333;
+        width: 215px;
+        font-size: 22px;
+        display: inline-block;
+    }
+    
+    .tClassName {
+        color: #777777;
+        width: 170px;
+        font-size: 22px;
+        display: inline-block;
+    }
+    
+    .tClassPrice {
+        font-size: 22px;
+        color: #777777;
+    }
+    
+    .tClass1::after {
+        position: absolute;
+        content: '';
+        width: 730px;
+        height: 1px;
+        border-bottom: 1px dashed #fff;
+        bottom: -6px;
+        left: 0;
+    }
+    
+    .tClass2 {
+        background-image: url(img/tClass2.jpg);
+        width: 730px;
+        height: 195px;
+        box-sizing: border-box;
+        padding-left: 90px;
+        margin-top: 10px;
+    }
+    
+    .tClass2Box {
+        background-color: rgba(231, 111, 76, 0.71);
+        position: absolute;
+        width: 140px;
+        height: 160px;
+        color: #fff;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 28px;
+        display: inline-block;
+    }
+    
+    .tClassUlLi {
+        font-size: 22px;
+        color: #333;
+        line-height: 30px;
+    }
+    
+    .tClassMore {
+        background: url(img/tClassMore.jpg) no-repeat center;
+        width: 715px;
+        height: 396px;
+        margin: auto;
+        padding: 15px 0;
+    }
+    
+    .tClassMoreLi {
+        width: 50%;
+        height: 50%;
+        float: left;
+        text-align: center;
+        font-size: 28px;
+        line-height: 70px;
+        box-sizing: border-box;
+    }
+    
+    #train .tClassMoreLiHot {
+        text-align: left;
+        color: #333;
+        padding-left: 20px;
+    }
+    
+    .tClassMoreP {
+        font-size: 24px;
+        line-height: 94px;
+        position: relative;
+    }
+    
+    .tClassMoreP::after {
+        content: '';
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        width: 36px;
+        height: 4px;
+        background-color: #333;
+    }
+    
+    .tClassMorePP {
+        font-size: 20px;
+        line-height: 20px;
+        position: relative;
+    }
+    
+    .tClassMorePP::after {
+        content: '>>>';
+        position: absolute;
+        bottom: -45px;
+        left: 0;
+    }
+    
+    .tClassMoreLi2 {
+        color: #e99312;
+    }
+    
+    .tClassMoreLi3 {
+        color: #8a6e7c;
+    }
+    
+    .tClassMoreLi4 {
+        color: #6b6f85;
+    }
+    
+    .tH4 {
+        display: inline-block;
+        font-size: 24px;
+        line-height: 40px;
+        color: #777777;
+        font-weight: 400;
+        text-align: center;
+        margin-left: 50%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        transform: translateX(-50%);
+        border-bottom: 1px dashed #777;
+    }
+    
+    .tProject {
+        border-top: 2px solid #333333;
+        background-color: #f3f3f3;
+        padding-bottom: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .tProjectP {
+        font-size: 20px;
+        color: #333;
+        text-indent: 2em;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    
+    .tAdvantage {
+        border-top: 2px solid #333333;
+        background-color: #f3f3f3;
+        padding-bottom: 25px;
+    }
+    
+    .tAdvantageUl {
+        background-image: url(img/tAdvantage.jpg);
+        width: 710px;
+        height: 659px;
+        margin: auto;
+        counter-reset: num;
+    }
+    
+    .tAdvantageLi {
+        width: 49.9%;
+        height: 33.5%;
+        float: left;
+        font-size: 22px;
+        color: #333333;
+        padding-left: 19px;
+        padding-top: 11px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .tAdvantageLi::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+        content: attr(data-num);
+        FILTER: progid: DXImageTransform.Microsoft.Gradient(gradientType=1, startColorStr=#e99312, endColorStr=#efb257);
+        background: -ms-linear-gradient(-54deg, #e99312, #efb257);
+        background: -moz-linear-gradient(-54deg, #e99312, #efb257);
+        background: -webkit-linear-gradient(-54deg, #e99312, #efb257);
+        background: -o-linear-gradient(-54deg, #e99312, #efb257);
+        background: linear-gradient(-54deg, #e99312, #efb257);
+    }
+    
+    .tAbout {
+        border-top: 2px solid #333333;
+        background: url(img/tAbout.jpg) no-repeat center;
+        width: 750px;
+        height: 829px;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    
+    .tAboutP {
+        text-indent: 2em;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    
+    .tContent {
+        border-top: 2px solid #333333;
+        background-color: #f3f3f3;
+        padding-bottom: 20px;
+    }
+    
+    .tContentUl {
+        background-color: #fff;
+        margin: auto 20px;
+    }
+    
+    #train .tContentUlSpan {
+        font-size: 20px;
+        color: #333;
+        line-height: 44px;
+    }
+    
+    .tContentUlicons {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+    }
+    
+    .tContentUlLi {
+        border-bottom: 1px dashed #e1e1e1;
+        padding-top: 15px;
+    }
+    
+    .tContentUlicons1 {
+        background: url(img/tContentUlicons1.png) no-repeat center;
+    }
+    
+    .tContentUlicons2 {
+        background: url(img/tContentUlicons2.png) no-repeat center;
+    }
+    
+    .tContentUlicons3 {
+        background: url(img/tContentUlicons3.png) no-repeat center;
+    }
+    
+    .tContentUlicons4 {
+        background: url(img/tContentUlicons4.png) no-repeat center;
+    }
+    
+    .tContentUlicons5 {
+        background: url(img/tContentUlicons5.png) no-repeat center;
+    }
+    </style>
+    <script type="text/javascript" src="http://m.jushewang.com/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://m.jushewang.com/js/sider.js"></script>
+    <script type="text/javascript" src="js/train.js"></script>
+</head>
+
+<body>
+    <div class="viewport ">
+        <header>
+            <div class="header-back">
+                <a class="button" href="javascript:history.back(-1)">返回</a>
+            </div>
+            <h2>商学院</h2>
+            <div class="header-sort">
+                <a class="button" href="javascript:void(0);"></a>
+            </div>
+        </header>
+        <div id="train">
+            <a class="TopTel" href="tel:13915180155">
+                <i class="TopTelPic"></i>13915180155
+            </a>
+            <div class="banner pr">
+                <ul class="bannerUl">
+                    <li class="bannerUlLi">
+                        <img src="img/banner1.jpg" />
+                    </li>
+                    <li class="bannerUlLi">
+                        <img src="img/banner2.jpg" />
+                    </li>
+                    <li class="bannerUlLi">
+                        <img src="img/banner3.jpg" />
+                    </li>
+                    <li class="bannerUlLi">
+                        <img src="img/banner4.jpg" />
+                    </li>
+                </ul>
+                <ul class="clearfix bannerQ">
+                    <li class="bannerQLi"></li>
+                    <li class="bannerQLi"></li>
+                    <li class="bannerQLi"></li>
+                    <li class="bannerQLi"></li>
+                </ul>
+            </div>
+            <div class="tClass">
+                <div class="tClass1">
+                    <div class="tClass1Box">
+                        <p class="tClassP">9月</p>
+                        <p class="tClassPMore">课程安排</p>
+                    </div>
+                    <ul class="tClassUl">
+                        <li>
+                            <em class="tClassTime">[9月8日&nbsp;-&nbsp;9月11日]</em><em class="tClassName">名包鉴定估价班</em><em class="tClassPrice">8800元</em>
+                        </li>
+                        <li>
+                            <em class="tClassTime">[9月8日&nbsp;-&nbsp;9月30日]</em><em class="tClassName">鉴定估价全科班</em><em class="tClassPrice">32800元</em>
+                        </li>
+                        <li>
+                            <em class="tClassTime">[9月15日-9月18日]</em><em class="tClassName">名表鉴定估价班</em><em class="tClassPrice">9800元</em>
+                        </li>
+                        <li>
+                            <em class="tClassTime">[9月19日-9月30日]</em><em class="tClassName">皮具护理班</em><em class="tClassPrice">6800元</em>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tClass2">
+                    <div class="tClass2Box">
+                        <p class="tClassP">9月</p>
+                        <p class="tClassPMore">开学季
+                            <br />优惠政策</p>
+                    </div>
+                    <ul class="tClassUl">
+                        <li class="tClassUlLi">报名费用满1000减100</li>
+                        <li class="tClassUlLi">报名费用满5000减500</li>
+                        <li class="tClassUlLi">报名费用满10000减1000</li>
+                        <li class="tClassUlLi">立即报名减1000元</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="tClassMore">
+                <li class="tClassMoreLi tClassMoreLiHot">
+                    <p class="tClassMoreP">热门</p>
+                    <p class="tClassMorePP">推荐课程</p>
+                </li>
+                <li class="tClassMoreLi tClassMoreLi2">名包鉴定估价班</li>
+                <li class="tClassMoreLi tClassMoreLi3">鉴定估价全科班</li>
+                <li class="tClassMoreLi tClassMoreLi4">名表鉴定估价班</li>
+            </ul>
+            <div class="tProject">
+                <h4 class="tH4">培训项目</h4>
+                <p class="tProjectP"> 商学院主要以世界高端名表、名包、钻石、金铂金等的鉴定、估价、维修、保养、经营、实习为一体的综合性培训机构，科目齐全，教学多样</p>
+                <img src="img/tProject.png" class="db ma" />
+            </div>
+            <div class="tAdvantage">
+                <h4 class="tH4">选择我们的6大优势支持</h4>
+                <ul class="tAdvantageUl">
+                    <li class="tAdvantageLi" data-num='1'>纳入公司鉴定估价系统</li>
+                    <li class="tAdvantageLi" data-num='2'>选择加盟有优先权并且
+                        <br />在该年加盟费内扣除培
+                        <br />训费用</li>
+                    <li class="tAdvantageLi" data-num='3'>提供永久免费复训机会</li>
+                    <li class="tAdvantageLi" data-num='4'>给予公司物品行内
+                        <br />最低折扣价</li>
+                    <li class="tAdvantageLi" data-num='5'>提供培训学员上岗实习支持</li>
+                    <li class="tAdvantageLi" data-num='6'>公司培训结束考核合格的
+                        <br />颁发结业证书</li>
+                </ul>
+            </div>
+            <div class="tAbout">
+                <h4 class="tH4">关于我们</h4>
+                <p class="tAboutP">佛阳子“聚奢网”创立于2006年，国内知名二手奢侈品交易平台，被誉为最具成长“互联网+企业”。分公司遍布全国，总部位于南京。
+                </p>
+                <p class="tAboutP">公司主要业务涉及奢侈品线上线下销售、寄售、奢侈品鉴定、养护服务、加盟培训业务等，拥有世界级专业奢侈品鉴定团队，实体店遍布全国各大中城市，借助强大的线下门店，首创“线上购物，线下体验”模式，为客户提供线下线上一流的奢侈品体验服务。
+                </p>
+                <p class="tAboutP">佛阳子“聚奢网”下设聚奢网商学院，与国内外专业的
+                    <br />教育培训合作，励志打造成全球奢侈品服务平台集团化公
+                    <br />司以及全球领先奢侈品一站式服务平台，成为追求高品质
+                    <br />生活高端人士的交流平台。
+                </p>
+                <p class="tAboutP">2016年1月16日，由中国企业投资协会、
+                    <br />CCTV、中国经营报、北京大学联合举办的“赢
+                    <br />在投资——2016年博雅企业家年会”与“博雅
+                    <br />中国品牌之星颁奖盛典”在北京·国际会议中心
+                    <br />隆重举行。佛阳子“聚奢网”在此会上荣获
+                    <br />“中国品牌之星100强”暨“中国互联网电商十
+                    <br />强品牌”称号。
+                </p>
+                <p class="tAboutP">佛阳子“聚奢网”正在引领奢侈品
+                    <br />行业发展方向，携手高端人士共同走向
+                    <br />未来，开创新的高品质生活！</p>
+            </div>
+            <div class="tContent">
+                <h4 class="tH4">联系我们</h4>
+                <ul class="tContentUl">
+                    <li class="tContentUlLi"><a href="tel:4008809930"><i class="tContentUlicons1 tContentUlicons"></i><span class="tContentUlSpan">全国服务电话：400-880-9930</span></a>
+                    </li>
+                    <li class="tContentUlLi"><i class="tContentUlicons2 tContentUlicons"></i><span class="tContentUlSpan">联系人：刘经理</span>
+                    </li>
+                    <li class="tContentUlLi"><a href="tel:13915180155"><i class="tContentUlicons3 tContentUlicons"></i><span class="tContentUlSpan">手机：13915180155</span></a>
+                    </li>
+                    <li class="tContentUlLi"><i class="tContentUlicons4 tContentUlicons"></i><span class="tContentUlSpan">微信：401273065</span>
+                    </li>
+                    <li class="tContentUlLi"><i class="tContentUlicons5 tContentUlicons"></i><span class="tContentUlSpan">地址：江苏省南京市鼓楼区中山北路2号紫峰大厦1518#</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="tac black_b fs20">聚奢网版权所有</footer>
+        <!--oneself -->
+        <div class="myHome">
+            <dl class="pa white_b p10 boxsize tac fs20">
+                <dt class="mt20 mb20">
+                    <a class="btn">
+                        <div class="photo dib oh boxsize"><img src="../../image/personal.jpg" alt="" /></div>
+                        <div class="greet">欢迎您</div>
+                        <div class="name" style="display:none;">
+                            <p>游客</p>
+                            <!--<p class="personalCenter">【个人中心】</p>-->
+                        </div>
+                    </a>
+                </dt>
+                <dd class="personalSet mt20 mb20">
+                    <ul>
+                        <li class="mt10 mb10">
+                            <a href="/order/myOrder" class="btn white black_b">我的订单</a>
+                        </li>
+                        <li class="mt10 mb10">
+                            <a href="/order/myBookOrder" class="btn white black_b">我的预约</a>
+                        </li>
+                        <li class="mt10 mb10">
+                            <a href="/cart/myCart" class="btn white black_b">我的购物车</a>
+                        </li>
+                        <li class="mt10 mb10">
+                            <a href="/consign/myConsign" class="btn white black_b">我的寄卖</a>
+                        </li>
+                        <li class="mt10 mb10">
+                            <a href="/coupons/myCoupons" class="btn white black_b">我的优惠券</a>
+                        </li>
+                        <li class="mt10 mb10">
+                            <a href="/userCenter/userInfo" class="btn white black_b">个人设置</a>
+                        </li>
+                        <li class="mt10 mb10">
+                            <a href="/userCenter/updatePassword" class="btn white black_b">修改密码</a>
+                        </li>
+                    </ul>
+                </dd>
+                <dd class="operate mt20 mb20">
+                    <ul>
+                        <li class="enter mt10 mb10">
+                            <a href="/login.html" class="btn black">登录</a>
+                        </li>
+                        <li class="regist mt10 mb10">
+                            <a href="/register.html" class="btn black">注册</a>
+                        </li>
+                        <li class="dropOut mt10 mb10" style="display:none;">
+                            <a href="/logout" class="btn black">退出</a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+            <div class="mask"></div>
+        </div>
+        <!--oneself end -->
+    </div>
+    <script>
+    $(function() {
+        //图片轮播
+        function showImg(index) {
+            $(".bannerUlLi").eq(index).fadeIn().siblings().stop(true, true).fadeOut();
+            $(".bannerQLi").removeClass("actQ")
+                .eq(index).addClass("actQ");
+        }
+        $('.bannerUlLi').fadeOut();
+        $('.bannerUlLi:first').fadeIn();
+        $('.bannerQLi').eq(0).addClass('actQ');
+
+        var len = $(".bannerUlLi").length;
+        var index = 0; //图片序号
+        var adTimer;
+
+        $(".bannerQLi").mouseover(function() {
+            index = $(".bannerQLi").index(this); //获取鼠标悬浮 li 的index
+            showImg(index);
+        }).eq(0).mouseover();
+
+        //滑入停止动画，滑出开始动画.
+        $('.bannerUl').hover(function() {
+            $(".bannerUlLi").stop('false', 'true');
+            clearInterval(adTimer);
+        }, function() {
+            adTimer = setInterval(function() {
+                showImg(index);
+                index++;
+                if (index == len) { //最后一张图片之后，转到第一张
+                    index = 0;
+                }
+            }, 3000);
+        }).trigger("mouseleave");
+
+    });
+    </script>
+</body>
+
+</html>
