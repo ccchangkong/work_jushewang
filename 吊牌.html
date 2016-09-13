@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>佛阳子管理后台</title>
+		<link rel="stylesheet" type="text/css" href="http://192.168.1.223:9080/css/public.css">
+		<script type="text/javascript" src="http://192.168.1.223:9080/js/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="http://192.168.1.223:9080/js/jquery.jqprint.js"></script>
+		<style type="text/css">
+			
+			.pbtn1 {
+				border: solid 2px #dcdcdc;
+				padding: 4px 14px 4px 34px;
+				color: #959595;
+				cursor: pointer;
+				background-color: #f9f9f9;
+			}
+		</style>
+
+	</head>
+
+	<body class="pr" style=";">
+
+		<div id="print_show">
+			<style type="text/css">
+				.printUl {
+		padding:30px 5px 2px 5px;			width:;
+					
+				}
+				
+				.printUl li {
+					width:270px;
+					font-size:8px;
+					line-height: 14px;
+				}
+			</style>
+			<ul class="printUl">
+				<li>【商品品牌】：宝格丽</li>
+				<li>【商品型号】：</li>
+				<li>【商品材质】：</li>
+				<li>【商品成色】：A级（有轻微使用痕迹，外观没有重大改变，状态良好）</li>
+				<li>【商品附件】：</li>
+				<li>【库存编号】：4375366053</li>
+				<li>【商品公价】：0.00元</li>
+				<li>【佛阳子折扣价】：0.00元</li>
+			</ul>
+		</div>
+		<div align="center">
+			<button id="print" onmouseover="this.style.borderColor='#75cd02'" onmouseout="this.style.borderColor='#dcdcdc'" class="btn1 pbtn1">打印</button>
+			<!-- <input type="button" id="print" value="打印" id="print"/>  -->
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				$("#print").click(function() {
+					$("#print_show").jqprint();
+				})
+			})
+		</script>
+
+	</body>
+
+</html>
