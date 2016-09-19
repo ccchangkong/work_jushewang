@@ -1,0 +1,230 @@
+#login {
+	position: relative;
+	font-family: "微软雅黑";
+}
+
+nav {
+	background: url(../img/loginBanner.jpg) no-repeat center;
+	height: 566px;
+	width: 750px;
+	position: relative;
+	margin: auto;
+}
+
+.back {
+	background-image: url(../img/back.png);
+	width: 21px;
+	height: 38px;
+	position: absolute;
+	top: 63px;
+	left: 22px;
+	display: block;
+}
+
+.lNavUl {
+	padding-top: 486px;
+	width: 520px;
+	margin: auto;
+	line-height: 80px;
+	font-size: 32px;
+	color: #766d5e;
+}
+
+.lNavUlLi {
+	display: inline-block;
+}
+
+.navAct {
+	color: #ead9c6;
+	position: relative;
+}
+
+.navAct::after {
+	position: absolute;
+	content: '';
+	width: 85px;
+	height: 4px;
+	background-color: #cca92d;
+	box-shadow: 0 0 25px #cca92d;
+	bottom: 0;
+	left: 20px;
+}
+
+.loginMain {
+	background: -ms-linear-gradient(-120deg, #221f1d, #45413f);
+	background: -moz-linear-gradient(-120deg, #221f1d, #45413f);
+	background: -webkit-linear-gradient(-120deg, #221f1d, #45413f);
+	background: -o-linear-gradient(-120deg, #221f1d, #45413f);
+	background: linear-gradient(-120deg, #221f1d, #45413f);
+	width: 750px;
+	margin: auto;
+}
+
+.lMainUl {
+	width: 520px;
+	margin: auto;
+	padding: 100px 0 30px 0;
+}
+
+.lMainUlLi {
+	/*border-bottom: 1px solid #766d5e;*/
+	vertical-align: middle;
+	font-size: 26px;
+	color: #aca7a1;
+	line-height: 86px;
+	position: relative;
+}
+
+.lMainUlLi::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #766d5e;
+}
+
+.lMainUlLiAct::after {
+box-shadow: 0 0 10px rgba(255,214,67,0.74);
+transition: .5s;
+}
+
+.lMainUlLiInput{
+	background-color: transparent;
+	font-size: 26px;
+	width: 360px;
+	text-align: center;
+	margin-left: 50px;
+	color: #ead9c6;	
+}
+.loginMain::-webkit-input-placeholder {
+	background-color: #aca7a1;
+}
+
+.loginMain::-moz-placeholder {
+	color: #aca7a1;
+	opacity: 1!important;
+}
+
+.loginMain:-ms-input-placeholder {
+	color: #aca7a1;
+	text-indent: 5px;
+}
+
+.lMainUlLiUnPic {
+	display: inline-block;
+	position: relative;
+	width: 26px;
+	height: 20px;
+	background-image: url(../img/username.png);
+	margin-left: 1px;
+}
+.lMainUlLiUnPicing {
+	background-image: url(../img/usernameing.png);
+}
+.lMainUlLiUnPic::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #766d5e;
+	bottom: -6px;
+	right: -48px;
+}
+
+.lMainUlLiPwPic {
+	position: relative;
+	display: inline-block;
+	width: 26px;
+	height: 24px;
+	background-image: url(../img/password.png);
+	margin-left: 1px;
+}
+.lMainUlLiPwPicing {
+	background-image: url(../img/passwording.png);
+}
+.lMainUlLiPwPic::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #766d5e;
+	bottom: -6px;
+	right: -48px;
+}
+.resetPwd {
+	color: #766d5e;
+	font-size: 26px;
+	text-align: right;
+	display: block;
+	width: 520px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.lMainBtn {
+	width: 520px;
+	line-height: 85px;
+	background-color: #45403d;
+	text-align: center;
+	color: #766d5e;
+	font-size: 26px;
+	display: block;
+	margin: auto;
+	margin-bottom: 50px;
+	letter-spacing: .3em;
+}
+.lMainOrAct{
+	background-color: #cca92d;
+	color: #333333;
+}
+.lMainOr {
+	text-align: center;
+	font-size: 22px;
+	color: #766d5e;
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.lMainOr::before {
+	position: absolute;
+	content: '';
+	width: 233px;
+	height: 1px;
+	background-color: #766d5e;
+	top: 14px;
+	left: 116px;
+}
+
+.lMainOr::after {
+	position: absolute;
+	content: '';
+	width: 233px;
+	height: 1px;
+	background-color: #766d5e;
+	top: 14px;
+	right: 116px;
+}
+
+.otherLogin {
+	width: 520px;
+	margin: auto;
+	padding-bottom: 130px;
+}
+
+.lMainWb {
+	display: inline-block;
+	width: 61px;
+	height: 50px;
+	background-image: url(../img/wb.png);
+	margin-left: 97px;
+}
+
+.lMainQq {
+	display: inline-block;
+	width: 45px;
+	height: 49px;
+	background-image: url(../img/qq.png);
+	margin-left: 217px;
+}

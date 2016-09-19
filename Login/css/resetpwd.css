@@ -1,0 +1,207 @@
+#resetPwd .viewport {
+	position: relative;
+	font-family: "微软雅黑";
+	background: -ms-linear-gradient(-120deg, #221f1d, #45413f);
+	background: -moz-linear-gradient(-120deg, #221f1d, #45413f);
+	background: -webkit-linear-gradient(-120deg, #221f1d, #45413f);
+	background: -o-linear-gradient(-120deg, #221f1d, #45413f);
+	background: linear-gradient(-120deg, #221f1d, #45413f);
+	width: 750px;
+	margin: auto;
+	height: 100vh;
+}
+
+nav {
+	height: 235px;
+	position: relative;
+	margin: auto;
+}
+
+.back {
+	background-image: url(../img/rback.png);
+	width: 21px;
+	height: 38px;
+	position: absolute;
+	top: 63px;
+	left: 22px;
+}
+
+.navH {
+	color: #ead9c6;
+	font-size: 32px;
+	text-align: center;
+	padding-top: 60px;
+	font-weight: 400;
+}
+
+.resetMain {}
+
+.rMainUl {
+	width: 520px;
+	margin: auto;
+	padding: 0px 0 105px 0;
+}
+
+.rMainUlLi {
+	/*border-bottom: 1px solid #766d5e;*/
+	vertical-align: middle;
+	font-size: 26px;
+	color: #aca7a1;
+	line-height: 86px;
+	height: 86px;
+	position: relative;
+}
+
+.rMainUlLi::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #766d5e;
+}
+
+.rMainUlLis::after {
+	width: 260px;
+}
+
+.rMainUlLiAct::after {
+	box-shadow: 0 0 10px rgba(255, 214, 67, 0.74);
+	transition: .5s;
+}
+
+.rMainUlLiInput {
+	background-color: transparent;
+	font-size: 26px;
+	width: 360px;
+	text-align: center;
+	margin-left: 50px;
+	color: #ead9c6;
+}
+
+.rMainUlLiInputs {
+	width: 260px;
+	display: inline-block;
+	margin-left: 0;
+	position: relative;
+}
+
+.resetMain::-webkit-input-placeholder {
+	background-color: #aca7a1;
+}
+
+.resetMain::-moz-placeholder {
+	color: #aca7a1;
+	opacity: 1!important;
+}
+
+.resetMain:-ms-input-placeholder {
+	color: #aca7a1;
+	text-indent: 5px;
+}
+
+.rMainUlLiPhPic {
+	display: inline-block;
+	position: relative;
+	width: 20px;
+	height: 32px;
+	background-image: url(../img/phone.png);
+	margin-left: 1px;
+}
+
+.rMainUlLiPhPicing {
+	background-image: url(../img/phoneing.png);
+}
+
+.rMainUlLiPhPic::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #766d5e;
+	bottom: -6px;
+	right: -48px;
+}
+
+.rMainUlLiPwNPic {
+	position: relative;
+	display: inline-block;
+	width: 26px;
+	height: 24px;
+	background-image: url(../img/passwordN.png);
+	margin-left: 1px;
+}
+
+.rMainUlLiPwNPicing {
+	background-image: url(../img/passwordNNing.png);
+}
+
+.rMainUlLiPwNPic::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #766d5e;
+	bottom: -6px;
+	right: -48px;
+}
+
+.rMainUlLiPwNNPic {
+	position: relative;
+	display: inline-block;
+	width: 26px;
+	height: 22px;
+	background-image: url(../img/passwordNN.png);
+	margin-left: 1px;
+}
+
+.rMainUlLiPwNNPicing {
+	background-image: url(../img/passwordNNing.png);
+}
+
+.rMainUlLiPwNNPic::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 30px;
+	background-color: #766d5e;
+	bottom: -6px;
+	right: -48px;
+}
+
+.rMainBtn {
+	width: 520px;
+	line-height: 85px;
+	background-color: #45403d;
+	text-align: center;
+	color: #766d5e;
+	font-size: 26px;
+	display: block;
+	margin: auto;
+	margin-bottom: 50px;
+	letter-spacing: .3em;
+}
+
+.rMainBtnAct {
+	background-color: #cca92d;
+	color: #333333;
+}
+
+.vCode {
+	width: 230px;
+	height: 56px;
+	margin-top: 20px;
+}
+
+#resetPwd .getvCode {
+	width: 230px;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+	color: #333333;
+	font-size: 26px;
+	background-color: #cca92d;
+	margin-top: 20px;
+	display: inline-block;
+}
