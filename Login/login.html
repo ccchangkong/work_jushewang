@@ -18,25 +18,30 @@
 	<body id="login">
 		<div class="viewport ">
 			<nav>
-					<a class="back"href=""></a>
-					
+				<a class="back" href="javascript:history.back(-1)"></a>
+
 				<ul class="lNavUl">
-					<li class="lNavUlLi navAct fl">用户登录</li>
+					<li class="lNavUlLi Act fl">用户登录</li>
 					<li class="lNavUlLi fr">用户注册</li>
 				</ul>
 			</nav>
 			<div class="loginMain">
-				<ul class="lMainUl">
-					<li class="lMainUlLi"><i class="lMainUlLiUnPic" data-class="lMainUlLiUnPicing"></i><input type="text" class="lMainUlLiUsername lMainUlLiInput" name="" id="" value="" placeholder="请输入用户名/手机号" /></li>
-					<li class="lMainUlLi"><i class="lMainUlLiPwPic" data-class = "lMainUlLiPwPicing"></i><input type="password" class="lMainUlLiPassword  lMainUlLiInput" name="" id="" value="" placeholder="请输入密码" /></li>
+				<ul class="MainUl">
+					<li class="MainUlLi"><i class="MainUlLiUnPic"></i><input type="text" class="MainUlLiUsername MainUlLiInput" name="" id="" value="" placeholder="请输入用户名/手机号" /></li>
+					<li class="MainUlLi"><i class="MainUlLiPwPic"></i><input type="password" class="MainUlLiPassword  MainUlLiInput" name="" id="" value="" placeholder="请输入密码" /></li>
 				</ul>
 				<a href="resetPwd.html" class="resetPwd">忘记密码？</a>
-				<button class="lMainBtn">登录</button>
+				<button class="MainBtn">登录</button>
 				<p class="lMainOr">OR</p>
 				<div class="otherLogin">
 					<i class="lMainWb"></i><i class="lMainQq"></i>
 				</div>
 			</div>
 		</div>
+		<div class="errorBox">
+			<i class="errorPic"></i>
+			<p class="errorP">errorText</p>
+		</div>
 	</body>
+
 </html>

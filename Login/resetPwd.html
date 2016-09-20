@@ -18,22 +18,26 @@
 	<body id="resetPwd">
 		<div class="viewport ">
 			<nav>
-				<a class="back" href=""></a>
+				<a class="back" href="javascript:history.back(-1)"></a>
 				<h2 class="navH">找回密码</h2>
 			</nav>
 			<div class="resetMain">
-				<ul class="rMainUl">
-					<li class="rMainUlLi"><i class="rMainUlLiPhPic" data-class="rMainUlLiPhPicing"></i><input type="text" class="rMainUlLiPhone rMainUlLiInput" name="" id="" value="" placeholder="请输入用户名/手机号" /></li>
-					<li class="rMainUlLi rMainUlLis"><input type="text" id="code" value="" placeholder="验证码" class="rMainUlLiInput rMainUlLiInputs"><img src="/captcha/imageCode?14742757563320.04838603556213772" title="点击更换" id="codeImage" class="vCode fr"></li>
-					<li class="rMainUlLi rMainUlLis"><input type="text" id="smscode" value="" placeholder="短信验证码" class="rMainUlLiInput rMainUlLiInputs">
+				<ul class="MainUl">
+					<li class="MainUlLi"><i class="MainUlLiPhPic"></i><input type="text" class="MainUlLiPhone MainUlLiInput" name="" id="" value="" placeholder="请输入用户名/手机号" /></li>
+					<li class="MainUlLi MainUlLis"><input type="text" id="code" value="" placeholder="验证码" class="MainUlLiInput MainUlLiInputs"><img src="/captcha/imageCode?14742757563320.04838603556213772" title="点击更换" id="codeImage" class="vCode fr"></li>
+					<li class="MainUlLi MainUlLis "><input type="text" id="smscode" value="" placeholder="短信验证码" class="MainUlLiInput MainUlLiInputs">
 						<a href="javascript:;" id="sendCode" class="getvCode fr">获取验证码</a>
 					</li>
-					<li class="rMainUlLi"><i class="rMainUlLiPwNPic" data-class="rMainUlLiPwNPicing"></i><input type="password" class="rMainUlLiPassword  rMainUlLiInput" name="" id="" value="" placeholder="请输入新密码" /></li>
-					<li class="rMainUlLi"><i class="rMainUlLiPwNNPic" data-class="rMainUlLiPwNNPicing"></i><input type="password" class="rMainUlLiPassword  rMainUlLiInput" name="" id="" value="" placeholder="确认密码" /></li>
+					<li class="MainUlLi"><i class="MainUlLiPwNPic"></i><input type="password" class="MainUlLiPassword  MainUlLiInput" name="" id="" value="" placeholder="请输入新密码" /></li>
+					<li class="MainUlLi"><i class="MainUlLiPwNNPic"></i><input type="password" class="MainUlLiPassword  MainUlLiInput" name="" id="" value="" placeholder="确认密码" /></li>
 				</ul>
-				<button class="rMainBtn">找回密码</button>
+				<button class="MainBtn">找回密码</button>
 
 			</div>
+		</div>
+		<div class="errorBox hide">
+			<i class="errorPic"></i>
+			<p class="errorP">errorText</p>
 		</div>
 	</body>
 

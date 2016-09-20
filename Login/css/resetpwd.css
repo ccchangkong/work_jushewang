@@ -1,6 +1,7 @@
 #resetPwd .viewport {
 	position: relative;
 	font-family: "微软雅黑";
+	background-color: #45413f;
 	background: -ms-linear-gradient(-120deg, #221f1d, #45413f);
 	background: -moz-linear-gradient(-120deg, #221f1d, #45413f);
 	background: -webkit-linear-gradient(-120deg, #221f1d, #45413f);
@@ -36,13 +37,13 @@ nav {
 
 .resetMain {}
 
-.rMainUl {
+.MainUl {
 	width: 520px;
 	margin: auto;
 	padding: 0px 0 105px 0;
 }
 
-.rMainUlLi {
+.MainUlLi {
 	/*border-bottom: 1px solid #766d5e;*/
 	vertical-align: middle;
 	font-size: 26px;
@@ -52,7 +53,7 @@ nav {
 	position: relative;
 }
 
-.rMainUlLi::after {
+.MainUlLi::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -62,16 +63,16 @@ nav {
 	background-color: #766d5e;
 }
 
-.rMainUlLis::after {
+.MainUlLis::after {
 	width: 260px;
 }
 
-.rMainUlLiAct::after {
+.MainUlLi.Act::after {
 	box-shadow: 0 0 10px rgba(255, 214, 67, 0.74);
 	transition: .5s;
 }
 
-.rMainUlLiInput {
+.MainUlLiInput {
 	background-color: transparent;
 	font-size: 26px;
 	width: 360px;
@@ -80,7 +81,7 @@ nav {
 	color: #ead9c6;
 }
 
-.rMainUlLiInputs {
+.MainUlLiInputs {
 	width: 260px;
 	display: inline-block;
 	margin-left: 0;
@@ -101,7 +102,7 @@ nav {
 	text-indent: 5px;
 }
 
-.rMainUlLiPhPic {
+.MainUlLiPhPic {
 	display: inline-block;
 	position: relative;
 	width: 20px;
@@ -110,11 +111,11 @@ nav {
 	margin-left: 1px;
 }
 
-.rMainUlLiPhPicing {
+.MainUlLi.Act .MainUlLiPhPic {
 	background-image: url(../img/phoneing.png);
 }
 
-.rMainUlLiPhPic::after {
+.MainUlLiPhPic::after {
 	position: absolute;
 	content: '';
 	width: 1px;
@@ -124,7 +125,7 @@ nav {
 	right: -48px;
 }
 
-.rMainUlLiPwNPic {
+.MainUlLiPwNPic {
 	position: relative;
 	display: inline-block;
 	width: 26px;
@@ -133,11 +134,11 @@ nav {
 	margin-left: 1px;
 }
 
-.rMainUlLiPwNPicing {
-	background-image: url(../img/passwordNNing.png);
+.MainUlLi.Act .MainUlLiPwNPic {
+	background-image: url(../img/passwordNing.png);
 }
 
-.rMainUlLiPwNPic::after {
+.MainUlLiPwNPic::after {
 	position: absolute;
 	content: '';
 	width: 1px;
@@ -147,7 +148,7 @@ nav {
 	right: -48px;
 }
 
-.rMainUlLiPwNNPic {
+.MainUlLiPwNNPic {
 	position: relative;
 	display: inline-block;
 	width: 26px;
@@ -156,11 +157,11 @@ nav {
 	margin-left: 1px;
 }
 
-.rMainUlLiPwNNPicing {
+.MainUlLi.Act .MainUlLiPwNNPic {
 	background-image: url(../img/passwordNNing.png);
 }
 
-.rMainUlLiPwNNPic::after {
+.MainUlLiPwNNPic::after {
 	position: absolute;
 	content: '';
 	width: 1px;
@@ -170,7 +171,7 @@ nav {
 	right: -48px;
 }
 
-.rMainBtn {
+.MainBtn {
 	width: 520px;
 	line-height: 85px;
 	background-color: #45403d;
@@ -183,7 +184,7 @@ nav {
 	letter-spacing: .3em;
 }
 
-.rMainBtnAct {
+.MainBtn.Act {
 	background-color: #cca92d;
 	color: #333333;
 }
@@ -192,6 +193,7 @@ nav {
 	width: 230px;
 	height: 56px;
 	margin-top: 20px;
+	font-size: 18px;
 }
 
 #resetPwd .getvCode {
@@ -204,4 +206,31 @@ nav {
 	background-color: #cca92d;
 	margin-top: 20px;
 	display: inline-block;
+}
+
+.errorBox {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	background-color: rgba(256, 256, 256, 0.35);
+	padding: 60px 80px;
+	border-radius: 10px;
+}
+
+.errorPic {
+	display: block;
+	background-image: url(../img/error.png);
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.errorP {
+	text-align: center;
+	font-size: 26px;
+	color: #333333;
 }
