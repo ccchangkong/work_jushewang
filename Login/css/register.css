@@ -1,17 +1,21 @@
-min-height: 100vh;
+#register {
+    min-height: 100vh;
 }
+
 #register .viewport {
     position: relative;
     font-family: "微软雅黑";
     width: 750px;
     margin: auto;
 }
+
 nav {
     background: url(../img/rgBanner.jpg) no-repeat center;
     height: 283px;
     position: relative;
     margin: auto;
 }
+
 .back {
     background-image: url(../img/back.png);
     width: 21px;
@@ -20,6 +24,7 @@ nav {
     top: 63px;
     left: 22px;
 }
+
 .rgNavUl {
     padding-top: 202px;
     width: 520px;
@@ -28,13 +33,16 @@ nav {
     font-size: 32px;
     color: #766d5e;
 }
+
 .rgNavUlLi {
     display: inline-block;
 }
+
 .rgNavUlLi.Act {
     color: #ead9c6;
     position: relative;
 }
+
 .rgNavUlLi.Act::after {
     position: absolute;
     content: '';
@@ -45,6 +53,7 @@ nav {
     bottom: 0;
     left: 20px;
 }
+
 .registerMain {
     background-color: #45413f;
     background: -ms-linear-gradient(-120deg, #221f1d, #45413f);
@@ -57,17 +66,19 @@ nav {
     padding-bottom: 150px;
     height: calc(100vh - 283px);
 }
+
 .MainUl {
     width: 520px;
     margin: auto;
     padding: 0px 0 105px 0;
 }
+
 #register .MainUl {
     padding-bottom: 28px;
 }
+
 .MainUlLi {
     /*border-bottom: 1px solid #766d5e;*/
-
     vertical-align: middle;
     font-size: 26px;
     color: #aca7a1;
@@ -75,6 +86,7 @@ nav {
     height: 86px;
     position: relative;
 }
+
 .MainUlLi::after {
     content: '';
     position: absolute;
@@ -84,13 +96,16 @@ nav {
     height: 1px;
     background-color: #766d5e;
 }
+
 .MainUlLis::after {
     width: 260px;
 }
+
 .MainUlLi.Act::after {
     box-shadow: 0 0 10px rgba(255, 214, 67, 0.74);
     transition: .5s;
 }
+
 .MainUlLiInput {
     background-color: transparent;
     font-size: 26px;
@@ -99,22 +114,27 @@ nav {
     margin-left: 50px;
     color: #ead9c6;
 }
+
 .MainUlLiInputs {
     width: 260px;
     display: inline-block;
     margin-left: 0;
     position: relative;
 }
+
 .registerMain::-webkit-input-placeholder {
     background-color: #aca7a1;
 }
+
 .registerMain::-moz-placeholder {
     color: #aca7a1;
     opacity: 1!important;
 }
+
 .registerMain:-ms-input-placeholder {
     color: #aca7a1;
 }
+
 .MainUlLiUnPic {
     display: inline-block;
     position: relative;
@@ -123,9 +143,11 @@ nav {
     background-image: url(../img/username.png);
     margin-left: 1px;
 }
+
 .MainUlLi.Act .MainUlLiUnPic {
     background-image: url(../img/usernameing.png);
 }
+
 .MainUlLiUnPic::after {
     position: absolute;
     content: '';
@@ -135,6 +157,7 @@ nav {
     bottom: -6px;
     right: -48px;
 }
+
 .MainUlLiPwPic {
     position: relative;
     display: inline-block;
@@ -143,9 +166,11 @@ nav {
     background-image: url(../img/password.png);
     margin-left: 1px;
 }
+
 .MainUlLi.Act .MainUlLiPwPic {
     background-image: url(../img/passwording.png);
 }
+
 .MainUlLiPwPic::after {
     position: absolute;
     content: '';
@@ -155,6 +180,7 @@ nav {
     bottom: -6px;
     right: -48px;
 }
+
 .MainUlLiPhPic {
     display: inline-block;
     position: relative;
@@ -163,9 +189,11 @@ nav {
     background-image: url(../img/phone.png);
     margin-left: 1px;
 }
+
 .MainUlLi.Act .MainUlLiPhPic {
     background-image: url(../img/phoneing.png);
 }
+
 .MainUlLiPhPic::after {
     position: absolute;
     content: '';
@@ -175,6 +203,7 @@ nav {
     bottom: -6px;
     right: -48px;
 }
+
 .MainUlLiPwNPic {
     position: relative;
     display: inline-block;
@@ -183,9 +212,11 @@ nav {
     background-image: url(../img/passwordN.png);
     margin-left: 1px;
 }
+
 .MainUlLi.Act .MainUlLiPwNPic {
     background-image: url(../img/passwordNNing.png);
 }
+
 .MainUlLiPwNPic::after {
     position: absolute;
     content: '';
@@ -195,6 +226,7 @@ nav {
     bottom: -6px;
     right: -48px;
 }
+
 .MainUlLiPwNNPic {
     position: relative;
     display: inline-block;
@@ -203,9 +235,11 @@ nav {
     background-image: url(../img/passwordNN.png);
     margin-left: 1px;
 }
+
 .MainUlLi.Act .MainUlLiPwNNPic {
     background-image: url(../img/passwordNNing.png);
 }
+
 .MainUlLiPwNNPic::after {
     position: absolute;
     content: '';
@@ -215,6 +249,7 @@ nav {
     bottom: -6px;
     right: -48px;
 }
+
 .MainBtn {
     width: 520px;
     line-height: 85px;
@@ -227,19 +262,23 @@ nav {
     margin-bottom: 50px;
     letter-spacing: .3em;
 }
+
 .MainBtn.Act {
     background-color: #cca92d;
     color: #333333;
 }
+
 .rgAgreeBox {
     width: 520px;
     margin: auto;
     margin-bottom: 50px;
 }
+
 .rgAgree {
     position: absolute;
     left: -10000px;
 }
+
 .rgAgrees {
     display: inline-block;
     box-sizing: border-box;
@@ -249,18 +288,22 @@ nav {
     border: 1px solid #766d5e;
     vertical-align: bottom;
 }
+
 .rgAgree:checked+.rgAgrees {
     background: url(../img/ok.png) no-repeat center;
 }
+
 .rgAgreeP {
     display: inline-block;
     font-size: 26px;
     color: #766d5e;
     padding-left: 20px;
 }
+
 .rgAgreePA {
     color: #ead9c6;
 }
+
 .rgAgreement {
     display: none;
     transition: .5s;
@@ -277,6 +320,7 @@ nav {
     z-index: 0;
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.46);
 }
+
 .rgAClose {
     position: absolute;
     top: -25px;
@@ -292,6 +336,7 @@ nav {
     line-height: 56px;
     text-align: center;
 }
+
 .rgPre {
     white-space: pre-wrap;
     overflow: scroll;
@@ -299,16 +344,15 @@ nav {
     font-size: 26px;
     line-height: 50px;
     height: 900px;
-    background: linear-gradient(white 15px, hsla(0, 0%, 100%, 0)) 0 0 / 100% 50px, radial-gradient(at top, rgba(0, 0, 0, .2), transparent 70%) 0 0 / 100% 15px, linear-gradient(to top, white 15px, hsla(0, 0%, 100%, 0)) bottom / 100% 50px, radial-gradient(at bottom, rgba(0, 0, 0, .2), transparent 70%) bottom / 100% 15px;
-    background-repeat: no-repeat;
-    background-attachment: local, scroll, local, scroll;
 }
+
 .vCode {
     width: 230px;
     height: 56px;
     margin-top: 20px;
     font-size: 18px;
 }
+
 #register .getvCode {
     width: 230px;
     height: 56px;
@@ -320,6 +364,7 @@ nav {
     margin-top: 20px;
     display: inline-block;
 }
+
 .errorBox {
     display: none;
     position: fixed;
@@ -331,6 +376,7 @@ nav {
     padding: 60px 80px;
     border-radius: 10px;
 }
+
 .errorPic {
     display: block;
     background-image: url(../img/error.png);
@@ -339,6 +385,7 @@ nav {
     margin: auto;
     margin-bottom: 20px;
 }
+
 .errorP {
     text-align: center;
     font-size: 26px;
