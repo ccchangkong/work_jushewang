@@ -339,7 +339,7 @@ nav {
 
 .rgPre {
 	white-space: pre-wrap;
-	overflow: hidden;
+	overflow: scroll;
 	color: #333;
 	font-size: 26px;
 	line-height: 50px;
