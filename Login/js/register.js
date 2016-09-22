@@ -7,5 +7,5 @@
 	});
 	$(".rgAClose").on('click',function () {
 		$(".rgAgreement").hide();
-	})
+	});
 });

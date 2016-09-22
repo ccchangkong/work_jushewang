@@ -89,7 +89,7 @@ nav {
 }
 
 .resetMain::-webkit-input-placeholder {
-	background-color: #aca7a1;
+	color: #aca7a1;
 }
 
 .resetMain::-moz-placeholder {

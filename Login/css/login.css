@@ -101,7 +101,7 @@ nav {
 }
 
 .loginMain::-webkit-input-placeholder {
-	background-color: #aca7a1;
+	color: #aca7a1;
 }
 
 .loginMain::-moz-placeholder {
