@@ -7,8 +7,11 @@
 
 .j-banner {
 	background-image: url(../img/j-banner.jpg);
+	background-size: cover;
 	width: 750px;
+	width: 100vw;
 	height: 400px;
+	height: 53.3vw;
 	margin: auto;
 	margin-bottom: 18px;
 }
@@ -267,8 +270,11 @@
 
 .j-banner2 {
 	background-image: url(../img/j-banner2.jpg);
+	background-size: cover;
 	width: 750px;
+	width: 100vw;
 	height: 600px;
+	height: 80vw;
 	margin: auto;
 	margin-bottom: 18px;
 }
@@ -339,9 +345,12 @@
 
 .j-part8 {
 	margin: auto;
-	width: 750px;
-	height: 302px;
 	background-image: url(../img/s8-bg.jpg);
+	background-size: cover;
+	width: 750px;
+	width: 100vw;
+	height: 300px;
+	height: 40vw;
 	text-align: center;
 }
 
@@ -379,11 +388,13 @@
 	background-color: #fff;
 	background-color: rgba(256, 256, 256, 0.48);
 }
+
 .j-p8-a:link,
 .j-p8-a:visited,
-.j-p8-a:hover{
-		color: #000000;
+.j-p8-a:hover {
+	color: #000000;
 }
+
 .condition {
 	margin: auto;
 	width: 750px;
