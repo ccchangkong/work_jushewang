@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+
+		<meta name="keywords" content="二手奢侈品网站，二手奢侈品交易平台，二手奢侈品购物网站，二手手表网站，二手包包网站，奢侈品寄售，奢侈品寄卖" />
+		<meta name="description" content="盛夏撩人 克拉爱恋急升温" />
+		<title>包袋大优惠 - 「聚奢网」二手奢侈品综合服务平台！</title>
+		<link href="http://www.jushewang.com/css/public.css" rel="stylesheet" type="text/css" />
+		<link href="http://www.jushewang.com/css/all.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://www.jushewang.com/js/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com/js/jquery.lazyload.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com/js/load.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com/js/config.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com/js/all.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com/js/home.js"></script>
+		<script type="text/javascript" src="http://www.jushewang.com/js/search.js"></script>
+		<link rel="stylesheet" href="css/activity.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div id="topLogin" class="swap">
+			<div class="popup fr pa white_b">
+				<div class="login_title grey_bbs">
+					<a target="_blank" class="selected dib pl20" style="width:331px">注册</a>
+					<a target="_blank" class="selected dib pl20">登录</a>
+					<!--<a target="_blank" href="/register.html" class="grey">注册</a>-->
+					<div class="switch pa"></div>
+				</div>
+				<div class="login_content oh">
+
+					<div class="registered fl">
+						<ul class="fl  pt20">
+							<li class="mb15">
+								<label class="dib tar mr10 grey">用户名</label>
+								<input class="grey_bs pl10" id="usernameg" name="" type="text" autocomplete="off" />
+							</li>
+							<li class="mb15">
+								<label class="dib tar mr10 grey">密码</label>
+								<input class="grey_bs pl10" id="passwordg" name="" type="password" />
+							</li>
+							<li class="mb15">
+								<label class="dib tar mr10 grey">确认密码</label>
+								<input class="grey_bs pl10" id="confirm_passwordg" autocomplete="off" name="" type="password" />
+							</li>
+							<li class="mb15">
+								<label class="dib tar mr10 grey">手机</label>
+								<input class="grey_bs pl10" id="phoneg" name="" type="text" />
+							</li>
+							<li class="mb15">
+								<label class="dib tar mr10 grey">验证码</label>
+								<input id="codeg" autocomplete="off" maxlength="4" type="text" class="verification grey_bs pl10" />
+								<img id="codeImageg" class="checkcode_img" src="/captcha/imageCode" style="height: 35px;" /></li>
+							<li class="mb15">
+								<label class="dib tar mr10 grey">短信验证码</label>
+								<input id="smscodeg" autocomplete="off" maxlength="6" name="smscodeg" type="text" class="verification grey_bs pl10" />
+								<a target="_blank" id="sendCodeg" class="login_btn dib green_b white tac">获取验证码</a>
+							</li>
+							<li class="label mb15">
+								<a target="_blank" id="register" href="javascript:;" class="login_btn dib green_b white tac">立即注册</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="fl">
+						<div id="J_Message" class="login-msg msg" style="display: block;">
+							<p class="error tac mt20"></p>
+						</div>
+						<ul class="fl login_list pt20 ml30">
+							<li class="username mb15 grey_bs">
+								<input class="pl10 vab" id="username" name="" type="text" autocomplete="off" placeholder="用户名/手机号" />
+							</li>
+							<li class="password mb15 grey_bs">
+								<input class="pl10 vab" id="password" name="" type="password" placeholder="请输入密码" />
+							</li>
+							<li id="liCode" class="liCode mb15" style="display:none">
+								<label class="dib tar mr10 grey">验证码</label>
+								<input id="code" autocomplete="off" maxlength="4" type="text" class="verification grey_bs pl10 vab" />
+								<img id="codeImage" class="checkcode_img" /> </li>
+							<li class="label mb15">
+								<a target="_blank" id="login" class="login_btn dib white tac yellow_b">登录</a>
+							</li>
+							<li class="register">新用户？
+								<a target="_blank" href="/register.html" class="red">免费注册</a>
+							</li>
+							<li class="mb15">
+								<p class="login_logo_title pt5 grey tac fl mr10">其他方式登录</p>
+								<div class="login_logo_btn fl db">
+									<!--<a target="_blank" id="weiboLogin" ><i class="weibo"></i></a>-->
+									<a target="_blank" id="qqLogin"><i class="qq"></i></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top grey_be">
+			<div class="wap fs12 grey_cf zi1">
+				<div class="fl"><span>佛阳子集团旗下购物商城!全国服务电话：400-880-9930</span></div>
+				<div class="fr"><span class="plr10"><a target="_blank" href="../../home.html" class="grey_cf">首页</a></span><span id="beforeLogin"><span class="plr10"><a target="_blank" href="../../login.html" class="grey_cf login_pop1" rel="nofollow">请登录</a></span><span class="plr10"><a target="_blank" href="../../register.html" class="grey_cf login_pop2" rel="nofollow">免费注册</a></span></span> <span id="afterLogin"><a target="_blank" onclick="userInfo()" class="grey_cf"><span id="loginUserName"></span></a><span class="plr10"><a target="_blank" onclick="loginOut()" class="link-logout grey_cf" rel="nofollow">退出</a></span></span> <span class="pr my plr10"><a target="_blank" onclick="myOrder()" class="grey_cf" rel="nofollow">我的聚奢</a>
+      <ul class="pa white_b grey_bcs tac pt5 pb5">
+        <li><a target="_blank" class="db" href="../../userCenter">个人中心</a></li>
+        <li><a target="_blank" class="db" href="../../order/myOrder">我的订单</a></li>
+        <li><a target="_blank" class="db" href="../../cart/myCart">购物车</a></li>
+        <li><a target="_blank" class="db" href="../../focus/myFocus">我的收藏</a></li>
+        <li><a target="_blank" class="db" href="../../coupons/myCoupons">优惠券</a></li>
+      </ul>
+      </span> <span class="settleup plr10"><a target="_blank" onclick="myCart()" class="grey_cf dib" rel="nofollow"><samp class="shopping_hover">去结算</samp><samp>购物车</samp></a> <span id="cartNum">[0]</span></span> <span class="plr10"><a target="_blank" href="http://p.qiao.baidu.com/im/index?siteid=7855301&ucid=18034750" class="db grey_cf">在线客服</a></span> </div>
+			</div>
+		</div>
+		<!--头部结束-->
+		<!--导航、搜索-->
+		<div class="headswap">
+			<div class="head wap">
+				<a target="_blank" href="/" class="logo fl"></a>
+				<div class="store_location fl pr dib tac cursor">
+					<div class="grey_bs grey br">实体店<i class="ci-right pr oh ml5"><s class="pr">&loz;</s></i></div>
+					<dl class="city grey_bs ptb10 pa white_b oh fs13">
+						<dt class="oh plr10 grey_bbs pb10"><span class="fl db cursor">热门城市：</span><a target="_blank" href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-11-0-0-0-0.html" class="grey fl db cursor">北京</a><a target="_blank" href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-31-0-0-0.html" class="grey fl db cursor">上海</a><a target="_blank" href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-5101-0-0-0.html" class="grey fl db cursor">成都</a><a target="_blank" href="/goods/listallgoods?url=/goods/list/0-0-0-0-0-0-0-0-0-3201-0-0-0.html" class="grey fl db cursor">南京</a></dt>
+						<dd class="areaList oh grey_bbs"></dd>
+						<dd class="storeList oh"></dd>
+					</dl>
+				</div>
+				<div class="search fl">
+					<div class="search_input fl pr grey_bs">
+						<input id="goodsTital" class="fl plr10" name="goodsTital" type="text" placeholder="请输入您要查找的商品！" />
+						<input type="hidden" id="goodsType" />
+						<input type="hidden" id="mainCategoryId" />
+						<input type="hidden" id="mainBrandId" />
+						<div class="hotwords fl pa plr5">
+							<a target="_blank" href="/goods/listallgoods?url=/goods/list/0-0-0-756-0-0-0-0-0-0-0-0-0-0.html" class="grey grey_bf fs12">爱马仕</a>
+							<a target="_blank" href="/goods/listallgoods?url=/goods/list/0-0-0-31-0-0-0-0-0-0-0-0-0-0.html" class="grey grey_bf fs12">浪琴</a>
+							<a target="_blank" href="/goods/listallgoods?url=/goods/list/0-0-0-20-0-0-0-0-0-0-0-0-0-0.html" class="grey grey_bf fs12">劳力士</a>
+						</div>
+						<input type="button" class="cursor fr" id="search" value="" />
+					</div>
+					<div class="promise pr fl ml20 plr10 oh"> <span class="pa"><a target="_blank" href="javascript:void(0);" class="dib prev"></a><a target="_blank" href="javascript:void(0);" class="dib next"></a></span>
+						<div class="promiseSwap">
+							<ul class="fs14">
+								<li><i class="fl maintain"></i>一年免费养护
+									<p class="fs12 grey_ca">购买表、包、钻、戒指的新老客户均可以享受一年内免费养护服务。</p>
+								</li>
+								<li><i class="fl shunfeng"></i>顺丰包邮
+									<p class="fs12 grey_ca">所有商品顺丰极速包邮。</p>
+								</li>
+								<li><i class="fl genuine"></i>正品保障
+									<p class="fs12 grey_ca">聚奢网经营的商品均为正品，假一赔二。</p>
+								</li>
+								<li><i class="fl returns"></i>七天退货
+									<p class="fs12 grey_ca">购买表、包、钻、戒指的均可以享受七天内无理由退换货服务。</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navitems black_b">
+				<ul class="wap fs14 clearfix">
+					<li class="fl tac ptb15 gray_b">
+						<a target="_blank" class="db" href="/goods/listallgoods?url=/goods/list/2-0-0-0-0-0-0-0-0-0-0-0-0-0.html">名包</a>
+					</li>
+					<li class="fl tac ptb15 gray_b">
+						<a target="_blank" class="db grey_bls" href="/goods/listallgoods?url=/goods/list/1-0-0-0-0-0-0-0-0-0-0-0-0-0.html">名表</a>
+					</li>
+					<li class="fl tac ptb15 gray_b">
+						<a target="_blank" class="db grey_bls" href="/goods/listallgoods?url=/goods/list/5-0-0-0-0-0-0-0-0-0-0-0-0-0.html">钻石</a>
+					</li>
+					<li class="fl tac ptb15 gray_b">
+						<a target="_blank" class="db grey_bls" href="/goods/listallgoods?url=/goods/list/4-0-0-0-0-0-0-0-0-0-0-0-0-0.html">首饰</a>
+					</li>
+					<li class="fl tac ptb15 gray_b">
+						<a target="_blank" class="db grey_bls" href="/goods/listallgoods?url=/goods/list/3-0-0-0-0-0-0-0-0-0-0-0-0-0.html">服饰</a>
+					</li>
+					<li class="fl tac ptb15 gray_b">
+						<a target="_blank" class="db grey_bls" href="/goods/listallgoods?url=/goods/list/6-0-0-0-0-0-0-0-0-0-0-0-0-0.html">数码</a>
+					</li>
+					<li class="fl tac ptb15">
+						<a target="_blank" class="db" href="/addconsign">寄售</a>
+					</li>
+					<li class="fl tac ptb15">
+						<a target="_blank" class="db grey_bls" href="/adddemand">求购</a>
+					</li>
+					<li class="fl tac ptb15">
+						<a target="_blank" class="db grey_bls" href="/appointToShop.html">预约</a>
+					</li>
+					<li class="fl tac ptb15">
+						<a target="_blank" class="db grey_bls" href="/auction/main.html">拍卖</a>
+					</li>
+					<li class="fl tac ptb15">
+						<a target="_blank" class="db grey_bls" href="/brand/querySortedBrands">品牌</a>
+					</li>
+					<li class="fl tac ptb15 pr oh">
+						<a target="_blank" class="db grey_bls khaki navrepair fl">养护</a>
+						<ul class="fl">
+							<li class="fl tac ptb15 gray_b bagrepair pa">
+								<a target="_blank" class="db gray_b" href="/repairGoods/packageRepair">包</a>
+							</li>
+							<li class="fl tac ptb15 gray_b watchrepair pa">
+								<a target="_blank" class="db gray_b" href="/repairGoods/watchRepair">表</a>
+							</li>
+						</ul>
+					</li>
+					<script>
+						$(".navitems li.pr").mouseenter(function() {
+							$(this).stop().animate({
+								width: 150
+							});
+						}).mouseleave(function() {
+							$(this).stop().animate({
+								width: 50
+							});
+						})
+					</script>
+					<li class="fl tac ptb15">
+						<a target="_blank" class="db grey_bls khaki" href="/recover.html">回收</a>
+					</li>
+					<li class="fl tac ptb15">
+						<a target="_blank" class="db grey_bls khaki" href="/joinUs.html">加盟</a>
+					</li>
+					<li class="fl tac ptb15" style="width:60px">
+						<a target="_blank" class="db grey_bls khaki" href="train.html">商学院</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--导航、搜索结束-->
+
+		<!-- 活动开始 -->
+		<div class="activity" id="activity">
+			<div class="a-banner"></div>
+			<div class="a-nav">
+				<div class="a-nav-count">
+					<div class="a-nav-count-title">距离双11优惠抢购结束仅剩</div>
+					<div id="a-nav-count-time"></div>
+					<!--<div id="a-nav-count-time"><span>7</span>天<span class="a-o">77</span>小时<span>7</span>分<span class="a-s">7</span>秒</div>-->
+
+				</div>
+				<div class="a-nav-title">有你想不到的惊喜</div>
+				<div class="a-nav-titles">X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大牌包包，你想要的包包，你意想不到的包包，全在这里&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X</div>
+				<dl class="a-nav-ul">
+					<dt class="a-nav-ul-title"><a href="">包袋专场</a></dt>
+					<dd class="a-nav-img a-nav-img1">
+						<a href=""><img src="img/a-nav-1.png" alt="" /></a>
+					</dd>
+					<dd class="a-nav-img a-nav-img2">
+						<a href=""><img src="img/a-nav-2.png" alt="" /></a>
+					</dd>
+					<dd class="a-nav-img a-nav-img3">
+						<a href=""><img src="img/a-nav-3.png" alt="" /></a>
+					</dd>
+					<dd class="a-nav-img a-nav-img4">
+						<a href=""><img src="img/a-nav-4.png" alt="" /></a>
+					</dd>
+					<dd class="a-nav-img a-nav-img5">
+						<a href=""><img src="img/a-nav-5.png" alt="" /></a>
+					</dd>
+				</dl>
+			</div>
+			<div class="a-part1">
+				<div class="a-p-title">1F&nbsp;&nbsp;单肩包</div>
+				<div class="a-p-title-e">SHOULDER BAG</div>
+				<img src="img/a-pic-1.jpg" alt="" class="a-p-img" />
+				<ul class="a-p-ul">
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+						<p class="a-p-li-price">￥5580.00</p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+						<p class="a-p-li-price">￥5580.00</p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+						<p class="a-p-li-price">￥5580.00</p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+						<p class="a-p-li-price">￥5580.00</p>
+					</li>
+				</ul>
+			</div>
+			<div class="a-part2">
+				<div class="a-p-title">2F&nbsp;&nbsp;手提包</div>
+				<div class="a-p-title-e">HAND BAG</div>
+				<img src="img/a-pic-2.jpg" alt="" class="a-p-img" />
+				<ul class="a-p-ul">
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+						<p class="a-p-li-price">￥5580.00</p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+				</ul>
+			</div>
+			<div class="a-part3">
+				<div class="a-p-title-e">3F&nbsp;&nbsp;女包</div>
+				<div class="a-p-title">FEMALE BAG</div>
+
+				<ul class="a-p-ul">
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+				</ul>
+				<img src="img/a-pic-3.jpg" alt="" class="a-p-img" />
+
+			</div>
+			<div class="a-part4">
+				<div class="a-p-title-e">4F&nbsp;&nbsp;男包</div>
+				<div class="a-p-title">MALE BAG</div>
+
+				<ul class="a-p-ul">
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+					<li class="a-p-li">
+						<img src="" alt="" class="a-p-li-img" />
+						<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+						<p class="a-p-li-price"></p>
+					</li>
+				</ul>
+				<img src="img/a-pic-4.jpg" alt="" class="a-p-img" />
+
+			</div>
+		</div>
+		<!--end-->
+		<!--底部信息-->
+		<div class="bttomInfo bg grey_bts grey_bbs ptb20">
+			<div class="wap">
+				<ul class="oh">
+					<li class="fl">
+						<p>24小时客服服务热线</p>
+						<p class="fs22 red mt5">400-880-9930</p>
+						<p class="grey mt5">在全国范围内已有实体店近<em class="red">100</em>家</p>
+					</li>
+					<li class="fl ml90">
+						<p>关于我们</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=1-1" class="grey">公司简介</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=1-2" class="grey">发展历程</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=1-3" class="grey">诚聘英才</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=1-4" class="grey">联系我们</a>
+						</p>
+					</li>
+					<li class="fl ml90">
+						<p>新手指南</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=2-1" class="grey">注册新用户</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=2-2" class="grey">回收指南</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=2-3" class="grey">购买指导</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=2-4" class="grey">预约指导</a>
+						</p>
+					</li>
+					<li class="fl ml90">
+						<p>配送服务</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=3-1" class="grey">收货指南</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=3-2" class="grey">体验店服务</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=3-3" class="grey">配送物流</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=3-4" class="grey">物流查询</a>
+						</p>
+					</li>
+					<li class="fl ml90">
+						<p>售后服务</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=4-1" class="grey">退换货政策</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=4-2" class="grey">如何申请退款</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=4-3" class="grey">维修补件说明</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=4-4" class="grey">一年免费养护</a>
+						</p>
+					</li>
+					<li class="fl ml90">
+						<p>购物保障</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=5-1" class="grey">正品保障</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=5-2" class="grey">注册协议</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=5-3" class="grey">隐私保护</a>
+						</p>
+						<p class="mt5">
+							<a target="_blank" href="/common/toHelpJsp?jsp=5-4" class="grey">免责声明</a>
+						</p>
+					</li>
+					<li class="fl ml90">
+						<p>微信服务公众号</p>
+						<p class="mt5"><img src="http://pic.jushewang.com/b2c_web/images/common/weixin.png" width="96" height="94" alt="微信服务公众号" /></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--底部信息结束-->
+		<div class="slogen black_b">
+			<ul class="wap clearfix grey_a tac">
+				<li class="fl fore1"><em class="dib"></em>100%正品保障</li>
+				<li class="fl fore2"><em class="dib"></em>顺丰极速包邮</li>
+				<li class="fl fore3"><em class="dib"></em>近100家体验店</li>
+				<li class="fl fore4"><em class="dib"></em>售后全国联保</li>
+				<li class="fl fore5"><em class="dib"></em>免费清洗养护</li>
+			</ul>
+		</div>
+		<!--版权-->
+		<div class="copyright tac fs12">
+			<p>友情链接：
+				<a target="_blank" href="http://www.fyzjt.com/" class="mr15">奢侈品回收</a>
+				<a target="_blank" href="http://www.fyzjt.com/" class="mr15">黄金回收</a>
+				<a target="_blank" href="http://www.fyzjt.com/" class="mr15">名表回收</a>
+				<a target="_blank" href="http://www.fyzjt.com/" class="mr15">钻石回收</a>
+				<a target="_blank" href="http://www.fyzjt.com/" class="mr15">金条回收</a>
+				<a target="_blank" href="http://m.kuaidi100.com" class="mr15">快递查询</a>
+			</p>
+			<p class="grey">© 2006-2016 聚奢网 版权所有，并保留所有权利。 ICP备案证书号：苏ICP备15044671号-1</p>
+			<p class="mt15">
+				<a target="_blank" href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action"><img src="http://pic.jushewang.com/b2c_web/images/common/foot01.jpg" width="108" height="40" alt="" /></a>
+				<a target="_blank" href="http://www.njga.gov.cn/www/njga/wsga/"><img src="http://pic.jushewang.com/b2c_web/images/common/foot02.jpg" width="108" height="40" alt="" /></a>
+				<a target="_blank" href="https://www.alipay.com/"><img src="http://pic.jushewang.com/b2c_web/images/common/foot03.jpg" width="108" height="40" alt="" /></a>
+				<a target="_blank" href="http://webscan.360.cn/index/checkwebsite/url/www.jushewang.com"><img border="0" height="40" src="http://img.webscan.360.cn/status/pai/hash/cd00c0904fc578a67bdf7198e3dacaeb" /></a>
+			</p>
+		</div>
+		<!--版权结束-->
+		<!--右侧浮动导航栏-->
+			<ul id="lift" class="lift tac fs16">
+				<li class="navigate">
+					<a target="_blank" class="db" href="javascript:;" title="奢华馆">单肩包</a>
+				</li>
+				<li class="navigate">
+					<a target="_blank" class="db" href="javascript:;" title="钻戒区">手提包</a>
+				</li>
+				<li class="navigate">
+					<a target="_blank" class="db" href="javascript:;" title="裸钻区">女    包</a>
+				</li>
+				<li class="navigate">
+					<a target="_blank" class="db" href="javascript:;" title="吊坠区">男    包</a>
+				</li>
+				<li class="return">
+					<a target="_blank" class="backtop db" title="返回顶部">TOP</a>
+				</li>
+			</ul>
+		<!--end-->
+		<script type="text/javascript">
+			$(function() {
+					var interval = 1000;
+
+					function timelength(val) {
+						if(val.toString().length > 1) {
+							return '<span class="a-o">' + val + '</span>'
+						}
+						return '<span>' + val + '</span>'
+					}
+
+					function ShowCountDown(year, month, day, divname) {
+						var now = new Date();
+						var endDate = new Date(year, month - 1, day);
+						var leftTime = endDate.getTime() - now.getTime();
+						var leftsecond = parseInt(leftTime / 1000);
+						//var day1=parseInt(leftsecond/(24*60*60*6)); 
+						var day1 = Math.floor(leftsecond / (60 * 60 * 24));
+						var hour = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600);
+						var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour * 3600) / 60);
+						var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour * 3600 - minute * 60);
+
+						var cc = document.getElementById(divname);
+						cc.innerHTML = timelength(day1) + '天' + timelength(hour) + '小时' + timelength(minute) + '分' + timelength(second) + '秒';
+						//		cc.innerHTML = '<span>' + day1 + '</span>天<span>' + hour + '</span>小时<span>' + minute + '</span>分<span class="a-s">' + second + '</span>秒';	
+					}
+					window.setInterval(function() {
+						ShowCountDown(2016, 11, 11, 'a-nav-count-time');
+					}, interval);
+
+				})
+				//距离顶部一定距离才显示
+			$(document).ready(function() {
+				$(window).scroll(function() {
+					var sTop = $(window).scrollTop();
+					if(sTop >= 700) {
+						$("#lift").show();
+					} else {
+
+						$("#lift").hide();
+					}
+				});
+				$(".lift li.navigate").click(function() {
+					var index = $(this).index();
+					var tops = $(".anchor").eq(index).offset().top - 20;
+					$('html, body').stop().animate({
+							scrollTop: tops
+						},
+						300);
+				});
+			});
+
+			/*回到顶部*/
+			$(document).ready(function() {
+				$(".backtop").click(function() {
+					$('html, body').animate({
+							scrollTop: 0
+						},
+						300);
+				});
+			});
+
+			/*加载商品*/
+			$(document).ready(function() {
+				//轻奢精品献礼520 
+				$.LoadGoods("/goods/getGoodsByGoodsIds?goodsIds=1256940602,6456270908,020205120903,6067016316,4943987134,9185033138,2749759886,5895076622,020205070703,5979955829,020305091303,6792595907", $('.a1 ul'));
+				//520  大胆表白我爱你
+				$.LoadGoods("/goods/getGoodsByGoodsIds?goodsIds=7906580775,4256170363,020153112501,5020090983,8341519708,9374449095,020035100302,2322080017,6146480469,020105121401,0964810723,020153082301", $('.a2 ul'));
+				//520  嫁给我吧亲爱的
+				$.LoadGoods("/goods/getGoodsByGoodsIds?goodsIds=2358626571,0817635071,8594079132,020153090402,7794057078,8817006319,020205060502,3646101937,020225091903,9510623408,020095100505,7102025327", $('.a3 ul'));
+				//520  你还记得今天是结婚几周年吗？
+				$.LoadGoods("/goods/getGoodsByGoodsIds?goodsIds=6238619688,4649887835,4649887835,9222429465,9109489677,2534758929,4780857792,7844467446,1180346625,5549360105,020153121001,8315605741", $('.a4 ul'));
+			});
+
+			jQuery.LoadGoods = function(url, $ul) {
+				$.ajax({
+					type: "post",
+					url: url,
+					dataType: "json",
+					success: function(data) {
+						for(var i = 0; i < data.length; i++) {
+							var item = data[i];
+							if(item.goodsState == 1) {
+								var li = '<li class="pr"><a target="_blank" href="/goods/detail/' + item.goodsId + '-100.html" title="' + item.goodsTitle + '"><img src="' + item.goodsImage + '" alt="' + item.goodsTitle + '" height="230" width="230" class="br"/><h3>' + item.goodsTitle + '</h3><span class="oh"><p><span class="yuan">￥</span>' + item.preSalePrice + '</p></span></a><div class="box" style="display:none"><span>已售<br />SOLD OUT</span></div></li>';
+							} else {
+								var li = '<li class="pr"><a target="_blank" href="/goods/detail/' + item.goodsId + '-100.html" title="' + item.goodsTitle + '"><img src="' + item.goodsImage + '" alt="' + item.goodsTitle + '" height="230" width="230" class="br"/><h3>' + item.goodsTitle + '</h3><span class="oh"><p><span class="yuan">￥</span>' + item.preSalePrice + '</p></span></a><div class="box" style="display:block"><span>已售<br />SOLD OUT</span></div></li>';
+							}
+							$ul.append(li);
+						}
+
+					}
+				});
+			}
+		</script>
+	</body>
+
+</html>
