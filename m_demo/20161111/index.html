@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>聚奢暑期放“价” 没有最低，只有更低</title>
+		<meta name="keywords" content="二手奢侈品网站，二手奢侈品交易平台，二手奢侈品购物网站，二手手表网站，二手包包网站，奢侈品寄售，奢侈品寄卖" />
+		<meta name="description" content="聚奢暑期放“价”   没有最低，只有更低" />
+		<meta name="viewport" content="target-densitydpi=320,width=750,user-scalable=no" />
+		<!--等比例缩放-->
+		<link href="http://m.jushewang.com/css/public.css" rel="stylesheet" type="text/css" />
+		<link href="http://m.jushewang.com/css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://m.jushewang.com/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://m.jushewang.com/js/sider.js"></script>
+
+		<style>
+			#activity {
+				background-color: #ececec;
+			}
+			
+			.a-banner {
+				margin: auto;
+				width: 100vw;
+				height: 489px;
+				height: 65.3vw;
+				margin-bottom: 40px;
+			}
+			
+			.a-nav {
+				width: ;
+				margin: auto;
+			}
+			
+			.a-nav-count {
+				margin: auto;
+				text-align: center;
+				position: relative;
+				margin-bottom: 50px;
+			}
+			
+			.a-nav-count-title {
+				font-size: 22px;
+				color: #262626;
+				margin-bottom: 24px;
+			}
+			
+			.a-nav-count-title:before,
+			.a-nav-count-title:after {
+				content: '';
+				border-top: 2px solid #272727;
+				display: block;
+				width: 120px;
+				height: 18px;
+				position: absolute;
+				top: 8px;
+			}
+			
+			.a-nav-count-title:before {
+				border-left: 2px solid #272727;
+				left: 90px;
+			}
+			
+			.a-nav-count-title:after {
+				border-right: 2px solid #272727;
+				right: 90px;
+			}
+			
+			#a-nav-count-time {
+				font-size: 35px;
+				color: #262626;
+			}
+			
+			#a-nav-count-time span {
+				width: 40px;
+				height: 60px;
+				font-size: 40px;
+				line-height: 60px;
+				text-align: center;
+				display: inline-block;
+				color: #fff;
+				background-color: #252324;
+				margin: 0 10px;
+				position: relative;
+			}
+			
+			#a-nav-count-time span:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 3px;
+				top: 49%;
+				left: 0;
+				background-color: #ececec;
+			}
+			
+			#a-nav-count-time span:last-of-type {
+				background-color: #b63a1e;
+			}
+			
+			#a-nav-count-time .a-o {
+				width: 80px;
+				letter-spacing: 0.3em;
+				text-align: right;
+			}
+			
+			#a-nav-count-time .a-o:before {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 6px;
+				height: 100%;
+				top: 0;
+				left: 45%;
+				background-color: #ececec;
+			}
+			/*#a-nav-count-time .a-s{
+	background-color: #b63a1e;
+}*/
+			
+			.a-nav-title-box {
+				background-color: #2a2b2e;
+				background: linear-gradient(90deg, #11161b, #434142);
+				position: relative;
+				color: #ffffff;
+				letter-spacing: 0.1em;
+				text-align: center;
+			}
+			
+			.a-nav-title {
+				font-size: 40px;
+				position: relative;
+				padding: 20px 0 30px;
+			}
+			
+			.a-nav-title:before,
+			.a-nav-title:after {
+				content: '';
+				position: absolute;
+				top: 34px;
+				display: inline-block;
+				width: 150px;
+				height: 26px;
+				background-color: #e08d9d;
+				background: linear-gradient(#e08d9d, #e08d9d 20%, transparent 20%, transparent 40%, #e08d9d 40%, #e08d9d 60%, transparent 60%, transparent 80%, #e08d9d 80%, #e08d9d 100%);
+			}
+			
+			.a-nav-title:before {
+				left: 0;
+			}
+			
+			.a-nav-title:after {
+				right: 0;
+			}
+			
+			.a-nav-titles {
+				font-size: 22px;
+				padding-bottom: 26px;
+				width: 710px;
+				margin: auto;
+			}
+			
+			.a-nav-titles:before,
+			.a-nav-titles:after {
+				content: 'X';
+			}
+			
+			.a-nav-titles:before {
+				float: left;
+			}
+			
+			.a-nav-titles:after {
+				float: right;
+			}
+			
+			.a-nav-title-box:after {
+				position: absolute;
+				content: '';
+				bottom: -14px;
+				left: 50%;
+				margin-left: -7.5px;
+				border-left: 15px solid transparent;
+				border-right: 15px solid transparent;
+				border-top: 15px solid #2a2b2e;
+			}
+			
+			.a-nav-ul {
+				height: 390px;
+				width: 750px;
+				margin: auto;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.a-nav-ul-title {
+				font-size: 26px;
+				line-height: 50px;
+				width: 120px;
+				height: 120px;
+				position: absolute;
+				right: 26px;
+				top: 26px;
+				z-index: 1;
+			}
+			
+			.a-nav-ul-title a {
+				z-index: 1;
+				color: #ffffff;
+				margin: 10px auto 0;
+				width: 60px;
+				display: block;
+			}
+			
+			.a-nav-ul-title:before {
+				display: block;
+				z-index: -1;
+				content: '';
+				width: 100%;
+				height: 100%;
+				background-color: #cb1537;
+				transform: rotate(45deg);
+				position: absolute;
+			}
+			
+			.a-nav-img {
+				position: absolute;
+			}
+			
+			.a-nav-img1 {
+				left: 13px;
+				top: 105px;
+			}
+			
+			.a-nav-img2 {
+				left: 145px;
+				top: 34px;
+			}
+			
+			.a-nav-img3 {
+				left: 219px;
+				top: 115px;
+			}
+			
+			.a-nav-img4 {
+				left: 287px;
+				top: 185px;
+			}
+			
+			.a-nav-img5 {
+				left: 385px;
+				top: 38px;
+			}
+			
+			.a-part1,
+			.a-part2,
+			.a-part3,
+			.a-part4 {
+				background-color: #fff;
+				width: 710px;
+				margin: auto;
+				margin-bottom: 15px;
+				padding-top: 30px;
+				font-size: 0;
+			}
+			
+			.a-p-title {
+				font-size: 30px;
+				color: #FFFFFF;
+				line-height: 46px;
+				background-color: #343638;
+				box-sizing: border-box;
+				position: relative;
+				display: inline-block;
+				margin-bottom: 15px;
+			}
+			
+			.a-p-title:after {
+				content: '';
+				position: absolute;
+				display: block;
+			}
+			
+			.a-part1 .a-p-title,
+			.a-part2 .a-p-title {
+				width: 315px;
+				margin-left: -16px;
+				padding-left: 22px;
+			}
+			
+			.a-part3 .a-p-title,
+			.a-part4 .a-p-title {
+				width: 391px;
+				margin-right: -16px;
+				padding-right: 22px;
+				text-align: right;
+			}
+			
+			.a-part1 .a-p-title:after,
+			.a-part2 .a-p-title:after {
+				left: 0;
+				bottom: -11px;
+				border-bottom: 11px solid transparent;
+				border-right: 15px solid #000000;
+			}
+			
+			.a-part3 .a-p-title:after,
+			.a-part4 .a-p-title:after {
+				right: 0;
+				bottom: -10px;
+				border-bottom: 11px solid transparent;
+				border-left: 15px solid #000000;
+			}
+			
+			.a-p-title-e {
+				display: inline-block;
+				box-sizing: border-box;
+				font-size: 28px;
+				line-height: 46px;
+				color: #11161b;
+				text-align: center;
+				position: relative;
+			}
+			
+			.a-part1 .a-p-title-e,
+			.a-part2 .a-p-title-e {
+				width: 411px;
+				right: -16px;
+			}
+			
+			.a-part3 .a-p-title-e,
+			.a-part4 .a-p-title-e {
+				width: 335px;
+			}
+			
+			.a-p-title-e:after {
+				content: '';
+				display: inline-block;
+				width: 105px;
+				height: 26px;
+				margin-top: 10px;
+				background-color: #e08d9d;
+				background: linear-gradient(#e08d9d, #e08d9d 20%, transparent 20%, transparent 40%, #e08d9d 40%, #e08d9d 60%, transparent 60%, transparent 80%, #e08d9d 80%, #e08d9d 100%);
+			}
+			
+			.a-part1 .a-p-title-e:after,
+			.a-part2 .a-p-title-e:after {
+				float: right;
+			}
+			
+			.a-part3 .a-p-title-e:after,
+			.a-part4 .a-p-title-e:after {
+				float: left;
+			}
+			
+			.a-part1 .a-p-img,
+			.a-part2 .a-p-img {
+				margin-left: 15px;
+			}
+			
+			.a-p-img {
+				box-shadow: 20px 25px 0 -10px #151716;
+				margin-bottom: 15px;
+				display: inline-block;
+			}
+			
+			.a-p-ul {
+				padding: 0 25px;
+				padding-bottom: 15px;
+				width: 680px;
+				vertical-align: top;
+				font-size: 0;
+				display: inline-block;
+			}
+			
+			.a-p-li {
+				display: inline-block;
+				width: 340px;
+				padding: 0 20px;
+				box-sizing: border-box;
+				margin-top: 8px;
+				margin-bottom: 10px;
+				position: relative;
+			}
+			
+			.a-p-li.Sold:after {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: '已售';
+				text-align: center;
+				color: #fff;
+				font-size: 50px;
+				line-height: 250px;
+				width: 100%;
+				height: 100%;
+				background-color: #333;
+				background-color: rgba(100, 100, 100, .5);
+				border-radius: 5%;
+			}
+			
+			.a-p-li-img {
+				width: 220px;
+				height: 220px;
+				margin: auto;
+				margin-bottom: 10px;
+				display: block;
+			}
+			
+			.a-p-li-title {
+				border-top: 2px solid #010101;
+				padding-top: 12px;
+				font-size: 24px;
+				line-height: 36px;
+				color: #11161b;
+				height: 84px;
+				box-sizing: border-box;
+				overflow: hidden;
+			}
+			
+			.a-p-li-brand {
+				color: #9b9b9b;
+				margin-right: 1em;
+			}
+			
+			.a-p-li-price {
+				font-size: 26px;
+				color: #cb1537;
+			}
+			
+			.a-p-li-price:before {
+				content: '11.11';
+				display: inline-block;
+				font-size: 22px;
+				color: #ffffff;
+				background-color: #cb1537;
+				line-height: 30px;
+				padding: 0 8px;
+				vertical-align: middle;
+			}
+			
+			.a-part4 {
+				margin-bottom: 50px;
+			}
+			
+			.a-part3 .a-p-img {
+				box-shadow: -20px 25px 0 -10px #151716;
+			}
+			
+			.a-part3 .a-p-ul {
+				margin-top: 20px;
+				width: 323px;
+				position: relative;
+			}
+			
+			.a-part3 .a-p-li:last-of-type {
+				position: absolute;
+				left: -88%;
+				bottom: 15px;
+			}
+			
+			.a-part4 .a-p-ul {
+				margin-top: 20px;
+				width: 323px;
+				position: relative;
+			}
+			
+			.a-part4 .a-p-li:last-of-type {
+				position: absolute;
+				right: -88%;
+				bottom: 15px;
+			}
+			
+			.backtop {
+				display: block;
+				margin: auto;
+				width: 125px;
+				height: 40px;
+				line-height: 40px;
+				color: #ececec;
+				text-align: center;
+				background-color: #cb1537;
+				border-radius: 50%/105% 105%0 0;
+			}
+			
+			.backtop:after {
+				content: '';
+				display: inline-block;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-bottom: 9px solid #ececec;
+				position: relative;
+				top: -2px;
+				left: 3px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="viewport ">
+			<header>
+				<div class="header-back">
+					<a class="button" href="javascript:history.back(-1)">返回</a>
+				</div>
+				<h2>包袋大优惠</h2>
+				<div class="header-sort">
+					<a class="button" href="javascript:void(0);"></a>
+				</div>
+			</header>
+			<div class="activity" id="activity">
+				<img class="a-banner" src="img/banner.jpg"></img>
+				<div class="a-nav">
+					<div class="a-nav-count">
+						<div class="a-nav-count-title">距离双11优惠抢购结束仅剩</div>
+						<div id="a-nav-count-time"></div>
+						<!--<div id="a-nav-count-time"><span>7</span>天<span class="a-o">77</span>小时<span>7</span>分<span class="a-s">7</span>秒</div>-->
+
+					</div>
+					<div class="a-nav-title-box">
+						<div class="a-nav-title">有你想不到的惊喜</div>
+						<div class="a-nav-titles">大牌包包，你想要的包包，你意想不到的包包，全在这里</div>
+					</div>
+
+					<dl class="a-nav-ul">
+						<dt class="a-nav-ul-title"><a href="http://www.jushewang.com/goods/list/2-0-0-0-0-0-0-0-0-0-0-0-0-0.html" target="_blank">包袋专场</a></dt>
+						<dd class="a-nav-img a-nav-img1">
+							<a href="http://www.jushewang.com/goods/list/2-0-0-753-0-0-0-0-0-0-0-0-0-0.html" target="_blank"><img src="http://pic.jushewang.com/b2c_web/images/activity/20161108/img/a-nav-1.png" alt="" /></a>
+						</dd>
+						<dd class="a-nav-img a-nav-img2">
+							<a href="http://www.jushewang.com/goods/list/2-0-0-859-0-0-0-0-0-0-0-0-0-0.html" target="_blank"><img src="http://pic.jushewang.com/b2c_web/images/activity/20161108/img/a-nav-2.png" alt="" /></a>
+						</dd>
+						<dd class="a-nav-img a-nav-img3">
+							<a href="http://www.jushewang.com/goods/list/2-0-0-754-0-0-0-0-0-0-0-0-0-0.html" target="_blank"><img src="http://pic.jushewang.com/b2c_web/images/activity/20161108/img/a-nav-3.png" alt="" /></a>
+						</dd>
+						<dd class="a-nav-img a-nav-img4">
+							<a href="http://www.jushewang.com/goods/list/2-0-0-752-0-0-0-0-0-0-0-0-0-0.html" target="_blank"><img src="http://pic.jushewang.com/b2c_web/images/activity/20161108/img/a-nav-4.png" alt="" /></a>
+						</dd>
+						<dd class="a-nav-img a-nav-img5">
+							<a href="http://www.jushewang.com/goods/list/2-0-0-755-0-0-0-0-0-0-0-0-0-0.html" target="_blank"><img src="http://pic.jushewang.com/b2c_web/images/activity/20161108/img/a-nav-5.png" alt="" /></a>
+						</dd>
+					</dl>
+				</div>
+				<div class="a-part1">
+					<div class="a-p-title">1F&nbsp;&nbsp;单肩包</div>
+					<div class="a-p-title-e">SHOULDER BAG</div>
+					<img src="img/a-pic-1.jpg" alt="" class="a-p-img" />
+					<ul class="a-p-ul">
+						<li class="a-p-li Sold">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+							<p class="a-p-li-price">￥5580.00</p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+							<p class="a-p-li-price">￥5580.00</p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+							<p class="a-p-li-price">￥5580.00</p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+							<p class="a-p-li-price">￥5580.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="a-part2">
+					<div class="a-p-title">2F&nbsp;&nbsp;手提包</div>
+					<div class="a-p-title-e">HAND BAG</div>
+					<img src="img/a-pic-2.jpg" alt="" class="a-p-img" />
+					<ul class="a-p-ul">
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand">Louis Vuitton/路易.威登</span>女士印度粉小号贝壳包</h3>
+							<p class="a-p-li-price">￥5580.00</p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="a-part3">
+					<div class="a-p-title-e">3F&nbsp;&nbsp;女包</div>
+					<div class="a-p-title">FEMALE BAG</div>
+					<img src="img/a-pic-3.jpg" alt="" class="a-p-img" />
+					<ul class="a-p-ul">
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+					</ul>
+
+				</div>
+				<div class="a-part4">
+					<div class="a-p-title-e">4F&nbsp;&nbsp;男包</div>
+					<div class="a-p-title">MALE BAG</div>
+
+					<ul class="a-p-ul">
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+						<li class="a-p-li">
+							<img src="" alt="" class="a-p-li-img" />
+							<h3 class="a-p-li-title"><span class="a-p-li-brand"></span></h3>
+							<p class="a-p-li-price"></p>
+						</li>
+					</ul>
+					<img src="img/a-pic-4.jpg" alt="" class="a-p-img" />
+
+				</div>
+				<a target="_blank" class="backtop db" title="返回顶部">TOP</a>
+			</div>
+			<footer class="tac black_b fs20">聚奢网版权所有</footer>
+			<!--oneself -->
+			<div class="myHome">
+				<dl class="pa white_b p10 boxsize tac fs20">
+					<dt class="mt20 mb20"><a class="btn">
+	      <div class="photo dib oh boxsize"><img src="http://pic.jushewang.com/b2c_mobile/images/index/personal.jpg" alt="" /></div>
+	      <div class="greet">欢迎您</div>
+	      <div class="name" style="display:none;">
+	        <p>游客</p>
+	        <!--<p class="personalCenter">【个人中心】</p>--> 
+	      </div>
+	      </a> </dt>
+					<dd class="personalSet mt20 mb20">
+						<ul>
+							<li class="mt10 mb10">
+								<a href="/order/myOrder" class="btn white black_b">我的订单</a>
+							</li>
+							<li class="mt10 mb10">
+								<a href="/order/myBookOrder" class="btn white black_b">我的预约</a>
+							</li>
+							<li class="mt10 mb10">
+								<a href="/cart/myCart" class="btn white black_b">我的购物车</a>
+							</li>
+							<li class="mt10 mb10">
+								<a href="/consign/myConsign" class="btn white black_b">我的寄卖</a>
+							</li>
+							<li class="mt10 mb10">
+								<a href="/coupons/myCoupons" class="btn white black_b">我的优惠券</a>
+							</li>
+							<li class="mt10 mb10">
+								<a href="/userCenter/userInfo" class="btn white black_b">个人设置</a>
+							</li>
+							<li class="mt10 mb10">
+								<a href="/userCenter/updatePassword" class="btn white black_b">修改密码</a>
+							</li>
+						</ul>
+					</dd>
+					<dd class="operate mt20 mb20">
+						<ul>
+							<li class="enter mt10 mb10">
+								<a href="/login.html" class="btn black">登录</a>
+							</li>
+							<li class="regist mt10 mb10">
+								<a href="/register.html" class="btn black">注册</a>
+							</li>
+							<li class="dropOut mt10 mb10" style="display:none;">
+								<a href="/logout" class="btn black">退出</a>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="mask"></div>
+			</div>
+			<!--oneself end -->
+		</div>
+		<script type="text/javascript">
+			$(function() {
+					// alert();
+					//轻奢精品献礼520 
+					$.LoadGoods("/goods/getGoodsByGoodsIds?goodsIds=4334214518,9188881336,0297233396,3889294974", $('.a-p-ul').eq(0));
+					//520  大胆表白我爱你
+					$.LoadGoods("/goods/getGoodsByGoodsIds?goodsIds=1330001543,3308350217,4976635400,6579740972", $('.a-p-ul').eq(1));
+					//520  嫁给我吧亲爱的
+					$.LoadGoods("/goods/getGoodsByGoodsIds?goodsIds=7113634322,3753711817,6579740972,5104642226", $('.a-p-ul').eq(2));
+					//520  你还记得今天是结婚几周年吗？
+					$.LoadGoods("/goods/getGoodsByGoodsIds?goodsIds=1989842831,7635007142,3712458044,3144779141", $('.a-p-ul').eq(3));
+					var interval = 1000;
+
+					function timelength(val) {
+						if(val.toString().length > 1) {
+							return '<span class="a-o">' + val + '</span>'
+						}
+						return '<span>' + val + '</span>'
+					}
+
+					function ShowCountDown(year, month, day, divname) {
+						var now = new Date();
+						var endDate = new Date(year, month - 1, day);
+						var leftTime = endDate.getTime() - now.getTime();
+						var leftsecond = parseInt(leftTime / 1000);
+						//var day1=parseInt(leftsecond/(24*60*60*6)); 
+						var day1 = Math.floor(leftsecond / (60 * 60 * 24));
+						var hour = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600);
+						var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour * 3600) / 60);
+						var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour * 3600 - minute * 60);
+
+						var cc = document.getElementById(divname);
+						cc.innerHTML = timelength(day1) + '天' + timelength(hour) + '小时' + timelength(minute) + '分' + timelength(second) + '秒';
+						//		cc.innerHTML = '<span>' + day1 + '</span>天<span>' + hour + '</span>小时<span>' + minute + '</span>分<span class="a-s">' + second + '</span>秒';	
+					}
+					window.setInterval(function() {
+						ShowCountDown(2016, 11, 11, 'a-nav-count-time');
+					}, interval);
+
+				})
+				//距离顶部一定距离才显示
+			$(document).ready(function() {
+				$(window).scroll(function() {
+					var sTop = $(window).scrollTop();
+					if(sTop >= 700) {
+						$("#lift").show();
+					} else {
+
+						$("#lift").hide();
+					}
+				});
+				$(".lift li.navigate").click(function() {
+					var index = $(this).index();
+					var tops = $(".a-p-title").eq(index).offset().top - 20;
+					$('html, body').stop().animate({
+							scrollTop: tops
+						},
+						300);
+				});
+				$(".backtop").click(function() {
+					$('html, body').animate({
+							scrollTop: 0
+						},
+						300);
+				});
+			});
+
+			jQuery.LoadGoods = function(url, $ul) {
+				$.ajax({
+					type: "post",
+					url: url,
+					dataType: "json",
+					success: function(data) {
+						// console.log(data);
+						for(var i = 0; i < data.length; i++) {
+							var item = data[i];
+							// var li = '<li class="a-p-li"><img src="' + item.goodsImage + ' class="a-p-li-img"/><h3  class="a-p-li-title"><span class="a-p-li-brand">' + item.brandName + '</span>' + item.goodsTitle + '</h3><p class="a-p-li-price">' + item.preSalePrice + '</p></li>';
+							if(item.goodsState == 1) {
+								var li = '<li class="a-p-li">\
+                        	<a target="_blank" href="/goods/detail/' + item.goodsId + '-100.html" title="' + item.goodsTitle + '">\
+                        	<img src="' + item.goodsImage + '" alt="' + item.goodsTitle + '" class="a-p-li-img"/>\
+                        	<h3  class="a-p-li-title"><span class="a-p-li-brand">' + item.brandName + '</span>' + item.goodsTitle + '</h3>\
+                        	<p class="a-p-li-price">' + item.preSalePrice + '</p>\
+                        	</a>\
+                        	</li>';
+							} else {
+								var li = '<li class="a-p-li Sold">\
+                        <a target="_blank" href="/goods/detail/' + item.goodsId + '-100.html" title="' + item.goodsTitle + '">\
+                        <img src="' + item.goodsImage + '" alt="' + item.goodsTitle + '" class="a-p-li-img"/>\
+                        <h3  class="a-p-li-title"><span class="a-p-li-brand">' + item.brandName + '</span>' + item.goodsTitle + '</h3>\
+                        <p class="a-p-li-price">' + item.preSalePrice + '</p>\
+                        </a>\
+                        </li>';
+							}
+							$ul.append(li);
+						}
+
+					}
+				});
+			}
+		</script>
+	</body>
+
+</html>
