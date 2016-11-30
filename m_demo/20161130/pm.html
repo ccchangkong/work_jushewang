@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>详情</title>
+		<meta name="keywords" content="二手奢侈品网站，二手奢侈品交易平台，二手奢侈品购物网站，二手手表网站，二手包包网站，奢侈品寄售，奢侈品寄卖" />
+		<meta name="description" content="详情" />
+		<meta name="viewport" content="target-densitydpi=320,width=1080,user-scalable=no" />
+		<!--等比例缩放-->
+		<link href="http://m.jushewang.com/css/public.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			.dn {
+	display: none;
+}
+
+* {
+	-webkit-text-size-adjust: none;
+}
+
+#details {
+	background-color: #ffffff;
+	font-size: 0;
+}
+.d-nav{
+	padding: 0 20px;
+}
+.d-nav-li {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	font-size: 26px;
+	color: #221f1d;
+	line-height: 80px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.d-nav-li:not(:last-child):after {
+	content: '';
+	width: 1px;
+	height: 24px;
+	background-color: #e4e4e4;
+	position: absolute;
+	right: 0;
+	top: 28px;
+}
+
+.d-nav-p {
+	display: inline;
+	padding: 0 10px 6px;
+	line-height: 50px;
+}
+
+.d-nav-li.Act .d-nav-p {
+	color: #97518b;
+	border-bottom: 2px solid;
+}
+
+.d-main-li {
+	padding: 0 20px 20px;
+	display: none;
+}
+
+.d-li-title {
+	font-size: 26px;
+	color: #221f1d;
+	font-weight: 400;
+	line-height: 40px;
+	background-color: #eeeeee;
+}
+.d-table{
+	width: 100%;
+	border-bottom: 1px solid #d1d1d1;
+}
+.d-t-head{
+	color: #221f1d;
+	background-color: #eeeeee;
+		margin-bottom: 30px;
+	
+}
+.d-t-head-th{
+	font-size: 26px;
+    width: 25%;
+	font-weight: 400;
+	line-height: 40px;
+	text-align: center;
+	display: inline-block;
+}
+.d-body-td{
+	font-size: 26px;
+	text-align: center;
+	line-height: 55px;
+	width: 25%;
+	display: inline-block;
+}
+.d-body-tr{
+		margin-bottom: 15px;
+}
+.d-body-tr:first-child{
+	background-color: #f28a3c;
+	color: #fff;
+	position: relative;	
+	border: 1px solid #d56919;
+}
+.d-body-tr:first-child:before{
+	position: absolute;
+	content: '';
+    width: 0;
+    height: 0;
+    border-top: 13px solid #fff;
+    border-right: 20px solid transparent;
+    top: -1px;
+    left: -1px;	
+}
+.d-body-tr:first-child:after{
+	position: absolute;
+	content: url(./img/d-cj-1.png);
+    top: -16px;
+    left: -13px;	
+}
+.d-body-tr:first-child .d-body-td:first-child{
+position: relative;
+left: -1em;
+}
+.Jp {
+	text-align: center;
+}
+
+.Jp img {
+	padding: 40px 0;
+}
+
+.Fw .d-li-title {
+	padding-left: 15px;
+}
+
+.Fw .d-li-p {
+	padding: 20px 15px;
+	font-size: 24px;
+	line-height: 1.5;
+	color: #9a9a9a;
+	text-indent: 2em;
+}
+		</style>
+		<script type="text/javascript" src="http://m.jushewang.com/js/jquery.min.js"></script>
+	</head>
+
+	<body id="details">
+		<div class="viewport">
+			<nav class="d-nav">
+				<ul>
+					<li class="d-nav-li Act">
+						<p class="d-nav-p">商品详情</p>
+					</li>
+					<li class="d-nav-li">
+						<p class="d-nav-p">出价记录(<span id="cj-num">3</span>)</p>
+					</li>
+					<li class="d-nav-li">
+						<p class="d-nav-p">竞拍须知</p>
+					</li>
+					<li class="d-nav-li">
+						<p class="d-nav-p">服务保障</p>
+					</li>
+				</ul>
+			</nav>
+			<ul class="d-main">
+				<li class="d-main-li" style="display: block;"></li>
+				<li class="d-main-li">
+					<div class="d-table">
+						<div class="d-t-head">
+							<div class="d-t-head-th">状态</div>
+							<div class="d-t-head-th">价格</div>
+							<div class="d-t-head-th">竞拍人</div>
+							<div class="d-t-head-th">时间</div>
+						</div>
+						<div class="d-t-body">
+							<div class="d-body-tr">
+								<div class="d-body-td">领先</div>
+								<div class="d-body-td">Data</div>
+								<div class="d-body-td">Data</div>
+								<div class="d-body-td">Data</div>
+							</div>
+							<div class="d-body-tr">
+								<div class="d-body-td">出局</div>
+								<div class="d-body-td">Data</div>
+								<div class="d-body-td">Data</div>
+								<div class="d-body-td">Data</div>
+							</div>
+
+						</div>
+					</div>
+				</li>
+				<li class="d-main-li Jp">
+					<h3 class="d-li-title">竞拍交保证金</h3>
+					<img src="img/d-jp-1.png" />
+					<h3 class="d-li-title">竞拍免交保证金</h3>
+					<img src="img/d-jp-2.png" />
+				</li>
+				<li class="d-main-li Fw">
+					<h3 class="d-li-title">正品保障</h3>
+					<p class="d-li-p">我司承诺所拍商品均为正品，如假包退；如需鉴定，请在收到商品后自行到该地区品牌专柜验货。</p>
+					<h3 class="d-li-title">商品成色</h3>
+					<p class="d-li-p">商品是实物多角度拍照，除对图片进行必要的裁剪外，无其他处理。由于受光线、显示器、拍照设备的影响，难免会存在一定偏差，不属于质量问题，介意者请慎拍。</p>
+					<h3 class="d-li-title">保证金退还</h3>
+					<p class="d-li-p">在竞拍结束后，如竞拍失败，您所缴纳的保证金我司将退还到您的支付账户。</p>
+					<h3 class="d-li-title">退货说明</h3>
+					<p class="d-li-p">商品支持7天无理由退货，对于签收7天后（不含7天）的商品在不影响二次销售的情况下可予以退货【我司将要扣除商品折旧费用】。</p>
+					<h3 class="d-li-title">物流发货</h3>
+					<p class="d-li-p">竞拍商品订单生效后，我司将在24小时之内发货，我司所有商品统一顺丰包邮，特殊商品除外，如有商品需快递保价业务，保价费买方承担。</p>
+					<h3 class="d-li-title">售后服务</h3>
+					<p class="d-li-p">收到商品有任何问题请联系在线客服，我们竭力做到让您满意；<br />
+						<a href="tel:400-880-9930">客服热线：400-880-9930</a>。</p>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+		$("#details").on('click','.d-nav-li',function () {
+			$(this).addClass('Act').siblings().removeClass('Act');
+			$(".d-main-li").eq($(this).index()).show().siblings().hide()		
+		})
+		</script>
+	</body>
+
+</html>
