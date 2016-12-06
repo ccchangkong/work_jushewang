@@ -1,0 +1,188 @@
+#activity {
+	font-size: 0;
+}
+
+.a-banner {
+	background: #fff url(../img/banner.jpg) no-repeat center;
+	height: 1005px;
+	margin: auto;
+}
+
+.a-part1,
+.a-part2,
+.a-part3,
+.a-part4 {
+	width: 100%;
+}
+
+.a-part1 {
+	background: url(../img/a-p1.jpg) no-repeat center;
+	height: 1695px;
+}
+
+.a-part2 {
+	background: url(../img/a-p2.jpg) no-repeat center;
+	height: 1778px;
+}
+
+.a-part3 {
+	background: url(../img/a-p3.jpg) no-repeat center;
+	height: 1620px;
+}
+
+.a-part4 {
+	background: url(../img/a-p4.jpg) no-repeat center;
+	height: 2103px;
+}
+
+.a-p-ul {
+	vertical-align: top;
+	font-size: 0;
+	width: 1020px;
+	height: 1265px;
+	margin: auto;
+}
+
+.a-part1 .a-p-ul {
+	padding-top: 403px;
+}
+
+.a-part2 .a-p-ul {
+	padding-top: 400px;
+}
+
+.a-part3 .a-p-ul {
+	padding-top: 330px;
+}
+
+.a-part4 .a-p-ul {
+	padding-top: 520px;
+}
+
+.a-p-li {
+	display: inline-block;
+	width: 33%;
+	height: 390px;
+	box-sizing: border-box;
+	position: relative;
+	padding-top: 40px;
+	margin-bottom: 30px;
+	transition: .5s;
+}
+
+.a-p-li:hover {
+	box-shadow: 0 0 25px #2C2228;
+}
+
+.a-p-li.Sold:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '已售';
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	line-height: 350px;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	background-color: rgba(100, 100, 100, .5);
+}
+
+.a-p-li-img {
+	width: 220px;
+	height: 220px;
+	margin: auto;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.a-p-li-title {
+	height: 25px;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: center;
+	color: #b31c21;
+	overflow: hidden;
+	margin-bottom: 8px;
+}
+
+.a-p-li-brand {}
+
+.a-p-li-price {
+	font-size: 15px;
+	color: #262626;
+	text-align: center;
+}
+
+.a-p-li-price:before {
+	content: 'RMB:￥';
+	font-size: 8px;
+}
+
+  #leafContainer {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  #leafContainer > div {
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    animation-iteration-count: infinite, infinite;
+
+    animation-direction: normal, normal;
+    animation-timing-function: linear, ease-in;
+  }
+  
+  #leafContainer > div > img {
+    width: 100%;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    transform-origin: 50% -100%;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      transform: translate(0px, -50px);
+    }
+    100% {
+      transform: translate(0px, 650px);
+    }
+  }
+  
+  @keyframes clockwiseSpin {
+    0% {
+      transform: rotate(-50deg);
+    }
+    100% {
+      transform: rotate(50deg);
+    }
+  }
+  
+  @keyframes counterclockwiseSpinAndFlip {
+    0% {
+      transform: scale(-1, 1) rotate(50deg);
+    }
+    100% {
+      transform: scale(-1, 1) rotate(-50deg);
+    }
+  }
