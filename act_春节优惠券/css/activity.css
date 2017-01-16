@@ -39,6 +39,17 @@
 	.a-p-box{
 		background: url(../img/a-p-bg.jpg) center no-repeat;
 		height: 1678px;
+		position: relative;
+		z-index: 0;
+	}
+	.a-p-box:before{
+		position: absolute;
+		content: url(../img/a-p-vs-bg.png);
+		z-index: -1;
+	}
+	.a-p-box:after{
+		position: absolute;
+		content: url(../img/a-p-VS.png);
 	}
 .a-part1,
 .a-part2, {
