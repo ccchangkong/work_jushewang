@@ -1,0 +1,112 @@
+#activity {
+	/*font-size: 0;*/
+	background-color: #93000b;
+    background-image: linear-gradient(#710005 0%,#e42130 100%);
+    position: relative;
+}
+#activity:before{
+	content: url(../img/a-banner-top.png);
+	position: absolute;
+	top: 0;
+	}
+.a-banner {
+	background: url(../img/a-banner.jpg) no-repeat center;
+	height: 1018px;
+	margin: auto;
+}
+.a-t-dt{
+	background: url(../img/a-title-bg.png) center no-repeat;
+	position: relative;
+}
+.a-t-dt:after{
+	content: url(../img/a-title-left.png);
+	position: absolute;
+	left: 0;}
+.a-t-dt:before{
+	content: url(../img/a-title-right.png);
+	position: absolute;
+	right: 0;}
+	.a-t-dd{
+		display: inline-block;
+		width: 285px;
+		height: 274px;
+		background: url(../img/a-title-li.png);
+		position: relative;
+	}
+	.a-t-dd:after{
+		content: '立即领取';
+	}
+	.a-p-box{
+		background: url(../img/a-p-bg.jpg) center no-repeat;
+		height: 1678px;
+	}
+.a-part1,
+.a-part2, {
+	width: 100%;
+}
+
+.a-part1 {
+/*	height: 1695px;*/
+background-color: #dde3ff;
+}
+
+.a-part2 {
+	/*height: 1778px;*/
+	background-color: #ffddf1;
+}
+
+
+.a-p-ul {
+	/*vertical-align: top;
+	font-size: 0;
+	width: 1020px;
+	height: 1265px;
+	margin: auto;*/
+}
+
+.a-p-li{
+		width: 476px;
+	height: 198px;
+	position: relative;
+	z-index: 0;
+}
+.a-p-li a{
+
+	line-height: 198px;
+	text-align: center;
+	color: transparent;
+	/*display: inline-block;
+	width: 33%;
+	height: 390px;
+	box-sizing: border-box;
+	position: relative;
+	padding-top: 40px;
+	margin-bottom: 30px;*/
+	transition: .5s;
+}
+
+.a-p-li:hover a{
+	color: #fff;
+	/*box-shadow: 0 0 25px #2C2228;*/
+}
+.a-p-li:hover:before{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	background-color: #333;
+	background-color: rgba(0,0,0,0.66);
+}
+.a-p-li1{
+	background: url(../img/a-p-li_1.jpg) center no-repeat;
+}
+
+
+.a-p-bt:before{
+	content: url(../img/a-bt-left.png);
+}
+.a-p-bt:after{
+	content: url(../img/a-bt-right.png);
+}
