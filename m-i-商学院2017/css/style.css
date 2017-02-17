@@ -1,0 +1,394 @@
+#train *,
+#train *:before,
+#train *:after {
+	box-sizing: border-box;
+	-webkit-text-size-adjust: none;
+}
+
+.color-orange {
+	color: #f76e00;
+}
+
+#train {
+	background-color: #fff;
+	width: 750px;
+	margin: auto;
+	position: relative;
+}
+
+.t-banner {
+	background: url(../img/t-banner.jpg) center no-repeat;
+	width: 750px;
+	height: 400px;
+	position: relative;
+}
+
+.t-b-code {
+	position: absolute;
+	right: 50px;
+	width: 90px;
+	background-color: #fff;
+}
+
+.t-b-code:after {
+	position: absolute;
+	bottom: -14px;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	border-top: 14px solid #fff;
+}
+
+.t-b-code-img {
+	display: block;
+	width: 68px;
+	height: 68px;
+	margin: 4px auto 18px;
+}
+
+.t-b-code:before {
+	content: '扫码微信咨询';
+	font-size: 12px;
+	position: absolute;
+	text-align: center;
+	width: 90px;
+	top: 82%;
+}
+
+.t-b-title {
+	padding-top: 60px;
+	float: right;
+}
+
+.t-course {
+	background-color: #282828;
+	font-size: 0;
+}
+
+.t-course dt {
+	color: #FFFFFF;
+	font-size: 60px;
+	display: inline-block;
+	height: 265px;
+	width: 120px;
+	line-height: 80px;
+	text-align: center;
+	padding-top: 52px;
+}
+
+.t-course-right {
+	display: inline-block;
+	height: 265px;
+	width: 630px;
+	vertical-align: top;
+	padding: 18px;
+	position: relative;
+}
+
+.t-course-right:before,
+.t-course-right:after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	background-color: #282828;
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.t-course-right:before {
+	left: 34.3%;
+}
+
+.t-course-right:after {
+	left: 65.6%;
+}
+
+.t-course dd {
+	display: inline-block;
+	width: 33.3%;
+	height: 50%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.t-course dd:nth-child(1),
+.t-course dd:nth-child(2),
+.t-course dd:nth-child(3) {
+	border-bottom: 1px solid #404040;
+}
+
+.t-course dd:nth-child(2),
+.t-course dd:nth-child(5) {
+	border-left: 1px solid #404040;
+	border-right: 1px solid #404040;
+}
+
+.t-course h4 {
+	color: #eff5e2;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 28px;
+}
+
+.t-course p {
+	color: #f76e00;
+	font-style: italic;
+	font-size: 30px;
+}
+
+.t-part-title {
+	font-size: 40px;
+	color: #333333;
+	text-align: center;
+	padding-top: 18px;
+	line-height: 78px;
+}
+
+.t-part-title span {
+	color: #f76e00;
+}
+
+.t-part-title:after {
+	content: '';
+	display: block;
+	width: 130px;
+	height: 1px;
+	margin: auto;
+	background-color: #f76e00;
+}
+
+.t-p-title-more {
+	font-size: 18px;
+	line-height: 28px;
+	color: #282828;
+	text-align: center;
+	padding-top: 14px;
+	padding-bottom: 22px;
+}
+
+.t-project {
+	font-size: 0;
+}
+
+.t-p1-ul {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.t-p1-ul:nth-of-type(1) {
+	text-align: right;
+}
+
+.t-p1-ul h4 {
+	font-size: 24px;
+	color: #333333;
+	display: inline-block;
+	line-height: 52px;
+	vertical-align: top;
+	position: relative;
+}
+
+.t-p1-ul p {
+	font-size: 18px;
+	color: #666666;
+	line-height: 26px;
+	display: inline-block;
+}
+
+.t-p1-ul:nth-of-type(1) li {
+	padding-bottom: 63px;
+}
+
+.t-p1-ul:nth-of-type(2) li {
+	padding-top: 60px;
+}
+
+.t-p1-ul:nth-of-type(1) p {
+	padding-right: 26px;
+}
+
+.t-p1-ul:nth-of-type(2) p {
+	padding-left: 26px;
+}
+
+.t-p1-ul:nth-of-type(1) h4 {
+	padding-right: 30px;
+}
+
+.t-p1-ul:nth-of-type(2) h4 {
+	padding-left: 30px;
+}
+
+.t-p1-ul h4:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 30px;
+	background-color: #999999;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.t-p1-ul h4:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	top: 50%;
+	transform: translate(0, -50%);
+	/*background-color: #333;*/
+}
+
+.t-p1-ul:nth-of-type(1) h4:before {
+	left: -15px;
+}
+
+.t-p1-ul:nth-of-type(1) h4:after {
+	right: -18px;
+}
+
+.t-p1-ul:nth-of-type(2) h4:before {
+	right: -15px;
+}
+
+.t-p1-ul:nth-of-type(2) h4:after {
+	left: -18px;
+}
+
+.t-p1-ul:nth-of-type(1) li:nth-of-type(1) h4:after {
+	background-color: #a5c8df;
+}
+
+.t-p1-ul:nth-of-type(1) li:nth-of-type(2) h4:after {
+	background-color: #669b9e;
+}
+
+.t-p1-ul:nth-of-type(1) li:nth-of-type(3) h4:after {
+	background-color: #9ba3b2;
+}
+
+.t-p1-ul:nth-of-type(2) li:nth-of-type(1) h4:after {
+	background-color: #5497c0;
+}
+
+.t-p1-ul:nth-of-type(1) li:nth-of-type(1) h4:after {
+	background-color: #5497c0;
+}
+
+.t-p1-ul:nth-of-type(2) li:nth-of-type(2) h4:after {
+	background-color: #a1998b;
+}
+
+.t-p1-ul:nth-of-type(2) li:nth-of-type(3) h4:after {
+	background-color: #4f8cb0;
+}
+
+.t-r-ul {
+	padding: 20px 55px;
+	font-size: 0;
+	text-align: center;
+}
+
+.t-r-ul li {
+	width: 320px;
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 40px;
+}
+
+.t-r-ul p:before {
+	display: block;
+	content: attr(data-num);
+	font-size: 30px;
+	line-height: 50px;
+	/*color: #282828;*/
+}
+
+.t-r-ul p {
+	font-size: 18px;
+	color: #282828;
+}
+
+.t-r-ul span {
+	color: #ff0000;
+}
+
+.t-about-box {
+	padding: 28px 60px 40px;
+}
+
+.t-about-p {
+	text-indent: 2em;
+	font-size: 18px;
+	line-height: 32px;
+	color: #666666;
+}
+
+.t-content-pic-box {
+	float: left;
+	margin-left: 65px;
+	margin-right: 30px;
+	width: 140px;
+	height: 140px;
+	border: 1px solid #e7e7e7;
+	text-align: center;
+	line-height: 140px;
+	position: relative;
+}
+
+.t-content-pic-box:before,
+.t-content-pic-box:after,
+.t-content-pic-box>div:before,
+.t-content-pic-box>div:after {
+	content: '';
+	border-top: 2px solid #917347;
+	border-left: 2px solid #917347;
+	position: absolute;
+	width: 14px;
+	height: 13px;
+	display: block;
+	line-height: 0;
+}
+
+.t-content-pic-box:before {
+	top: 0;
+	left: 0;
+}
+
+.t-content-pic-box:after {
+	top: 0;
+	right: -1px;
+	transform: rotate(90deg);
+}
+
+.t-content-pic-box>div:before {
+	bottom: -1px;
+	left: 0;
+	transform: rotate(-90deg);
+}
+
+.t-content-pic-box>div:after {
+	bottom: -1px;
+	right: -1px;
+	transform: rotate(180deg);
+}
+
+.t-content-ul {
+	padding-bottom: 50px;
+}
+
+.t-content-ul li,
+.t-content-ul a {
+	font-size: 18px;
+	color: #333333;
+	font-weight: 600;
+	line-height: 28px;
+}
