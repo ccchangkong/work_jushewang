@@ -38,6 +38,52 @@
 			</div>
 		</div>
 		  <script>
+  function is_weixin() {
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function is_qq() {
+    var ua = navigator.userAgent.toLowerCase();
+    return /mqqbrowser/.test(ua);
+  }
+
+  if (is_weixin()) {
+    document.getElementById('androiddl').href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.foyangzi.b2c.jushe';
+  } else {
+    if (!is_qq()) {
+      var isInstalled;
+      var urls = 'something://project.jushewang.com:9999/download';
+      var ifr = document.createElement('iframe');
+      ifr.src = urls;
+      ifr.style.display = 'none';
+      ifr.onload = function() {
+        isInstalled = true;
+        document.getElementById('androiddl').href = urls;
+      }
+      ifr.onerror = function() {
+        isInstalled = false;
+      }
+      document.body.appendChild(ifr);
+      window.setTimeout(function() {
+        document.body.removeChild(ifr);
+      }, 1000)
+    }
+  };
+
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?465a415ddde0e535a6fd21cd103494c4";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+
   function ih() {
     var h = window.innerHeight;
     var el = document.getElementById('app');
