@@ -52,10 +52,9 @@
     return /mqqbrowser/.test(ua);
   }
 
-  if (is_weixin()) {
+  if (is_weixin()||is_qq()) {
     document.getElementById('androiddl').href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.foyangzi.b2c.jushe';
   } else {
-    if (!is_qq()) {
       var isInstalled;
       var urls = 'something://project.jushewang.com:9999/download';
       var ifr = document.createElement('iframe');
@@ -72,7 +71,6 @@
       window.setTimeout(function() {
         document.body.removeChild(ifr);
       }, 1000)
-    }
   };
 
 
